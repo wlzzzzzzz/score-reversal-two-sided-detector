@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "eaaa7b15680bb56b7f278c61af6ded1e92d40fe0b493eff37d2a08fda456238a",
+  "rows": 2400,
+  "input_sha256": "cbce17ffff3694bbf168ed5416ba71baf701f3b8a00dc540dfa9d28d6f6521c2",
+  "parity_checks": [
+    {
+      "row_id": "squad:llama-2-7b:88:SemStamp",
+      "native_error": 5.960464477539063e-08,
+      "s3_error": 0.0
+    }
+  ]
+}

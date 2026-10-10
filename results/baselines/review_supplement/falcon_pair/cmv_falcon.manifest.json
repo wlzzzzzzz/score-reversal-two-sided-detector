@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "c529de1c5c3ebc73c8754b20467f664fdcc8cf4c396f2c9212b08bc335e61f31",
+  "rows": 2400,
+  "input_sha256": "8454d7e14cf880d3e639521bc2e355c39470317f3b1636af650f58d725c0973b",
+  "parity_checks": [
+    {
+      "row_id": "cmv:falcon:5:Unigram",
+      "native_error": 3.5762786865234375e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

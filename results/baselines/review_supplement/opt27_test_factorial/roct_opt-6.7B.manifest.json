@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "e5403b287f8682d9458ae56a4b59cb2c4bc7177cfc63ee59947923acd29aca2d",
+  "rows": 2400,
+  "input_sha256": "add47ec77123dc02b29611f65f54d3257cdaa2c8562b45ff453e9a3f81177ce5",
+  "parity_checks": [
+    {
+      "row_id": "roct:opt-6.7B:18:human",
+      "native_error": 7.152557373046875e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "ab12fea7d4744563747a052dfca3a24e66b4f05c4e499bd3b62d589f1fca7cec",
+  "rows": 2400,
+  "input_sha256": "b5ce27ec487233dc268f33868856a0011785b5f3105a520d1b64a73acc9a4ff9",
+  "parity_checks": [
+    {
+      "row_id": "pubmed:opt-2.7B:23:unwatermarked",
+      "native_error": 2.384185791015625e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

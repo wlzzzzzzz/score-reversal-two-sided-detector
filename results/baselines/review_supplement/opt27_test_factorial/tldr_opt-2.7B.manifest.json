@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "4dbd39f05396688b3d2b17b8af13d85052d1d2a3f8bc0e7a023a2efd58ee54f5",
+  "rows": 2400,
+  "input_sha256": "cd27a411a8c083d8ff928d943c26cef5d05d3c02216bdc3ee1ddb02b8b86aa49",
+  "parity_checks": [
+    {
+      "row_id": "tldr:opt-2.7B:39:SWEET",
+      "native_error": 0.0,
+      "s3_error": 0.0
+    }
+  ]
+}

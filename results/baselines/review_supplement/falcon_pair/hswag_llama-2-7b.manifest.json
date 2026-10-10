@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "1a3a6aee0e5294b534db916e21d9327518f05906c16fe4db2db262e19d0f720a",
+  "rows": 2400,
+  "input_sha256": "70547ef32afa3b2051fe7b4d06a9c3063edfeb32eb6c470b2c7de8d6a4e16dc1",
+  "parity_checks": [
+    {
+      "row_id": "hswag:llama-2-7b:10:human",
+      "native_error": 3.5762786865234375e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

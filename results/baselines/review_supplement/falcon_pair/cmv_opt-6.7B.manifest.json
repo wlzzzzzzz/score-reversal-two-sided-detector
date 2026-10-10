@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "dd4a747edba385d8b42245d53dc13dcb3a9115946cd59e9bfcbe5d3223da9008",
+  "rows": 2400,
+  "input_sha256": "8e1f110bd7371730c1c9ba5afd54276f80fe30fc8fd0d266ba59faac41d018f5",
+  "parity_checks": [
+    {
+      "row_id": "cmv:opt-6.7B:99:unwatermarked",
+      "native_error": 0.0,
+      "s3_error": 0.0
+    }
+  ]
+}

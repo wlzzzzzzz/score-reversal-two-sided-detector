@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "b4ed8ad367ded2fba178df83021490ad7deb3fa4c6e0b4c6342b7b9197c2c000",
+  "rows": 2400,
+  "input_sha256": "3441be75d078ed3278115b43a97f8aa4260b4dd83e9c6e56e40f54f6939e939e",
+  "parity_checks": [
+    {
+      "row_id": "hswag:GLM-4-9B-0414:10:human",
+      "native_error": 6.854534149169922e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

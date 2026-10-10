@@ -1,0 +1,44 @@
+{
+  "rows": 189660,
+  "main_score_names": [
+    "FastDetect_Falcon_native",
+    "FastDetect_OPT_native",
+    "Binoculars",
+    "AdaDetectGPT",
+    "NTS"
+  ],
+  "new_OPT_vs_prior_max_abs_score_error": 0.02794647216796875,
+  "new_OPT_vs_prior_p99_abs_score_error": 0.009563598632812503,
+  "batch_precision_audit": "results/baselines/review_supplement/batch_precision_audit.json",
+  "truncated_rows_either_pair": 31,
+  "human_repeated_score_max_spread": {
+    "FastDetect_Falcon_native": 0.006307005882263184,
+    "FastDetect_OPT_native": 0.011607319116592407,
+    "Binoculars": 0.0,
+    "AdaDetectGPT": 0.0,
+    "NTS": 0.001460641622543335
+  },
+  "scope": "Reused development benchmark; frozen contrasts do not remove historical selection bias.",
+  "status": "COMPLETE",
+  "common_untruncated_sources": 2354,
+  "dropped_sources_for_truncation": 7,
+  "aligned_score_columns": [
+    "row_id",
+    "source_id",
+    "source_index",
+    "dataset",
+    "generator",
+    "watermark_method",
+    "label",
+    "split",
+    "text_sha256",
+    "Falcon_tokens",
+    "OPT_tokens",
+    "any_truncated",
+    "FastDetect_Falcon_native",
+    "FastDetect_OPT_native",
+    "Binoculars",
+    "AdaDetectGPT",
+    "NTS"
+  ]
+}

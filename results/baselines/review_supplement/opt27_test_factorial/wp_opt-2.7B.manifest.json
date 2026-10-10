@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "c4459f0e11b3c196045420bdcd2230431832792932391bae169f3f6d611625ff",
+  "rows": 2400,
+  "input_sha256": "43946effb9ecb917b24cf198896587f93229cb2e1963a0080987ebf02aca5203",
+  "parity_checks": [
+    {
+      "row_id": "wp:opt-2.7B:146:KGW",
+      "native_error": 1.862645149230957e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

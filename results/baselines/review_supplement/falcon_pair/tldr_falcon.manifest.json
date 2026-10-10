@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "7ec1a2b1030cd4f5d69cda02bc8bd2b63455db2ba401dc465444c70ae406f00c",
+  "rows": 2400,
+  "input_sha256": "dc7a994f27a764e6f0b4c45fe75838cdb8b5bfa40a76e330c2dd40d6a0310b60",
+  "parity_checks": [
+    {
+      "row_id": "tldr:falcon:159:human",
+      "native_error": 0.0,
+      "s3_error": 0.0
+    }
+  ]
+}

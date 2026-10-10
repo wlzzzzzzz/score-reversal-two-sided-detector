@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "b8d2e9c08d6cdd983c7da75ede4613ba988b8b1882d6d547e4d155bd6e118a2f",
+  "rows": 2400,
+  "input_sha256": "09df735d223039b3a6c298172f5bb5594249a245e39e3d49e35f7584e6923ed5",
+  "parity_checks": [
+    {
+      "row_id": "pubmed:GLM-4-9B-0414:128:SWEET",
+      "native_error": 8.046627044677734e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

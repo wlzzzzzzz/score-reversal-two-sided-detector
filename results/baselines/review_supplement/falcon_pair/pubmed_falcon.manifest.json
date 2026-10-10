@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "9c2ae63a33e436b5ef7cb94f28f61f69bf49b4c4286e72bd2b879f4c2c3c5579",
+  "rows": 2400,
+  "input_sha256": "1d0b36c7ff6e237009de16c3443a4bbc44e863b730ff7ec14f0839fa8ebc3eda",
+  "parity_checks": [
+    {
+      "row_id": "pubmed:falcon:30:Unigram",
+      "native_error": 4.76837158203125e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

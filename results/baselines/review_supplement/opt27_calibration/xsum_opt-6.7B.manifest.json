@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "7442bc598826e9e3b4e7f679cc870719bc83aae4361b0816e46001469d8b8fc4",
+  "rows": 2400,
+  "input_sha256": "dd76d1ea76a478217baa87461956efb991f103af4ffb4736fe423fc44a91f228",
+  "parity_checks": [
+    {
+      "row_id": "xsum:opt-6.7B:150:KGW",
+      "native_error": 1.1026859283447266e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "e33d6ffac514107443069ad2718f737e3656b39033b483e7f7c3c299d910e9a5",
+  "rows": 2400,
+  "input_sha256": "fc4336d9101c5dec15aaf084fa865d6a7c76e6940c639c12a8662cd028817f68",
+  "parity_checks": [
+    {
+      "row_id": "cnn:opt-6.7B:159:SynthID",
+      "native_error": 5.066394805908203e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

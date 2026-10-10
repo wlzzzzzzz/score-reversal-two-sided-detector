@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "ab05065ecb4aa5d91a7a036d85d85a5580f6530e14f16f2e4ddb7c7f20f10b64",
+  "rows": 2400,
+  "input_sha256": "db5de9b504c59eaaf9c30d4787fc17bf41222bb1ea31d519d0ebce573dccc02c",
+  "parity_checks": [
+    {
+      "row_id": "cnn:GLM-4-9B-0414:33:SemStamp",
+      "native_error": 0.0,
+      "s3_error": 0.0
+    }
+  ]
+}

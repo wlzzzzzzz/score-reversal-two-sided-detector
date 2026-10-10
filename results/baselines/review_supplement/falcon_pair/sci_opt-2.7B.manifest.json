@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "b90d32e41c7e1015bae7df6a0284f8c7d5f4cef4b25af5c8ed94066b7322f765",
+  "rows": 2400,
+  "input_sha256": "c7c164a95bcbca8e2d96a0a2480ba83f1aa615fe63a78a01f698e9c7115e7479",
+  "parity_checks": [
+    {
+      "row_id": "sci:opt-2.7B:192:SemStamp",
+      "native_error": 7.748603820800781e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

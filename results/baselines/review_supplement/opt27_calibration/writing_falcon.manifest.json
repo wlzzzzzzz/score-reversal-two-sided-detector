@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "5a760c8999032a4ec3e1c7aa7d898ab3cc182e70d3cafeb4eb894f9635a52685",
+  "rows": 2400,
+  "input_sha256": "3af4acfe59572260e8a3ca791f607df8a1f2157793f2c8f5eef48f22c841a7bc",
+  "parity_checks": [
+    {
+      "row_id": "writing:falcon:70:DIP",
+      "native_error": 5.066394805908203e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

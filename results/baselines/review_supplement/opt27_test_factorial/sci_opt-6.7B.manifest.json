@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "2123988a321364318cea9d0f3e2020ef58bd08e5fac736c5f1d5a1826e34d2d9",
+  "rows": 2400,
+  "input_sha256": "b255359494394b19c388e0f7c2084ed2a787177c57b72aac05589d46c834a2b4",
+  "parity_checks": [
+    {
+      "row_id": "sci:opt-6.7B:52:ITSEdit",
+      "native_error": 2.0265579223632812e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

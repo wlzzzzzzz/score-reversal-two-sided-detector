@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "a94b9cb53806e3653faad3edbf7c3c6301e8d544ae64fdf3556bf95dbb2cdafd",
+  "rows": 2400,
+  "input_sha256": "9177c4e64d9c3dc0c9871998eef13300acf529daae7d6f3c7d199a78bffe83d7",
+  "parity_checks": [
+    {
+      "row_id": "xsum:falcon:73:Unigram",
+      "native_error": 5.140900611877441e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "63488285a73cbb4c9f3c8073bf8ea663baa838786dcb57c4d266efa7e5f11717",
+  "rows": 2400,
+  "input_sha256": "1e7e6db4c6497a7231d68ebad1dc1a460e60dcc435db15655c737212bc4d1a97",
+  "parity_checks": [
+    {
+      "row_id": "writing:opt-2.7B:74:unwatermarked",
+      "native_error": 5.364418029785156e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,2868 @@
+{
+  "status": "PASS",
+  "source_manifest": "results/baselines/benchmark/source_manifest.json",
+  "source_manifest_sha256": "92c56d5995a59087cd38c9f5b031a952027e677779af1001abcc7348536c478e",
+  "calibration_rows": 48000,
+  "test_rows": 141660,
+  "calibration_sources": 800,
+  "test_sources": 2361,
+  "calibration_test_source_overlap": 0,
+  "calibration_cells": 20,
+  "test_cells": 60,
+  "atomic_test_tasks": 660,
+  "test_label_independence_exact": true,
+  "test_labels_used_only_for": [
+    "AUC",
+    "TPR@1%FPR",
+    "TPR@5%FPR"
+  ],
+  "direction_calibration": {
+    "likelihood": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.5631364488636363
+    },
+    "rank": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.5754657102272727
+    },
+    "logrank": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.5818150852272727
+    },
+    "entropy": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.561001221590909
+    },
+    "detectllm_lrr": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.6085323863636364
+    },
+    "fastdetectgpt": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.6745780397727272
+    },
+    "adadetectgpt": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.7443036931818181
+    },
+    "binoculars": {
+      "sign": 1.0,
+      "calibration_auc_before_sign": 0.7391870312500001
+    },
+    "length_only": {
+      "sign": -1.0,
+      "calibration_auc_before_sign": 0.4768167897727273
+    }
+  },
+  "tail_activation_rate": 0.41441479599039954,
+  "rank_gate_activation_rate": 0.3634829874347028,
+  "truncation": {
+    "falcon_7b": 30,
+    "qwen2_5_7b_instruct": 25,
+    "opt_2_7b": 26,
+    "opt_6_7b": 26,
+    "strong": 30
+  },
+  "input_files": [
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/c4__GLM-4-9B-0414.json",
+      "sha256": "230a6a7b5364723ad397a18b3eba8d76a4264add40327f6db0702fc8b578a86f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/c4__GLM-4-9B-0414.json",
+      "sha256": "53f4d56ee7648a2e821de4c81cc0da51abc3d480e85058138e7c0a7ce8298761",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/c4__GLM-4-9B-0414.json",
+      "sha256": "f691d2dd3c02c83e0b2b5171803dcf4ac05a7b1fd2a0c2e36fe2ac388c7f3c24",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/c4__GLM-4-9B-0414.json",
+      "sha256": "12544f32c12dbcbad7c6a8755c40019ed2e3385ea4689aee42277c4d04a51188",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/c4_GLM-4-9B-0414.json",
+      "sha256": "a7d851033d3bac33f33969fce573d89bdf999073a12ed5edc6c0903890bd0ed1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/c4__falcon.json",
+      "sha256": "72b80fcde48dfba78ad70faa5f4fd344bbfcd83f3da51d4bea18b7c3b5157a54",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/c4__falcon.json",
+      "sha256": "725be29d1296076815193976bf242ff40d7fb812be6c6d22c998cdbe3a0f0d9f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/c4__falcon.json",
+      "sha256": "8f96eef6ec3a9700b6b3b2de5d04e42d0df5462c967383ae3cfdfe2bf44c3ecb",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/c4__falcon.json",
+      "sha256": "c09dd4a43a58ac5e67e56d00eaaf1031769331e9a42a096b930f32e1c2972549",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/c4_falcon.json",
+      "sha256": "9ca2dd89ba676892ab419a37401b1d17be4d7eff7d348516b38709ca432b0a06",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/c4__llama-2-7b.json",
+      "sha256": "ba9e233d8e2a93a5d8a219bda60b1298bcb4fcf9f2fe34598ffb5182e5cd4e11",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/c4__llama-2-7b.json",
+      "sha256": "586bb609ff6fd172bdde35891f565cb796eca0558017a5f2764f4ad237af2c30",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/c4__llama-2-7b.json",
+      "sha256": "852b88daeaa0df3da9db4461ad74d7cc9af62350386944e561c24f4af9e570d8",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/c4__llama-2-7b.json",
+      "sha256": "dfdd07ef442c232a6c3b109e4c69ed80a37a64cc6531ee1a064e28d670d6c94a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/c4_llama-2-7b.json",
+      "sha256": "884ecb52bdcf9827f3a572be7da6db6895d63f4a2403b89ba71de00f5cf5150d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/c4__opt-2.7B.json",
+      "sha256": "440ece3e217d7667b86e890afad2f0c47b4170e4398a325ce04193bd46759a2a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/c4__opt-2.7B.json",
+      "sha256": "72500e3147d9772688d8b5b627f3e9afbb5ac92c6fd7701e04ac6c77e10df6db",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/c4__opt-2.7B.json",
+      "sha256": "21767f23abc737c93dfbe6b9cb6fb97e4ae5aa864bcfb88eb4bab04f91e46aba",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/c4__opt-2.7B.json",
+      "sha256": "8e17a15949f77e5d95e259327a887e2ce4c5ba06460b23b25784f4e263750b38",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/c4_opt-2.7B.json",
+      "sha256": "481df5cba25419739e71e6cda09dcea0ea4eb625a2a12916f8d8a7bafe32e81c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/c4__opt-6.7B.json",
+      "sha256": "44a2752f00bcece43aab9fdf18c1f24bc809e0f89e3cbe97790947f2ebf09ac1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/c4__opt-6.7B.json",
+      "sha256": "efe11a077658a81eecf8ed6c8486a7426942103fd5457af4b73f393c116bd9d4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/c4__opt-6.7B.json",
+      "sha256": "ab337ec2aced72ff027d49b9b2e67b9aac41c44c102026b5a182d777c1125058",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/c4__opt-6.7B.json",
+      "sha256": "bf905cf11a71d761e15b082e200bb7225b3519b8ed099790618509fe286e1fd4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/c4_opt-6.7B.json",
+      "sha256": "22f65a05a3961e2b17dc6219b97c0dab3b89f267e6380e1c2159b99d166ca271",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cmv__GLM-4-9B-0414.json",
+      "sha256": "a63cf500f71ba1c52675e92f23ae469cfea821f0c117402013fb412d37f0b4dc",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cmv__GLM-4-9B-0414.json",
+      "sha256": "b51f9d8bee198e52394ee7c77afcef02792e7e4439b59b1f615a43bdcedf3745",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cmv__GLM-4-9B-0414.json",
+      "sha256": "610d9fc9b75b18d7fc2244c0145d0bbf0116b128c008105b35ffb9dd54d8f05a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cmv__GLM-4-9B-0414.json",
+      "sha256": "f89b891f200606e14e80d9e441acb9fcf022170799289b546bdc179a02f05b48",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cmv_GLM-4-9B-0414.json",
+      "sha256": "db408b9678ac03ce2a6c0d7da42a728dd32f38d707f070834e26198fde5f6d26",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cmv__falcon.json",
+      "sha256": "b04732fe89326e700921b4489bed53fe1a1f19a4288a96b8f59f4bad0f987673",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cmv__falcon.json",
+      "sha256": "18e6742de39d8de4335765311cba7d001b39bf435a604e4b16c8e94d766e2847",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cmv__falcon.json",
+      "sha256": "22386d3c9e648110cdb5744768eb336f07db7758e82d499403dc9d0d9c879b03",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cmv__falcon.json",
+      "sha256": "432048c2555d899e433689f540316529c41cfa19b18ed2d75b2910cd3669f432",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cmv_falcon.json",
+      "sha256": "a98a2e2bb68999fae72f68226795c25f913b233b070d4703fe55e55137b24539",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cmv__llama-2-7b.json",
+      "sha256": "5f803d414ed435f6405f9114e4ed887214cd0fd3bdecacd82fe94416c80fa33c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cmv__llama-2-7b.json",
+      "sha256": "a777c1cd9f040f4da9c406b4a001d2e97e477dc065be177eb36b10960734d43a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cmv__llama-2-7b.json",
+      "sha256": "443a23413a9e79822764f56a9a789fcaff5635982d37233e4fb1c6a76cafdba4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cmv__llama-2-7b.json",
+      "sha256": "65c9a56ef889c32e023d3c258f041e2643de7a98dd0d2325f7db4f5654447118",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cmv_llama-2-7b.json",
+      "sha256": "df99d11767f890f418f87d6d83cbde434088c6fb98eade63cb047be0243f288e",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cmv__opt-2.7B.json",
+      "sha256": "99923f3ada7c4ad88be1346d40cb8d7a39755a714808a2310ca0ae2d66e15558",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cmv__opt-2.7B.json",
+      "sha256": "baa3306aef83db08ec9ffa4bd2d4b3094382fe647c8da4d3731ea7225c2cdb4a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cmv__opt-2.7B.json",
+      "sha256": "cd83f8f137a2cd853156e5b62ff24d81b47e91d9d98df87d6ccd5ecae24403b8",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cmv__opt-2.7B.json",
+      "sha256": "799bff529ae0d452e0ffd145d8cec291a4b729147e7a56fcf45ffbcc073c7853",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cmv_opt-2.7B.json",
+      "sha256": "cd05f610b9baea9f125a947f84777722a3e6dbb4f52272f8ac61f07f93adb425",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cmv__opt-6.7B.json",
+      "sha256": "4853f4a62530696bd551422779ada4870c51e03c1d570eb2baed2645e79ddd02",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cmv__opt-6.7B.json",
+      "sha256": "dd5b196dc3a7c651159152c22353344c5f087ba2fa39e77e67553d8c5152dba4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cmv__opt-6.7B.json",
+      "sha256": "8bb7789c2b9fe2af63264f3d77b0127ab3a490a95da1c9e02b17a2dd3537414b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cmv__opt-6.7B.json",
+      "sha256": "309cdb67125d1c2939e9ae1ef2bc22558885ca7debe592f9c5987fef21d8c880",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cmv_opt-6.7B.json",
+      "sha256": "5ab33987d5b6cec65dd5be06b75c43072f4a9497250aaf3b7d9508db40a74517",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cnn__GLM-4-9B-0414.json",
+      "sha256": "e5abc3a4b251e3cf8cf8f20596a6d861a4007dcad404779534556d8b33aea0af",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cnn__GLM-4-9B-0414.json",
+      "sha256": "292ab7712de21f7bb204e78e459a3eabafc821ef271003d5e43e81e64b38c30c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cnn__GLM-4-9B-0414.json",
+      "sha256": "b9d09b6783449322214fb652399ea3f69fd59be0ba3fe6029aece4090aebc99a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cnn__GLM-4-9B-0414.json",
+      "sha256": "906170af4531113aecb890c35be80b7baf481439beae1095ba8c52c478c24a9a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cnn_GLM-4-9B-0414.json",
+      "sha256": "da65b19e76eecbba74b270daa171d6e9aec8e9f025567cbe66be3c90206bfc08",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cnn__falcon.json",
+      "sha256": "1b2769b3f35d3405b7ba9306f1b7f13113552a12ab5685c01626a3549c3885c1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cnn__falcon.json",
+      "sha256": "096561574198adbbd6a1cf66933b0977641af2cb78caf44a000eb68f968bf3bb",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cnn__falcon.json",
+      "sha256": "85fa6df2c8c115eb8783e19c8dfb50fee6ce1e9c0ea05ba65df4942e37a1e32f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cnn__falcon.json",
+      "sha256": "b013726b28b95b3a1c7fcf687dbf8afce1e871bde403962ca15288aa6dd0e7e2",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cnn_falcon.json",
+      "sha256": "36201e6722fb0ad2cb412e8657b54bb5b96bfb563f8f721ba7fec9bcc8d1addc",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cnn__llama-2-7b.json",
+      "sha256": "12f09adacaeb19e560d38754b94178a5a3a0b5643f4a8302cffd207f8a6cac82",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cnn__llama-2-7b.json",
+      "sha256": "acffee833fe05d9c1b24c2d88d55d5ae05f37d081bec4d382d605c90660a34cb",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cnn__llama-2-7b.json",
+      "sha256": "cfafe9d3f5e45082e212c8b673112dd7666c74fc5d5a685995bfc7d5f1a80408",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cnn__llama-2-7b.json",
+      "sha256": "5e558c8451fea8261b24b42233d8fa7d99dddd4f3b72ee931e424f2cfd67d22f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cnn_llama-2-7b.json",
+      "sha256": "5ce17b3d5162755098d9514e5dd6b8d341991884d10f828e83ecc705084b1d8e",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cnn__opt-2.7B.json",
+      "sha256": "c4f95f5a241da05c51e1865fccd3e965a2ef58279f948744820b06f320a86c6d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cnn__opt-2.7B.json",
+      "sha256": "93b18d68a6407008712941c2e5420b095046f318b38188410ce6346f6d0d7c20",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cnn__opt-2.7B.json",
+      "sha256": "dce17356abed7c72bccfc885c3ddaebe274cb9ab9d23ed3d8c60922978546dc9",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cnn__opt-2.7B.json",
+      "sha256": "a6400e31c50e65df5b32ba5306982fc0f6d572ffcb68ef7d14aaa2593bcf11db",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cnn_opt-2.7B.json",
+      "sha256": "a3b3bb1f654329f22a8278b8717b2adde174a38b59f634afdd11ae04b9eb3d8d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/cnn__opt-6.7B.json",
+      "sha256": "cfb6d27050dfc59a2c4251f04ede04e606958e3d549a59d04c4b281ccf2d8761",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/cnn__opt-6.7B.json",
+      "sha256": "a77338ebb8801a7385c5b074f761e6840c908f3b8af7df8097532dc709e40080",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/cnn__opt-6.7B.json",
+      "sha256": "f3f4abb2d9bf49ced89fa4a01f705997418376c9a7382af14bb3884f51f579ed",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/cnn__opt-6.7B.json",
+      "sha256": "49f2b505d259aaafa969e9e98ff83d3f5efc6ac44b067f3572b41fd97270cef4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/cnn_opt-6.7B.json",
+      "sha256": "7eb199ece721a2b21359ce0a746f2b2905185d19fbddc3f7eba18dcabae75815",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/dialogsum__GLM-4-9B-0414.json",
+      "sha256": "da1dcd57035c0f441dd6c91e68d8f66aa5c67c339394988471595a5e72f110d7",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/dialogsum__GLM-4-9B-0414.json",
+      "sha256": "72529c11968af573834fa6546f6952e877be114030781f42bc3ba6cc3c986706",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/dialogsum__GLM-4-9B-0414.json",
+      "sha256": "81fd70837c8a523e0f155c800d6ba6991799ca0608d2b5a26ccaeb02690eb000",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/dialogsum__GLM-4-9B-0414.json",
+      "sha256": "b0b3de459e4f8e01893d56f9ef8891dc2a251685eb82eb5ca5bcfb3c3d989d97",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/dialogsum_GLM-4-9B-0414.json",
+      "sha256": "d32b1f23e344357c339b6a489787849eda0729679e998e2f7cf7819f255ae8ef",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/dialogsum__falcon.json",
+      "sha256": "694ff8a468f5e406bd567ac1abddb636c72ed883c08a8b2cf3d896e3a90c7c5e",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/dialogsum__falcon.json",
+      "sha256": "cee31e6048394078831480aaa821e6533c2e1c7e477e10451d45c5121de026a6",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/dialogsum__falcon.json",
+      "sha256": "a30c8fe3cbdf3c8bb58fc947a30e998517a2464312d4aa987f5c79486baa28a5",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/dialogsum__falcon.json",
+      "sha256": "2aa8baccfd980d1c0d01d66c67ea11bed0c1650d2911ff55ae70baeed93fad36",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/dialogsum_falcon.json",
+      "sha256": "cf355aeb6c650d86722f36c54a67254f9f54d2049014f0c4d43398999f60e993",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/dialogsum__llama-2-7b.json",
+      "sha256": "7a847eb985e50537885449cfb20d15d8d0e737323eb1ea7d8071258ec2de20f1",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/dialogsum__llama-2-7b.json",
+      "sha256": "a56860cc5ea170826c5b6dca97dd27915f1dd74f1c79c6d9ee153d154d551584",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/dialogsum__llama-2-7b.json",
+      "sha256": "7e8af9e7726946a300357a1eedbb3bad520702f952ec835f72c798b1fa3bb1bd",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/dialogsum__llama-2-7b.json",
+      "sha256": "0065b2c84ba830e1e6038e685d1672ce3761c2594ae924ca126310e573b3ce00",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/dialogsum_llama-2-7b.json",
+      "sha256": "bd8a8013cbe62196cd908bd4024c03b42cf7c76694d973978ae368674fc9b8db",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/dialogsum__opt-2.7B.json",
+      "sha256": "e8d1363aa102f8ab116c7cc3a086f3e80231c88b79612241c79a5981a1c1636b",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/dialogsum__opt-2.7B.json",
+      "sha256": "ebf49271810dc5d466efa6896b4a2dc2bcb45ffc5c2b96a476356a9bc95673db",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/dialogsum__opt-2.7B.json",
+      "sha256": "926fe736b72645b97318bab3b65b68835f7cbe0c50697fb51d3ef869a1e8e567",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/dialogsum__opt-2.7B.json",
+      "sha256": "14adfcd63fc111918bce11104805f4d691850af148b0748f5d66bde5493045e6",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/dialogsum_opt-2.7B.json",
+      "sha256": "335d174956e97d5634011d9e8049f6da3055a4584678faaf0969ae745fd29476",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/dialogsum__opt-6.7B.json",
+      "sha256": "f334632ce6d474713afd61b6ee248f5ec656704c3955fc4e3f2c48a8d76dc9cd",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/dialogsum__opt-6.7B.json",
+      "sha256": "7802c1d889f77bbddd9fefe06801a19dba17d4f220427ef5dcc9fea30c4cf3c2",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/dialogsum__opt-6.7B.json",
+      "sha256": "714d7b88415408dbfb6236f4c411b17fc8e86ccad851180ae01de9753048f0b5",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/dialogsum__opt-6.7B.json",
+      "sha256": "1b6bf541a8ba430d9b9e8bd0a7d01be0f7c279d9b78ab5ddea873a69ec0c7a46",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/dialogsum_opt-6.7B.json",
+      "sha256": "be8c29475405bf590cff97650c496bd3f9607116afda0dc936eb4af197f53ebb",
+      "rows": 1944,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/eli5__GLM-4-9B-0414.json",
+      "sha256": "e9f1b46e96541ab7fe35ae0e2085dab80cc31bf5c1e353fc8cf294c5325a0ff3",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/eli5__GLM-4-9B-0414.json",
+      "sha256": "5ac04be3d3c0f63bc86648a5c52af1a0fba65b29c5445c57690e5d74f2af3dfb",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/eli5__GLM-4-9B-0414.json",
+      "sha256": "6b553ba06db8f3e3d50285d32acdf35cd01e74ba318c9717d7c0a690baa9f4f1",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/eli5__GLM-4-9B-0414.json",
+      "sha256": "ced36f12ca5a42f4ba955c7a91c6136d90f64b51a7c2d8955e97306f656a9d69",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/eli5_GLM-4-9B-0414.json",
+      "sha256": "3e84429e5a67902284d21970a60495a4b9a6b97fce7205c78a614986cb30ef69",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/eli5__falcon.json",
+      "sha256": "3adee8cb2517e0f46fcd788e212e7842085253864b2f069426bf3d91a9aaf170",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/eli5__falcon.json",
+      "sha256": "a5c6a2b70aea9542bebe341acd39895c2d7debe4fa0f0997064829bb33106d8b",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/eli5__falcon.json",
+      "sha256": "50c8e405f7a656b904a08acd1658c6d3518ef96c17d07f14bc9b346784854b00",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/eli5__falcon.json",
+      "sha256": "79936265f75e50a74131fcebda070384027c034d99bd183397fdad46683b2098",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/eli5_falcon.json",
+      "sha256": "af74d31a920742ab7f13f98a819af435aa0da2c7d6f66eddee13a7008cab6aa8",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/eli5__llama-2-7b.json",
+      "sha256": "014148d5e3e2e65ca473f6b23dd80e649612aa917674f5609bb81ee7dc641a06",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/eli5__llama-2-7b.json",
+      "sha256": "3cf15ab690b804e851855c45b99b26ccb0da0b54899b6638aa63c84ccffc7c82",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/eli5__llama-2-7b.json",
+      "sha256": "7dd5a133b7d67fc4c41a83b9bcd29222b58a154720a1ef49ff1325721d9af07f",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/eli5__llama-2-7b.json",
+      "sha256": "885f7594898cf16bd0808380f42d57cfe687f90d54c284fcb92a116e720bd943",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/eli5_llama-2-7b.json",
+      "sha256": "e00f44a1c4556f8a1b739e6627f01ac107c6c702bf7a95163400f6b8101f09ef",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/eli5__opt-2.7B.json",
+      "sha256": "4f150647be91b9d35419b5434fb6c4a30ff1f1ed9cc6099fc1b863ac96f7b519",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/eli5__opt-2.7B.json",
+      "sha256": "fb8cfdb74b38ec6327044dfd9c585e26855e5c7520b5a469ab95815618a71689",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/eli5__opt-2.7B.json",
+      "sha256": "f619b34e4623473c12ef31d210a5e248bd5beeac15c9dbed7e9d0e5aa5472b1a",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/eli5__opt-2.7B.json",
+      "sha256": "c5d1be52088cc60c64392a4df990480528662ba582c60895372853130850768a",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/eli5_opt-2.7B.json",
+      "sha256": "725ac7ec52627cc47381df14c478fd4b512def64a1f42089af73c1f596f31260",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/eli5__opt-6.7B.json",
+      "sha256": "abbdb2eef39245c623a5a0b5631b8f813d744d2b46eea1e923258d7638816a1a",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/eli5__opt-6.7B.json",
+      "sha256": "cb6e488ab96c75e3f986dc282691489012765984b078854601b4372609891a90",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/eli5__opt-6.7B.json",
+      "sha256": "4f88c812f3bea67cfe2286371c22bd5a4c292b70036fbe7ea21af206462bb7de",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/eli5__opt-6.7B.json",
+      "sha256": "aa7f93b60b6f3e58854a7205211fdbc6f0337c92c9212e21a9c8c908509afcaa",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/eli5_opt-6.7B.json",
+      "sha256": "e3b8e820433db28482ecff828c7307cbe1eec33711ac4fb333b5efc82d49b880",
+      "rows": 2400,
+      "truncated": 4
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/hswag__GLM-4-9B-0414.json",
+      "sha256": "2c996dc4f14c3e61284ead2040a66c236dfc1dd51249c0a62c3c21c4ffc8f3b1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/hswag__GLM-4-9B-0414.json",
+      "sha256": "c05f42833caa347addede3eb5b3e0b04cc578669052153f9611032adfc369c9d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/hswag__GLM-4-9B-0414.json",
+      "sha256": "9c2db1812c72cb2ec6e100e4ccbb06239b5ae286cd65cc67c90a612784df3074",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/hswag__GLM-4-9B-0414.json",
+      "sha256": "e10255cc3bff7ce8484bfab6be6355c6c451ff3318e28c4fd51af99d12bb4a20",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/hswag_GLM-4-9B-0414.json",
+      "sha256": "08cd15029f11822952f42485093db8ccf5759902ba3f5068b5ce0b5b7f85f0f4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/hswag__falcon.json",
+      "sha256": "a66d7fc871427deaca4f42708c671d403820b43bdff4de44b2c5a5a35937eb02",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/hswag__falcon.json",
+      "sha256": "9795da8408a4e5129e882a980519f34b5666292f52bcb41ffd9310488f997f8d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/hswag__falcon.json",
+      "sha256": "d010ef18cdd727d89a010e822c603d52bf296da4ece82c2b70dd33589cd5dbb6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/hswag__falcon.json",
+      "sha256": "bbb2cae46410f766c9100e311b3e053772b64e1a723412aaffcbac8ae6fb96a7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/hswag_falcon.json",
+      "sha256": "31e3e5da9d04a785aa3686d283b7330cb9789e2664fc36c7d5b6182684a8368d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/hswag__llama-2-7b.json",
+      "sha256": "6a5b9f10ec033638d617e12ed2fb42f7ee9be79c098ea08c27e6578730af4a4c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/hswag__llama-2-7b.json",
+      "sha256": "d1e4952a7d398575a73d0cd0486c2d84be464c335aa2d391f7feb1c51dabf56f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/hswag__llama-2-7b.json",
+      "sha256": "eeaecc0716a169f9317ecf76cdbba169232ee19c72ca369f2de8c2288c53b4ee",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/hswag__llama-2-7b.json",
+      "sha256": "93c3403426b29d014e26544ae97fe13c6c128b16c72d5a74cce3658e6ba9d62d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/hswag_llama-2-7b.json",
+      "sha256": "8279df87fde28645c4227d52182d0b14304e13ebc89db6f727de5f4634179fef",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/hswag__opt-2.7B.json",
+      "sha256": "e4906382ae356aa0f00155cbf93a844dfebc5a4319858599bd6e6bb0641dd162",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/hswag__opt-2.7B.json",
+      "sha256": "0376f7ca1743bc6a8ed7e99442b108eb2efc5fed2cd2ca7fb27a8551a302fc95",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/hswag__opt-2.7B.json",
+      "sha256": "5ef0f15d4ed7ba3ad7a2619031affcfbb79e8578783317924a069af8c64dae5e",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/hswag__opt-2.7B.json",
+      "sha256": "125be39f45c3d6ff21c54db379a6d16590d16e191acbdd65a51385111bfb962d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/hswag_opt-2.7B.json",
+      "sha256": "7523992eda1273c487463a770c0bc55c00cda5d8fe37bab015934f541fa8b398",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/hswag__opt-6.7B.json",
+      "sha256": "97c9fbe860fef5832c0282bc937a188fe49af28441fa3647b99f833649599d91",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/hswag__opt-6.7B.json",
+      "sha256": "48c8f5c62fc7da284616382695d559db1fcf935bcf0248f137f4e1e2d0871a3b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/hswag__opt-6.7B.json",
+      "sha256": "124550396b6c5840245068d7d02832fe6e5938a96cb709d114a732f4c3964feb",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/hswag__opt-6.7B.json",
+      "sha256": "9f790ffd3c8f20c4ccc8f4e48a507e6718ddd86449440048abfcabb59144699a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/hswag_opt-6.7B.json",
+      "sha256": "41e1faf33550a82d8cb1a580be9b294fc768dfd7c30bbd4a3ec5a3f383a7c4a5",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/imdb__GLM-4-9B-0414.json",
+      "sha256": "842024c3472bae8056625bac37490aaa5917e79939b0f83989ae15632df9c2cf",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/imdb__GLM-4-9B-0414.json",
+      "sha256": "c0881cad926b1f038b825f70754f2e7064e27210d1fc349bb73b2eca5fcd02a6",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/imdb__GLM-4-9B-0414.json",
+      "sha256": "1df7cc6ee160e29c43130efd10e3935e8ad2358fb8e1e0fc7b63e3deb79ff67b",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/imdb__GLM-4-9B-0414.json",
+      "sha256": "105b6b78c56447e525cb9fbd3666382dcf6108c94fbb7f396fe11bba8d366dca",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/imdb_GLM-4-9B-0414.json",
+      "sha256": "3da0079928914ff8a60121a04de741adbddeeaf69b0217d477b27c630159d659",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/imdb__falcon.json",
+      "sha256": "89fcac7712020428c0c22ac776963a31b7ca7ef7d36f2f7fc8b24f21a9ebc042",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/imdb__falcon.json",
+      "sha256": "151d54dc122eedfa841b25bdd99112960357777b15a7bb69ff8434528bd063e4",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/imdb__falcon.json",
+      "sha256": "6823ef646d796ec5fa31d1c61f0aec97ab7f748849651d0103923e4fcc81fbe8",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/imdb__falcon.json",
+      "sha256": "02962e45be1d12a44c19b222f6cd9ee0e263e7a8fc99f9d0411b4070ce056edb",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/imdb_falcon.json",
+      "sha256": "8d1763b9d4c66746d6682418ac86f696ad66a025e75cdaa8ab40aedce5184e03",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/imdb__llama-2-7b.json",
+      "sha256": "5d169314ce5ce50af7f75aa890c08417f1abd5add97ac04c47aae77cd1acb092",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/imdb__llama-2-7b.json",
+      "sha256": "fd8f805faf6b3d73a945b4826331cb0568bd58ea6d35743295dc60f8e7390e17",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/imdb__llama-2-7b.json",
+      "sha256": "1dfe991cb62330c059b26883f3cd6a0bca4d167ee5ca682ad460af08b87556e9",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/imdb__llama-2-7b.json",
+      "sha256": "5bba29cbc57996f8ba51fb25b7fdbf558d5d282952d042c3fb0100890f537f8d",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/imdb_llama-2-7b.json",
+      "sha256": "98a149dc45af40c7919da5133a756e0427362e9be28f8f2f0eca7eaf676e5366",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/imdb__opt-2.7B.json",
+      "sha256": "dd38aeb40a4db9872eac2feea3c117b4073aa883353e1468e1fbf5af1efd6111",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/imdb__opt-2.7B.json",
+      "sha256": "232e126a0995b4f2d06d24c8237314a4866a298aaedf87ac7af540d5e89c6c2b",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/imdb__opt-2.7B.json",
+      "sha256": "5d035edc3de2e68eecf1eb997f6b86d64f18789026f4f1db86f941734c195989",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/imdb__opt-2.7B.json",
+      "sha256": "2bdda70d74868cbde6f123b3b0ecbaf32bf5f0f39c8d530aa00540144b95d7de",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/imdb_opt-2.7B.json",
+      "sha256": "712586e3f9eb15fd66e1ee0e1c9e187f467ff295414f092294a64f5f991045e4",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/imdb__opt-6.7B.json",
+      "sha256": "5f9430f537976086b699e3f4ea4e6587769953f760a2d1a20d50ebc499d5805c",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/imdb__opt-6.7B.json",
+      "sha256": "bf2ab0aeda7eaa1c63e663759ef2167a59df3edde4992d92a41a158a82bc4921",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/imdb__opt-6.7B.json",
+      "sha256": "a97b0b1601bde24056892a027c8975cf8be1447e461fd65226af1fb1b1108221",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/imdb__opt-6.7B.json",
+      "sha256": "83aed06a6cdffb956f82a169df3113f6e5534c762bc49c2a31d69c3c8a8b7082",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/imdb_opt-6.7B.json",
+      "sha256": "bd345a161b1be4100e1490ea57b1a7aa44340d9b7beb79fa439ba6e1026dfdac",
+      "rows": 2388,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/pubmed__GLM-4-9B-0414.json",
+      "sha256": "d03ad857f89971acf72f28b9a0b96d467067af7b4ae669c37de60a473dedf152",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/pubmed__GLM-4-9B-0414.json",
+      "sha256": "f2321a00ef8fe6b76f66a1536098da55e79e4e18e0ce29ac1fd00fb5ba478861",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/pubmed__GLM-4-9B-0414.json",
+      "sha256": "4ab1b159cb2178d5df37d995c9fb47871ac611e8eb5c4813f280e9fcb990aaaa",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/pubmed__GLM-4-9B-0414.json",
+      "sha256": "b2b92ce7a3f1b1c3e63d87846cba5a1952ee0608047c17aee8b37d07e25219f7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/pubmed_GLM-4-9B-0414.json",
+      "sha256": "4b6dad313a6fb8e650ed2f89d79f39b164630c5a53446c77402b9c99436f8525",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/pubmed__falcon.json",
+      "sha256": "d7a95760cf33c3c85985420e7d187a13e7d48b68ae55c812f622a460ce6db445",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/pubmed__falcon.json",
+      "sha256": "c06a87dca08a31d57856a4a3bc4e5b6acd1add557cc4b45b2dd5498d651ba130",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/pubmed__falcon.json",
+      "sha256": "556eeb5d8f85ee2172bd74456f8fe4cb3ef64387c9a236ab5910781334d8d7e0",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/pubmed__falcon.json",
+      "sha256": "efc54e344111c22c5ec735f567791d28567593189cec2b5abc3cc06fdb042fb7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/pubmed_falcon.json",
+      "sha256": "b0885d38814daa66f5ebd92cb94923bc63d1b7e098e5e53c5f1d5fb134baee64",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/pubmed__llama-2-7b.json",
+      "sha256": "30d9b67d29436d07ad896a4d4ea2f35fb59c554dcc3ffcf964fc34d2e9675659",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/pubmed__llama-2-7b.json",
+      "sha256": "5b7e02a1653eb3f24efa2ed4db31206de3815b2107c7f0c40d6b77d957a93dc4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/pubmed__llama-2-7b.json",
+      "sha256": "27dc3a63454a0b49ee2952321083aa2ec9e6bb3f7d7070837d1f2b545219238d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/pubmed__llama-2-7b.json",
+      "sha256": "f835ce99a7e0b70dd55c59900ddef62a3a1e59e21947d82b67771fefc40d26de",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/pubmed_llama-2-7b.json",
+      "sha256": "e50efdfd3d56a05448f18b29cb29abfddfaefa888f1294eddfad22b795197092",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/pubmed__opt-2.7B.json",
+      "sha256": "e52815e8bf2f046da387913d4a8504b341a5b8982b04d19965142f8a902b2d17",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/pubmed__opt-2.7B.json",
+      "sha256": "092612881150fa99b58789b16c0fb71a7f7301f659f452cc56945e0bf10a1c49",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/pubmed__opt-2.7B.json",
+      "sha256": "ee8fa16f9420779a598209f6ee2f3590be100014d11390e135e3f036319c997d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/pubmed__opt-2.7B.json",
+      "sha256": "c1d7986d8a13fdd79c04cccdf8c6007dd19a20a276dd8a390c02810deb7022df",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/pubmed_opt-2.7B.json",
+      "sha256": "dc804da29c237b70ad2094445ca73fded8fad3083de5421dc5e1da2da58419d5",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/pubmed__opt-6.7B.json",
+      "sha256": "db0d72a5d5023ae99c11e2146b2fa5177ad8a2843f26a626c1fe4b1a1ab9769d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/pubmed__opt-6.7B.json",
+      "sha256": "f0de584257507489efd4be0524a67490ff7edbdfa10745055699e643338ba59e",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/pubmed__opt-6.7B.json",
+      "sha256": "21202afe313921fc55f1e1829f3c3443e11f5f046576cb4c7e9b4883a57731d7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/pubmed__opt-6.7B.json",
+      "sha256": "74830bd9187a7b7940f9c53e600613350810544f5608ab685ea0739b87009c84",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/pubmed_opt-6.7B.json",
+      "sha256": "975b808ac5b757f7cf92451cccf5965fc5e561b3b37adeeec88255d2b29734d2",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/roct__GLM-4-9B-0414.json",
+      "sha256": "428bef6f965b3e849441b49c71dbfaa8898eca5d9a734b028346f6c387c73b27",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/roct__GLM-4-9B-0414.json",
+      "sha256": "108811cf577bd9217e42b6214360475debafa2801805753a6acae78fce52abd3",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/roct__GLM-4-9B-0414.json",
+      "sha256": "02b64e5dc725faeb109297570c6dc6ea818fdd3a653da0996e4a7b08d3f6a0b8",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/roct__GLM-4-9B-0414.json",
+      "sha256": "3170a86d6435cc78de61bd1816df09421aaa07a7857e6a9ab3b2503615f765a1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/roct_GLM-4-9B-0414.json",
+      "sha256": "f53662568ae0cd85fce30f7391328491d80aab27b8a89fe1a18e1b232d6ae2e3",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/roct__falcon.json",
+      "sha256": "47225e283e8e5d5f2a08e547f502b284a76db2caf790ffc0133ad532611e6ba7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/roct__falcon.json",
+      "sha256": "2d854c97c44c4595375ea8d47e11301f5682cf9ef7ea84eebb27a3d536323ca6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/roct__falcon.json",
+      "sha256": "f4d544d163063ad85ab8ab0c9e78f37b73794685e13068e390c0218cd5359fa8",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/roct__falcon.json",
+      "sha256": "fd06093ec76fa186df4606da3322ae39dad0254c76e8867ef2cd64b291f8e34f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/roct_falcon.json",
+      "sha256": "a6939dcf663ba15f62422453162ed849b59d6c1ed4bd285df8d8433930fa342c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/roct__llama-2-7b.json",
+      "sha256": "8baee5e01c72dbc3171c5880233460081fed9457bbbb5469ac29e5a30f4c9685",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/roct__llama-2-7b.json",
+      "sha256": "78c45f24ed6312819ed77b1fc1267cd72f20fbb653db903b4331131a2ad8ebb8",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/roct__llama-2-7b.json",
+      "sha256": "181766a6d20e052c5787c15db324511517e0a3fd83bdd0f75567fd63337ba3fd",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/roct__llama-2-7b.json",
+      "sha256": "a29e98003e9572ce83d9005010211ecfb70545ec556cb09e49be4b08e479df91",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/roct_llama-2-7b.json",
+      "sha256": "4eafa15cf8cbb6c9a2bc452d46268e598c24c1f6380b91e9a5cab47ea1aba682",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/roct__opt-2.7B.json",
+      "sha256": "715fde9f4646f6dfaa5328fb5c36c06ca8ba89196ac4add6115757503288cd70",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/roct__opt-2.7B.json",
+      "sha256": "967a0a883a5585331b0fe26ba969dbe08d244a808ef9f758ca01e247309eb15f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/roct__opt-2.7B.json",
+      "sha256": "5a85666a2d85f68665c3df7ee8e848e32466a34a9839ef60dcda5d445bc194a1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/roct__opt-2.7B.json",
+      "sha256": "530f222c0ee49177a3b1e1241827001a3517a258f7b7ccb85738162fa83a9736",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/roct_opt-2.7B.json",
+      "sha256": "637ae8925e41ea43c10ea7df1b264292e42c874528f67cabc24b411e7d7899d1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/roct__opt-6.7B.json",
+      "sha256": "5463dbf8c004fdfb1bb7797a895ba433d39d2047151cc42c286b92374127ae77",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/roct__opt-6.7B.json",
+      "sha256": "b55495e0099fadf1717b95653f70a8994b88c57acd523e774e4340773f91d868",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/roct__opt-6.7B.json",
+      "sha256": "9bbe1047b8fcbd942322e24525fe26856b35f25f1747ab6e3e3ca743ba8cbc70",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/roct__opt-6.7B.json",
+      "sha256": "2412be775c535eacabca034cb1390ee00bbf4bb4f303127f53524b6e2c7df327",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/roct_opt-6.7B.json",
+      "sha256": "13905964b6692b07ccef665ea8c7d151647f06c85e0e025c55e6af24c6401129",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/sci__GLM-4-9B-0414.json",
+      "sha256": "9544fe9bc0bb6d526ee0bc48b616b9d770a3f3443fbbf8f30828ff0b5b143cde",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/sci__GLM-4-9B-0414.json",
+      "sha256": "fd91496a4dcd3e58499029ec7cd44ad8db2abb301fe93745a58bddd3ee53a31d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/sci__GLM-4-9B-0414.json",
+      "sha256": "3bcb041e52c2dee6fd3cfbd28cf5854f1e7612021f227d92a3404f7e822f761b",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/sci__GLM-4-9B-0414.json",
+      "sha256": "0519b938ab1b2bfb760726d7ffafbd7043914922e928e9427822e871520a4946",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/sci_GLM-4-9B-0414.json",
+      "sha256": "ce5cf471a3d4d176348289fc4daedfcde12b81b6d04d15fddf31698b72e57b7d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/sci__falcon.json",
+      "sha256": "9917ce6b0ce093c21e72b591d2ab3cf4f8b9661afe3588a61c48aecf3f67f004",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/sci__falcon.json",
+      "sha256": "e4e9507e834a1eb30a1657dfcad445e30e3e4fb59820e46c70bd0b52933df2b6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/sci__falcon.json",
+      "sha256": "c83f91fded4e9e592e57c30bd87e3ae30fa88d61ebf1637e8a6faba0cd1aaaa4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/sci__falcon.json",
+      "sha256": "f1ec84385cd5bba2bca07ca469f53c33d82cdbeddf9541f4bf7227bc316eaaa0",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/sci_falcon.json",
+      "sha256": "c22f052d13b6644881efa1a3736559a640c85de159eef23f867d7b0182806df2",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/sci__llama-2-7b.json",
+      "sha256": "4a424b4504860cd056d53187a81c55f83be244f1a551257797b4c7a03ee82148",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/sci__llama-2-7b.json",
+      "sha256": "8f38c2e4ea89b888f6f7828dddb9de8c38ac7ac22ef1d43193f2cafe2c562397",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/sci__llama-2-7b.json",
+      "sha256": "8f704f05149c78c23b9cca0990e8ad38f490a142838b203c55eb0642eb7e7cb3",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/sci__llama-2-7b.json",
+      "sha256": "8158f842e7bc6f35ec58dfc25f63342e2df2a6304c860eaa1d303cc4fce255c6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/sci_llama-2-7b.json",
+      "sha256": "33168cb99b0718acdf1d640907bbc01a21b447a25b25388a18a1791ce6bed4a1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/sci__opt-2.7B.json",
+      "sha256": "7203c48b36ffd55d0cbddd21912b081388d4d9250ec6cfe865e844eac25808cb",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/sci__opt-2.7B.json",
+      "sha256": "e4e7bad4fa16a3ed6e1bd8d1d9953c0b0784687cb1c48f0af8b5d3984c237fb0",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/sci__opt-2.7B.json",
+      "sha256": "cfe8ccd8e229f077c1dd7d84241cee59d9d9ca98ca27b71694308048928bcf04",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/sci__opt-2.7B.json",
+      "sha256": "ac72dbaffeae2f7dd30360e87641cdd9ca90e2c03aa42e5965aa6e372fd2e54a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/sci_opt-2.7B.json",
+      "sha256": "b5e3a9bd43a255d530f4204a7742ce1118aa1aeb6b5fd35894719f2962ee982a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/sci__opt-6.7B.json",
+      "sha256": "75c609d23bc14b9818fb0057e41d9295413530003e38f9f032f8048a63b9ee3a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/sci__opt-6.7B.json",
+      "sha256": "e15bf67e2d772e003f3d626b891cea793f34d991336d3e358d4847d806342141",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/sci__opt-6.7B.json",
+      "sha256": "08b042bd795aa4505b67e1168d9883975a73352ca07c0185ecfe73a372c309bf",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/sci__opt-6.7B.json",
+      "sha256": "6d8c3db112f7a1841d23533ce76d82931d75cd6c411755564efd052181b6a9dc",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/sci_opt-6.7B.json",
+      "sha256": "3c0548c681a47a0e61970979e990e01c95d8cbb38e0f3698d9b6483a70b63e14",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/squad__GLM-4-9B-0414.json",
+      "sha256": "c8986b9559cf2eb373ae1d9cf39b164243edc16f6f5311bfc654f1470c92c22a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/squad__GLM-4-9B-0414.json",
+      "sha256": "7618ad76630bb21f80a35bb5158dd729c28d98df604567f000f44cba1c5e8b63",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/squad__GLM-4-9B-0414.json",
+      "sha256": "6bd8c90c8d3de8ea29fcfd01b71d0540954e1f06b9c95b6960ee059718fbf6ed",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/squad__GLM-4-9B-0414.json",
+      "sha256": "1e5c4e5a2fe75a496e84fead7650e0c3ebfb66d8fccb573a112186364ef3b84b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/squad_GLM-4-9B-0414.json",
+      "sha256": "f0a1371bdb84246ea044d7d62898d25c22aaefdea87fe68c2bc170d9cfcc69b1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/squad__falcon.json",
+      "sha256": "6644c4d0b4f135bf13570e59b33745c1be27ea62d09745e38e10f558cc9b479d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/squad__falcon.json",
+      "sha256": "99108ce1d932194b3e5a403bf4091054ce6c8480abc4fa4a2fd30ea854ddd992",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/squad__falcon.json",
+      "sha256": "2f2b531dfa85bb13423fff42456b63f73231fd30e4c10dfb1320589c66363d51",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/squad__falcon.json",
+      "sha256": "43a07c3f5ad5d218e0325f251fbce70a129b780444868d0edb654a92bcf9c4b9",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/squad_falcon.json",
+      "sha256": "25c6cff3762969bb2383d19abf3e09141195a366004baddbf41a70842df9b081",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/squad__llama-2-7b.json",
+      "sha256": "1a98dd354c324bf97a9b53554e523e3bd1b30bd2b59792067f65e475c5874cf1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/squad__llama-2-7b.json",
+      "sha256": "befaf722d76b2b138b7b416fa1a5bbf548ebca8cb5b399296bef3c5e1df389d6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/squad__llama-2-7b.json",
+      "sha256": "70be0295d0500b9aa2edaf6d0c9d456fa7ecc8211d6df34843107b55a188bc5a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/squad__llama-2-7b.json",
+      "sha256": "9c486a155f258e810ea32a550a48890b983f61fb79a85068cb728311adfc07a6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/squad_llama-2-7b.json",
+      "sha256": "51c84704774f52ffb024a408921dad90817f326ec40f7e25be32badab6cfef08",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/squad__opt-2.7B.json",
+      "sha256": "43a6457362dcf03a75e008dd764851421ae61cc7ca01b04153d7960d5eda9694",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/squad__opt-2.7B.json",
+      "sha256": "03252375df965187cf885c2fe2206d9484ec6ed07dc65170b43d70ad5061c163",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/squad__opt-2.7B.json",
+      "sha256": "2173cc818d581ce25a21a8a457db2bcc33a2e0a962d74c469b949e4337b6fa2b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/squad__opt-2.7B.json",
+      "sha256": "dee2e509d2dae48f6c005f0f55bff80306c9143e3e83e33d26ff4b9e130b3ed1",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/squad_opt-2.7B.json",
+      "sha256": "d46c3a93627d2221bce3488850dd32fd1ae99a20b1e5217c752b150ab8c6e798",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/squad__opt-6.7B.json",
+      "sha256": "cc342b06c47d0d94d4c9be5b137fde4c1374a571a9f3821ed514fe4e7371f1be",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/squad__opt-6.7B.json",
+      "sha256": "2553df09cd972e2abb456ffc7ca24f657f169c3ebc673b2d525f20827a497c3f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/squad__opt-6.7B.json",
+      "sha256": "75e94656831181bcd2dffee3667d316d20085c03dcc47c3c3d0ce54278386db5",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/squad__opt-6.7B.json",
+      "sha256": "7f1f3301be7934b43589193b6c9c3ea567f71de32ab5a6bd64e3d021d5fe06b6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/squad_opt-6.7B.json",
+      "sha256": "4ae23b942190d0877d353f80e48d1186512d528b9c82b184fe9ea82c08eaef78",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/tldr__GLM-4-9B-0414.json",
+      "sha256": "7d9f86e38b69a0e56353c84697b1a8d9c515bb49b389b9b9a80ffdb1d5b66a22",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/tldr__GLM-4-9B-0414.json",
+      "sha256": "bb589894cae6d38f1ae5ba092dfaf6581ef02dda58abc571be02ca7dcccfd1b9",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/tldr__GLM-4-9B-0414.json",
+      "sha256": "586d9071e172617c6a72688fc67efd201784619d2d4b72b18f02c5252d95a48a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/tldr__GLM-4-9B-0414.json",
+      "sha256": "82518333dbd70b98782ecc6f77fc2678604fd50de198d51a5a52b01d6a8350c7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/tldr_GLM-4-9B-0414.json",
+      "sha256": "882023243f9fed85c17215b9acfa1140ee816b3ee620e05f0778ebab8023ed82",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/tldr__falcon.json",
+      "sha256": "9b26b2af4b5709940d832e3899186d8c9c37331a26ea4bf8a9f006eb5d531f81",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/tldr__falcon.json",
+      "sha256": "5801c39ce1cbf3aaa4f2dc866efa6694ebb8646f2caffa8d738784b8a6e7c479",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/tldr__falcon.json",
+      "sha256": "da3c349aaae1a42adcb06a8d8b33aff37ab2c1fefdd9f4997f368c16df9a6f45",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/tldr__falcon.json",
+      "sha256": "18b5ac9607245161195f034c99c65d0e18ac789ac713815c3e63a15d5d0376cf",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/tldr_falcon.json",
+      "sha256": "10e465890f8453e990ecf4a55484f8d6a5e6cbbc8eca294d9721037476e8776d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/tldr__llama-2-7b.json",
+      "sha256": "bc2637ef3515e3bfc6f0328cea2193479411fb237241ec8cd43ef668d7717bec",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/tldr__llama-2-7b.json",
+      "sha256": "2bd4cd1ad50e045f3519346591fb4d2dab3d30bea2a70c10a579f7c79f749382",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/tldr__llama-2-7b.json",
+      "sha256": "b59f577b56a77df5ddfb3254278ffe2bf3cd23570e4cbdfde64a15d3cf9302c8",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/tldr__llama-2-7b.json",
+      "sha256": "5ec137c7b9cf08b1c15590e0fba84b1ef1e548a224b343464e320aac52814dd7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/tldr_llama-2-7b.json",
+      "sha256": "efb28bd87ee50a99bf22dda3fb771a1f4849b176e8361de69c913d60b255992b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/tldr__opt-2.7B.json",
+      "sha256": "135d83ee091ec9e7ac1fe250da2fe297d2538eca236813c09bb355c7f9ead03e",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/tldr__opt-2.7B.json",
+      "sha256": "58d51c84ba89336d2f4d271647c7ba6e599aa67caa9152477d4659d787183885",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/tldr__opt-2.7B.json",
+      "sha256": "ed59540e58a7b91db03b099235a4350281512bd146b211beeb455a2d39a8df5c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/tldr__opt-2.7B.json",
+      "sha256": "b1c20efd1715a933c78b189f23e811f0b4f863aed4db07b8d99a828dae7ff025",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/tldr_opt-2.7B.json",
+      "sha256": "35a2f29ce63b6c595fa12fb83e196993a4588d359cc360aceed121f6876d70a2",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/tldr__opt-6.7B.json",
+      "sha256": "d28f8c63ea3c4e262232e5a10fc5dc074a51a4c48cca345a4393ae4f231313a7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/tldr__opt-6.7B.json",
+      "sha256": "472324674b35fd5641de2015cea20f1059764812ae58a30ae40a0e6a31010078",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/tldr__opt-6.7B.json",
+      "sha256": "38f38a5f0e5217a620c828896ddfaec9d4784802c40739aad2c942fe09cc72bd",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/tldr__opt-6.7B.json",
+      "sha256": "60ae574d3d1b4ef2fd1e252562567533e02d7489993ce8be3dcd96c128fa32ac",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/tldr_opt-6.7B.json",
+      "sha256": "e5e7e97db039b3621e9cf8a84c6956837d318a1a28bd0dce63178548794b893a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/wp__GLM-4-9B-0414.json",
+      "sha256": "7fc1c0464e664dd74426b1a73362a47d9f221663d8e6f5dab6d041a38e13c03c",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/wp__GLM-4-9B-0414.json",
+      "sha256": "1ad0865b496f95edbfbd0a14924cb066d06ed00d46d4f7b5208e398794fada0a",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/wp__GLM-4-9B-0414.json",
+      "sha256": "ef6b7e0f588630eb02e518f600123346a771696cbd3fd8cfe5a14ba8343e25e6",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/wp__GLM-4-9B-0414.json",
+      "sha256": "7f861769a7efcd5ef4aea3556387148e4cae3a0568f5a424341ba3de284535c8",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/wp_GLM-4-9B-0414.json",
+      "sha256": "a11a17f166bd7b8b845e8492c5c701f4021193c4fb344fe274b7a88b92fea490",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/wp__falcon.json",
+      "sha256": "d5632f39912958f78190cea6085d3ad48bec2e0d741e9d4675d83e862f4869e2",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/wp__falcon.json",
+      "sha256": "e6e1ab91005f3f74389f4067601d185555c98ac8b9e6671b1e1c955820600847",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/wp__falcon.json",
+      "sha256": "973b702827c03161a413b22611349e2a59b0255fa5b4de4d71de5832f65aaf82",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/wp__falcon.json",
+      "sha256": "8a7ed9d081a2ac8b6bda0768404b8840e99617486d09437f2f32b98a656b84df",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/wp_falcon.json",
+      "sha256": "89db7fb8e9e21abda70e9fa23927cb5b3ebe5aedfc39b18fdec2d49d35c53810",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/wp__llama-2-7b.json",
+      "sha256": "71112c48b08abfca50731a93a58e9cd8c4dbb8e4b1013f08a9b7ca4bd089d6a7",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/wp__llama-2-7b.json",
+      "sha256": "ddf72a1b85128ebc31d6317669d55c9849f211425ca3a2e3d7d2d58327a70175",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/wp__llama-2-7b.json",
+      "sha256": "5f496a8fea8252228c61501558f09b5a652de0a28db556fc340990a702af6a5e",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/wp__llama-2-7b.json",
+      "sha256": "fe53c219d6ea8a0c0a5addb08ec36a38e27aac6cd24f34232986b9fc420a2f91",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/wp_llama-2-7b.json",
+      "sha256": "1ce18d4d7411eaab7e00190f1e9e4ff88a34dc5e579a7ffb4d47ed2054a140e1",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/wp__opt-2.7B.json",
+      "sha256": "386036046f92e62d0cf854db9d33167a9890509a68bdb26ed7b2d3ed0998b83c",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/wp__opt-2.7B.json",
+      "sha256": "22cbd5fb50ab06878085504d8b2304101a5bc5010689e2c145c1bd729914993b",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/wp__opt-2.7B.json",
+      "sha256": "124b62a8488880dd450b17416e1b33d2988563a883c174b0dd0c9b6026128e0d",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/wp__opt-2.7B.json",
+      "sha256": "2541782a9d83185dff3060c54231768b37f5f75ed41cae4d56afefdb4a106368",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/wp_opt-2.7B.json",
+      "sha256": "fa6f1eddc4a37cfab66174f3c78d4abaadfebf3d070940fce141173992771c25",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/wp__opt-6.7B.json",
+      "sha256": "19b98794bf1a597481f029f994c3e0143a46988448fad563dc955129776c1b59",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/wp__opt-6.7B.json",
+      "sha256": "bb588b12fc2a2c9ef1bdf6f2b75e9d485ea4a4a3598530ea77582dd051682b4f",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/wp__opt-6.7B.json",
+      "sha256": "a0b8f52d44ae3ab8150f7bf9e25aa8e90377795bad4b138a5c0e17a438032b9e",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/wp__opt-6.7B.json",
+      "sha256": "8ea854063d1a6c11765a81a7d5ac875f4901423332ab243bc7ff0cb5c8c6f91b",
+      "rows": 2400,
+      "truncated": 1
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/wp_opt-6.7B.json",
+      "sha256": "4684d0f76d6e9c8840b5ab58f7229fc7104d84383e4423adfb06a7d03bb426c9",
+      "rows": 2400,
+      "truncated": 2
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/writing__GLM-4-9B-0414.json",
+      "sha256": "1b9e7b88ec1d84c816c33c02697124f769c64f1322da53a19da25fadf2d4f098",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/writing__GLM-4-9B-0414.json",
+      "sha256": "2ede8c88ffdd385991a49f6dd9abd09d5d51447e6103a2b60f238dafc2028057",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/writing__GLM-4-9B-0414.json",
+      "sha256": "e4dea080f921248f2f0adc37b64e2d72881f4d87132f09e45435305756238c4c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/writing__GLM-4-9B-0414.json",
+      "sha256": "21273ca0c8b51c2a2f2070a5366b23fc82f2a40184bb2f84002040923f28f364",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/writing_GLM-4-9B-0414.json",
+      "sha256": "d68a56db4bcb74692a043d9485f88cd921878844c7860d46e790dd27a3e3ae08",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/writing__falcon.json",
+      "sha256": "214ce892f6dbb28d02b139cebaa8127ed8b10a06457afbae2f2d30fe8594452d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/writing__falcon.json",
+      "sha256": "f234f20affe08388c69f648f413bea4d68db7690d7f99496704354c255c5b6b6",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/writing__falcon.json",
+      "sha256": "dd6c878313516aa4195f5dd10bcf3e49bcc014363c12fe92d24e45b818fd1033",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/writing__falcon.json",
+      "sha256": "ada1d8eb46a60b603a3a2d66c9f7278b90c441cefa24e888e087a4d5eaf51637",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/writing_falcon.json",
+      "sha256": "dfc76ab4859cf5b66978ffdcfc899e91930a672bf01dbb29600b5513c1ed3c60",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/writing__llama-2-7b.json",
+      "sha256": "c88d8e89e9b2d37ca825ddf19d2e7ed44549484e7f4d4b41b2011b6e458faa96",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/writing__llama-2-7b.json",
+      "sha256": "64c067970faeaeefe721deb525d291a04fd1ff7b0b25bd73764c0f0175190238",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/writing__llama-2-7b.json",
+      "sha256": "441589894da1957bcea3fa61a914ee371cbca9360d6e851267161cefbbecb247",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/writing__llama-2-7b.json",
+      "sha256": "d759757de532914aeb690b1d4fa95a721ee469d9c12b97a3a722a01d2c65f933",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/writing_llama-2-7b.json",
+      "sha256": "fc2401e2ce41fce5b79fb9cfe36372ba57bc1f2c215f1500bc13cd18cd874fef",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/writing__opt-2.7B.json",
+      "sha256": "f740ceac617971637286b485c468226ed06900e89e6d5a0dea815caff72c7487",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/writing__opt-2.7B.json",
+      "sha256": "7eda73bad93193c42d5ddbb5ecc54a38b49f35d7e5d5fbe29419b6af0463b08c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/writing__opt-2.7B.json",
+      "sha256": "33627cc1b446f3f9a9f19e11455375009dca394e8ffb1a7b8c9438fc3f6d0c0e",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/writing__opt-2.7B.json",
+      "sha256": "ad769d4851e00fdf886ed32d01d4de645cdb96aeab28d2e801944104f9d7b944",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/writing_opt-2.7B.json",
+      "sha256": "b232a9a79a5f3d821bc686fa921f52fb0369cd912df5b1b1da83e054becf43f9",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/writing__opt-6.7B.json",
+      "sha256": "1962af640a0bd2710d8119226a962937b7d40dc1d744220b04f724b5bddabfd5",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/writing__opt-6.7B.json",
+      "sha256": "c8cb499cb63c4061d08eb514d3423a5aa5698f04d764646483d335404b428ef4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/writing__opt-6.7B.json",
+      "sha256": "e719c7157062e97bea6b4f498364daeb9e57afe0320f0f74c84f6ffb21d2597b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/writing__opt-6.7B.json",
+      "sha256": "255a45ce7341fb79a630761e830538a7de8fe1e64f67529b4a4fe6d170ec7414",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/writing_opt-6.7B.json",
+      "sha256": "7b96ef975d4a0956ac043c97f85ad60b240b8232284a8c13b00f478f1dd61be3",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/xsum__GLM-4-9B-0414.json",
+      "sha256": "aa0b2edd18373589c1828b6a6b1097bcb7debf4652dd5527f8754947c2b01a69",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/xsum__GLM-4-9B-0414.json",
+      "sha256": "56cc745caba08e2de3aa37b593dd8e53ce7931a701badcc1354e3a0a361bb18c",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/xsum__GLM-4-9B-0414.json",
+      "sha256": "4579030f50dd7286c6f4e4291902a13dd9685b4da294079559dc605487b05523",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/xsum__GLM-4-9B-0414.json",
+      "sha256": "e6c941c771046de6df134a939737819533d5ca3d8b06f04b7af723aec28a9bc0",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/xsum_GLM-4-9B-0414.json",
+      "sha256": "1b108779c40a01563d704ea9a27759a424523ed9214bdc145016ced75e8de5cc",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/xsum__falcon.json",
+      "sha256": "0287159b4f6bd8866cb189c4bfe6472c8fad8211eee9768c15aafd25f9ec9eca",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/xsum__falcon.json",
+      "sha256": "16eee2f0425281b62f8e117eedd2f855d6ea711c134530bf15315b9053321f7b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/xsum__falcon.json",
+      "sha256": "cd665fd65223c1266c4cb9af03ef4713976c4b0e319a983da9ddfcc3f99f81df",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/xsum__falcon.json",
+      "sha256": "28a16a34762a0c894fd647ecc80a22d58f8f8a1ca2af05c69ece1c9170913187",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/xsum_falcon.json",
+      "sha256": "b55ed237464309d12f16b3404c62b836c3292fb6971683ad3af508e3db97481d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/xsum__llama-2-7b.json",
+      "sha256": "b1c74200641dc5be1414bb2fcb89cb02d1dd8c0875250772baf6c16c5b6ddf21",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/xsum__llama-2-7b.json",
+      "sha256": "9a0fc24c0e18a8cb5561c650114cf4d755dc0cbb219135eea49a07f88f9989ba",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/xsum__llama-2-7b.json",
+      "sha256": "c996a42617cf0fe5a716d36774180ced6b2bec7746aed44bd6fb66983929a54b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/xsum__llama-2-7b.json",
+      "sha256": "d35ea14cc77d00614d4d86ad25d095779406ff91a2a9e7132b44ece40a2a35c9",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/xsum_llama-2-7b.json",
+      "sha256": "7f74e625834a0e251e7d8a9456e1cb66a6f7393a4e6bee17aae192fbe54bed52",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/xsum__opt-2.7B.json",
+      "sha256": "cee22f85a1461c8aed1109769caab9c833e9ef71633fa3458299fa3fabca1447",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/xsum__opt-2.7B.json",
+      "sha256": "601c019fd45125a88a75bceedde8890cda783049b99eaea8e2205376553c570d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/xsum__opt-2.7B.json",
+      "sha256": "1463f6875da0380734cb0438554395596795ce77b4593a357cd799c38191da43",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/xsum__opt-2.7B.json",
+      "sha256": "eaa9fcd2f9608389634f110b40bf8f7630a3897f055874f680cdd2ce8de438ca",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/xsum_opt-2.7B.json",
+      "sha256": "e97114abdf7425f66900241d98fe80121822fe1b13765fb68b74a393d7221de4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/xsum__opt-6.7B.json",
+      "sha256": "5498800b4d1bc76dd7c206bf71910221ae6f835c5ea107bfd9613fda4f1f537f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/xsum__opt-6.7B.json",
+      "sha256": "d7837adf0291d5e9f0dd5df19e50e57d2bfc953d9a1c050c7d8cb05fc23860e7",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/xsum__opt-6.7B.json",
+      "sha256": "ffda825538218dfb1d61767442ae361f8542c0d8ce6a643b461b5c32b578e4fb",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/xsum__opt-6.7B.json",
+      "sha256": "10a814ae2df3671550562650e35d56e0427fdd7a01f09c03b9d956c593a4885d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/xsum_opt-6.7B.json",
+      "sha256": "d750941b4fe313e7af7f34abdf9297f5bc18565150300d2381291ba21ba504fa",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/yelp__GLM-4-9B-0414.json",
+      "sha256": "21c55066dc2bbcf1ecea463bf8f99395e3000614ffa00b9966861bc8426c68e4",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/yelp__GLM-4-9B-0414.json",
+      "sha256": "ac7fc827da217169095a57498a283d19a28fc27b482f8c23525ea90407b27156",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/yelp__GLM-4-9B-0414.json",
+      "sha256": "353e1c362b1576b2376e4c0953ab4727c3d094787b9b167ee7f75d7e4fa844d5",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/yelp__GLM-4-9B-0414.json",
+      "sha256": "0fb01cf844219bb48c111bbdddb7afc3808119f356d9c10fd1aef76051031a17",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/yelp_GLM-4-9B-0414.json",
+      "sha256": "6e1efba6357bec7233881e44ee51b61cb78527d41fc51eb2f4665f8521386851",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/yelp__falcon.json",
+      "sha256": "3733d741c5c87e6a1b19df9a31c9e24e32adc8f498d7ceb49a794c7daecc17fa",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/yelp__falcon.json",
+      "sha256": "a3fe6469e45f44920c8051deaa96afdbe88c0177a54f6d689fb016b468e75c2d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/yelp__falcon.json",
+      "sha256": "83fd51c53c69e459135940111b459f8db98b25b79b2a374c6882b2f542d7a69d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/yelp__falcon.json",
+      "sha256": "84f12acdd3282282bf344d2814cb4bb11a11db9af5565bee9f328864c1c812e2",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/yelp_falcon.json",
+      "sha256": "488d9ce6d59cc870b07cdac5915657c7ca3601ab282ff15b0f8da2879ae27016",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/yelp__llama-2-7b.json",
+      "sha256": "bbc1727f1e8239694c5576f979a5f57ce84d5602f76e92c90f049653a524398a",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/yelp__llama-2-7b.json",
+      "sha256": "c41a9734638b7ccde63a0e95514774ee400e03bdaefbd247b22c10cc78a53e7f",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/yelp__llama-2-7b.json",
+      "sha256": "afb3b6d9805058e375d1e957fdebec9bfcac695cdc9a57e2d4a28b390185d62b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/yelp__llama-2-7b.json",
+      "sha256": "4f6b3d37b6cf96f55d4662e43d5bb58b77166e91daba086fa719ddcd77b30696",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/yelp_llama-2-7b.json",
+      "sha256": "0f5482552e4bc3375cd515034b75cbddd7fbb5334efb74ef23a5506dcbf8ee71",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/yelp__opt-2.7B.json",
+      "sha256": "d71061525abd5b1c171b4fbd404e5f28186cec25f2d58bae3b1bf49e228eb62d",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/yelp__opt-2.7B.json",
+      "sha256": "e0802abb62a530e3a6ca7fab0b965c7b3dcbd2f3d3cf86877ada4cf078b9de67",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/yelp__opt-2.7B.json",
+      "sha256": "d4b0bdf7c5e2308aae3cda916c95f6880283d70ecb1b150456f5e963a5f3111b",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/yelp__opt-2.7B.json",
+      "sha256": "007952444d1ce8e69638c23f21add21f631976dac65c71e0363b28e52831b0fe",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/yelp_opt-2.7B.json",
+      "sha256": "356951917b9f71f39719f844eafb813ba52761421a8a8820517d5df46c1dd5c5",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "falcon_7b",
+      "path": "results/baselines/benchmark/precompute/falcon_7b/yelp__opt-6.7B.json",
+      "sha256": "9684c9477f23b6346ff6328cca8936181c3855cb7c19bba8169956c3b21f997e",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "qwen2_5_7b_instruct",
+      "path": "results/baselines/benchmark/precompute/qwen2_5_7b_instruct/yelp__opt-6.7B.json",
+      "sha256": "d266de6531df187e293904fcd4d3a14e334140d12c122a464542308a411d54c2",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_2_7b",
+      "path": "results/baselines/benchmark/precompute/opt_2_7b/yelp__opt-6.7B.json",
+      "sha256": "3bf47388461340fd142c1413c86caa41709d1d19642f1972c08a467707d44ff5",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "opt_6_7b",
+      "path": "results/baselines/benchmark/precompute/opt_6_7b/yelp__opt-6.7B.json",
+      "sha256": "951e883ed5ec0230f19221e54c0ea262426b79a387f7bc401c7118890a81c956",
+      "rows": 2400,
+      "truncated": 0
+    },
+    {
+      "kind": "strong",
+      "path": "results/baselines/benchmark/strong_scores/yelp_opt-6.7B.json",
+      "sha256": "a16b4021397064c801c5c7df4df92d4f16cb393202031bc684037957fd0d7e94",
+      "rows": 2400,
+      "truncated": 0
+    }
+  ]
+}

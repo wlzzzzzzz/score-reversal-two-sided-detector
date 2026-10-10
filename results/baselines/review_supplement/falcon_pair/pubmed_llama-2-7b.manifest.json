@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "30baa93390a9ff505210609da65332e8007e72f0498c4de3df3a1611d5c56599",
+  "rows": 2400,
+  "input_sha256": "ecd9b30eb531fbf5c59c45bfe5687c763a99e7507385616764a81f888d23f717",
+  "parity_checks": [
+    {
+      "row_id": "pubmed:llama-2-7b:75:SynthID",
+      "native_error": 9.5367431640625e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

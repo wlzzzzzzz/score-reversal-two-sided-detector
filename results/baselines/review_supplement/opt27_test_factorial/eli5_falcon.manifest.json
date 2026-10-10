@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "74e9a1a9f541a974f454b2160ed8776b2713d5646f3fa42679c55a3ed2e8eb70",
+  "rows": 2400,
+  "input_sha256": "812a6634a123f64763be2062d8da8f87a708b8e6a128032d1df6994ddd48ac32",
+  "parity_checks": [
+    {
+      "row_id": "eli5:falcon:69:human",
+      "native_error": 1.0132789611816406e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

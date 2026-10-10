@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "0d30cca399f6d5bb6c1ae813ca3459e06b9f68064c61909431fa0bba80b335a0",
+  "rows": 2400,
+  "input_sha256": "2d3896d1b76ab65e072cf30267422684a516265d6c85cf082f519a6a7c8cd5d5",
+  "parity_checks": [
+    {
+      "row_id": "hswag:falcon:10:human",
+      "native_error": 6.854534149169922e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

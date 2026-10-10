@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "a4e07e24984abe63112f3e9a8d2240d8c9471cebbd0cea1d1fe2087315395266",
+  "rows": 2400,
+  "input_sha256": "9a3da4be9970ad37d9e5b611d748f2613bb89df6129a7b493ff0aa212d5f7f2e",
+  "parity_checks": [
+    {
+      "row_id": "sci:falcon:126:SemStamp",
+      "native_error": 1.9073486328125e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "13af97272d520d36d5598bcab468e4630cdaff32c5bf01ffe6215b343215c1be",
+  "rows": 2400,
+  "input_sha256": "b2f054dd134e954f831269014cd3e6df198a142be783eceb7916fd388dbe5688",
+  "parity_checks": [
+    {
+      "row_id": "cmv:opt-2.7B:156:SemStamp",
+      "native_error": 1.0728836059570312e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

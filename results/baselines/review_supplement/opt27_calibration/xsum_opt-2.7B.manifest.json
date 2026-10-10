@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "c8fc96b190e4d3beff6843dd17a336b1bd0e7bfc57ea77983e0e49a958746c3f",
+  "rows": 2400,
+  "input_sha256": "e9cf64fd845c2516bdb00a0032f68018130964f4520da5748c5eae2e43b5a114",
+  "parity_checks": [
+    {
+      "row_id": "xsum:opt-2.7B:67:SemStamp",
+      "native_error": 1.0728836059570312e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

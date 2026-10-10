@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "62e1f870bbd26b4a45c26d6fafa12debf30604ddf273707fe62f6b0cb756a3f8",
+  "rows": 2400,
+  "input_sha256": "8c2231893546111c3a13209fb28aa4c65917504d6046e94967296a5dd93d41ed",
+  "parity_checks": [
+    {
+      "row_id": "hswag:opt-6.7B:10:human",
+      "native_error": 6.854534149169922e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

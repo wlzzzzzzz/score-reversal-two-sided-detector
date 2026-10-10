@@ -1,0 +1,783 @@
+{
+  "status": "COMPLETE",
+  "measurements": [
+    {
+      "pair": "falcon",
+      "panel": "same_native_token_count",
+      "requested_tokens": 64,
+      "raw_text_sha256": null,
+      "input_tokens": 64,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14013600256,
+        "1": 13913517568
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14181181440,
+        "1": 13913517568
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.07130460906773806,
+          "native_module_seconds": 0.0019908444955945015,
+          "s3_only_module_seconds": 0.004335337318480015,
+          "native_total_seconds": 0.07329545356333256,
+          "s3_total_seconds": 0.07563994638621807,
+          "native_peak_total_bytes": 27927117824,
+          "s3_peak_total_bytes": 28094699008
+        },
+        {
+          "forward_seconds": 0.07150094490498304,
+          "native_module_seconds": 0.002018352970480919,
+          "s3_only_module_seconds": 0.004400340840220451,
+          "native_total_seconds": 0.07351929787546396,
+          "s3_total_seconds": 0.0759012857452035,
+          "native_peak_total_bytes": 27927117824,
+          "s3_peak_total_bytes": 28094699008
+        },
+        {
+          "forward_seconds": 0.07158911135047674,
+          "native_module_seconds": 0.0020730001851916313,
+          "s3_only_module_seconds": 0.004432067275047302,
+          "native_total_seconds": 0.07366211153566837,
+          "s3_total_seconds": 0.07602117862552404,
+          "native_peak_total_bytes": 27927117824,
+          "s3_peak_total_bytes": 28094699008
+        },
+        {
+          "forward_seconds": 0.07166531216353178,
+          "native_module_seconds": 0.0020145894959568977,
+          "s3_only_module_seconds": 0.004408172331750393,
+          "native_total_seconds": 0.07367990165948868,
+          "s3_total_seconds": 0.07607348449528217,
+          "native_peak_total_bytes": 27927117824,
+          "s3_peak_total_bytes": 28094699008
+        },
+        {
+          "forward_seconds": 0.07154517341405153,
+          "native_module_seconds": 0.0020113736391067505,
+          "s3_only_module_seconds": 0.004419032484292984,
+          "native_total_seconds": 0.07355654705315828,
+          "s3_total_seconds": 0.07596420589834452,
+          "native_peak_total_bytes": 27927117824,
+          "s3_peak_total_bytes": 28094699008
+        }
+      ],
+      "forward_seconds_median": 0.07154517341405153,
+      "forward_seconds_p95": 0.07165007200092077,
+      "native_module_seconds_median": 0.0020145894959568977,
+      "native_module_seconds_p95": 0.002062070742249489,
+      "s3_only_module_seconds_median": 0.004408172331750393,
+      "s3_only_module_seconds_p95": 0.004429460316896438,
+      "native_total_seconds_median": 0.07355654705315828,
+      "native_total_seconds_p95": 0.07367634363472461,
+      "s3_total_seconds_median": 0.07596420589834452,
+      "s3_total_seconds_p95": 0.07606302332133055,
+      "native_peak_total_bytes_median": 27927117824.0,
+      "native_peak_total_bytes_p95": 27927117824.0,
+      "s3_peak_total_bytes_median": 28094699008.0,
+      "s3_peak_total_bytes_p95": 28094699008.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "same_native_token_count",
+      "requested_tokens": 128,
+      "raw_text_sha256": null,
+      "input_tokens": 128,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14121674240,
+        "1": 13922972160
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14458792448,
+        "1": 13922972160
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.08846931159496307,
+          "native_module_seconds": 0.003921740688383579,
+          "s3_only_module_seconds": 0.007843022234737873,
+          "native_total_seconds": 0.09239105228334665,
+          "s3_total_seconds": 0.09631233382970095,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08880690857768059,
+          "native_module_seconds": 0.003946090117096901,
+          "s3_only_module_seconds": 0.007794439792633057,
+          "native_total_seconds": 0.09275299869477749,
+          "s3_total_seconds": 0.09660134837031364,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08713969774544239,
+          "native_module_seconds": 0.003958128392696381,
+          "s3_only_module_seconds": 0.007785195484757423,
+          "native_total_seconds": 0.09109782613813877,
+          "s3_total_seconds": 0.09492489323019981,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08733114879578352,
+          "native_module_seconds": 0.0039321500808000565,
+          "s3_only_module_seconds": 0.007797605358064175,
+          "native_total_seconds": 0.09126329887658358,
+          "s3_total_seconds": 0.0951287541538477,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08697587065398693,
+          "native_module_seconds": 0.0038956813514232635,
+          "s3_only_module_seconds": 0.007716841995716095,
+          "native_total_seconds": 0.0908715520054102,
+          "s3_total_seconds": 0.09469271264970303,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        }
+      ],
+      "forward_seconds_median": 0.08733114879578352,
+      "forward_seconds_p95": 0.08873938918113708,
+      "native_module_seconds_median": 0.0039321500808000565,
+      "native_module_seconds_p95": 0.0039557207375764845,
+      "s3_only_module_seconds_median": 0.007794439792633057,
+      "s3_only_module_seconds_p95": 0.007833938859403134,
+      "native_total_seconds_median": 0.09126329887658358,
+      "native_total_seconds_p95": 0.09268060941249132,
+      "s3_total_seconds_median": 0.0951287541538477,
+      "s3_total_seconds_p95": 0.0965435454621911,
+      "native_peak_total_bytes_median": 28044646400.0,
+      "native_peak_total_bytes_p95": 28044646400.0,
+      "s3_peak_total_bytes_median": 28381764608.0,
+      "s3_peak_total_bytes_p95": 28381764608.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "same_native_token_count",
+      "requested_tokens": 256,
+      "raw_text_sha256": null,
+      "input_tokens": 256,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14339256832,
+        "1": 13940496896
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14683133440,
+        "1": 13940496896
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.14415986649692059,
+          "native_module_seconds": 0.0075854407623410225,
+          "s3_only_module_seconds": 0.015155831351876259,
+          "native_total_seconds": 0.1517453072592616,
+          "s3_total_seconds": 0.15931569784879684,
+          "native_peak_total_bytes": 28279753728,
+          "s3_peak_total_bytes": 28623630336
+        },
+        {
+          "forward_seconds": 0.13488739635795355,
+          "native_module_seconds": 0.0077794818207621574,
+          "s3_only_module_seconds": 0.015271659009158611,
+          "native_total_seconds": 0.1426668781787157,
+          "s3_total_seconds": 0.15015905536711216,
+          "native_peak_total_bytes": 28279753728,
+          "s3_peak_total_bytes": 28623630336
+        },
+        {
+          "forward_seconds": 0.13497688248753548,
+          "native_module_seconds": 0.007824822328984737,
+          "s3_only_module_seconds": 0.015196878463029861,
+          "native_total_seconds": 0.14280170481652021,
+          "s3_total_seconds": 0.15017376095056534,
+          "native_peak_total_bytes": 28279753728,
+          "s3_peak_total_bytes": 28623630336
+        },
+        {
+          "forward_seconds": 0.1347310170531273,
+          "native_module_seconds": 0.007761633954942226,
+          "s3_only_module_seconds": 0.01532031875103712,
+          "native_total_seconds": 0.14249265100806952,
+          "s3_total_seconds": 0.1500513358041644,
+          "native_peak_total_bytes": 28279753728,
+          "s3_peak_total_bytes": 28623630336
+        },
+        {
+          "forward_seconds": 0.1351456493139267,
+          "native_module_seconds": 0.007803638465702534,
+          "s3_only_module_seconds": 0.01534606795758009,
+          "native_total_seconds": 0.14294928777962923,
+          "s3_total_seconds": 0.1504917172715068,
+          "native_peak_total_bytes": 28279753728,
+          "s3_peak_total_bytes": 28623630336
+        }
+      ],
+      "forward_seconds_median": 0.13497688248753548,
+      "forward_seconds_p95": 0.1423570230603218,
+      "native_module_seconds_median": 0.0077794818207621574,
+      "native_module_seconds_p95": 0.007820585556328297,
+      "s3_only_module_seconds_median": 0.015271659009158611,
+      "s3_only_module_seconds_p95": 0.015340918116271496,
+      "native_total_seconds_median": 0.14280170481652021,
+      "native_total_seconds_p95": 0.14998610336333512,
+      "s3_total_seconds_median": 0.15017376095056534,
+      "s3_total_seconds_p95": 0.15755090173333883,
+      "native_peak_total_bytes_median": 28279753728.0,
+      "native_peak_total_bytes_p95": 28279753728.0,
+      "s3_peak_total_bytes_median": 28623630336.0,
+      "s3_peak_total_bytes_p95": 28623630336.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "same_native_token_count",
+      "requested_tokens": 512,
+      "raw_text_sha256": null,
+      "input_tokens": 512,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14769187328,
+        "1": 14008957440
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14716040704,
+        "1": 14008957440
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.26904122438281775,
+          "native_module_seconds": 0.015432926826179028,
+          "s3_only_module_seconds": 0.03351069241762161,
+          "native_total_seconds": 0.2844741512089968,
+          "s3_total_seconds": 0.30255191680043936,
+          "native_peak_total_bytes": 28778144768,
+          "s3_peak_total_bytes": 28724998144
+        },
+        {
+          "forward_seconds": 0.26794531289488077,
+          "native_module_seconds": 0.015383323654532433,
+          "s3_only_module_seconds": 0.030791698954999447,
+          "native_total_seconds": 0.2833286365494132,
+          "s3_total_seconds": 0.2987370118498802,
+          "native_peak_total_bytes": 28778144768,
+          "s3_peak_total_bytes": 28724998144
+        },
+        {
+          "forward_seconds": 0.2688242718577385,
+          "native_module_seconds": 0.015394466929137707,
+          "s3_only_module_seconds": 0.030764092691242695,
+          "native_total_seconds": 0.2842187387868762,
+          "s3_total_seconds": 0.2995883645489812,
+          "native_peak_total_bytes": 28778144768,
+          "s3_peak_total_bytes": 28724998144
+        },
+        {
+          "forward_seconds": 0.26862916350364685,
+          "native_module_seconds": 0.014968855306506157,
+          "s3_only_module_seconds": 0.030265968292951584,
+          "native_total_seconds": 0.283598018810153,
+          "s3_total_seconds": 0.29889513179659843,
+          "native_peak_total_bytes": 28778144768,
+          "s3_peak_total_bytes": 28724998144
+        },
+        {
+          "forward_seconds": 0.267721937969327,
+          "native_module_seconds": 0.014972373843193054,
+          "s3_only_module_seconds": 0.0302429161965847,
+          "native_total_seconds": 0.28269431181252,
+          "s3_total_seconds": 0.2979648541659117,
+          "native_peak_total_bytes": 28778144768,
+          "s3_peak_total_bytes": 28724998144
+        }
+      ],
+      "forward_seconds_median": 0.26862916350364685,
+      "forward_seconds_p95": 0.2689978338778019,
+      "native_module_seconds_median": 0.015383323654532433,
+      "native_module_seconds_p95": 0.015425234846770764,
+      "s3_only_module_seconds_median": 0.030764092691242695,
+      "s3_only_module_seconds_p95": 0.03296689372509718,
+      "native_total_seconds_median": 0.283598018810153,
+      "native_total_seconds_p95": 0.2844230687245727,
+      "s3_total_seconds_median": 0.29889513179659843,
+      "s3_total_seconds_p95": 0.3019592063501477,
+      "native_peak_total_bytes_median": 28778144768.0,
+      "native_peak_total_bytes_p95": 28778144768.0,
+      "s3_peak_total_bytes_median": 28724998144.0,
+      "s3_peak_total_bytes_p95": 28724998144.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "same_native_token_count",
+      "requested_tokens": 2048,
+      "raw_text_sha256": null,
+      "input_tokens": 2048,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 17366538752,
+        "1": 15218526720
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 15217478144,
+        "1": 15218526720
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 1.4311047242954373,
+          "native_module_seconds": 0.05926314927637577,
+          "s3_only_module_seconds": 0.12094781547784805,
+          "native_total_seconds": 1.490367873571813,
+          "s3_total_seconds": 1.5520525397732854,
+          "native_peak_total_bytes": 32585065472,
+          "s3_peak_total_bytes": 30436004864
+        },
+        {
+          "forward_seconds": 1.437945755198598,
+          "native_module_seconds": 0.059456540271639824,
+          "s3_only_module_seconds": 0.12096911389380693,
+          "native_total_seconds": 1.4974022954702377,
+          "s3_total_seconds": 1.5589148690924048,
+          "native_peak_total_bytes": 32585065472,
+          "s3_peak_total_bytes": 30436004864
+        },
+        {
+          "forward_seconds": 1.4404940558597445,
+          "native_module_seconds": 0.05934026278555393,
+          "s3_only_module_seconds": 0.12113075982779264,
+          "native_total_seconds": 1.4998343186452985,
+          "s3_total_seconds": 1.5616248156875372,
+          "native_peak_total_bytes": 32585065472,
+          "s3_peak_total_bytes": 30436004864
+        },
+        {
+          "forward_seconds": 1.4341621091589332,
+          "native_module_seconds": 0.05936293676495552,
+          "s3_only_module_seconds": 0.12107458058744669,
+          "native_total_seconds": 1.4935250459238887,
+          "s3_total_seconds": 1.5552366897463799,
+          "native_peak_total_bytes": 32585065472,
+          "s3_peak_total_bytes": 30436004864
+        },
+        {
+          "forward_seconds": 1.4375269189476967,
+          "native_module_seconds": 0.05933156795799732,
+          "s3_only_module_seconds": 0.12082529254257679,
+          "native_total_seconds": 1.496858486905694,
+          "s3_total_seconds": 1.5583522114902735,
+          "native_peak_total_bytes": 32585065472,
+          "s3_peak_total_bytes": 30436004864
+        }
+      ],
+      "forward_seconds_median": 1.4375269189476967,
+      "forward_seconds_p95": 1.4399843957275151,
+      "native_module_seconds_median": 0.05934026278555393,
+      "native_module_seconds_p95": 0.05943781957030296,
+      "s3_only_module_seconds_median": 0.12096911389380693,
+      "s3_only_module_seconds_p95": 0.12111952397972345,
+      "native_total_seconds_median": 1.496858486905694,
+      "native_total_seconds_p95": 1.4993479140102863,
+      "s3_total_seconds_median": 1.5583522114902735,
+      "s3_total_seconds_p95": 1.5610828263685108,
+      "native_peak_total_bytes_median": 32585065472.0,
+      "native_peak_total_bytes_p95": 32585065472.0,
+      "s3_peak_total_bytes_median": 30436004864.0,
+      "s3_peak_total_bytes_p95": 30436004864.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "identical_raw_text",
+      "requested_tokens": 64,
+      "raw_text_sha256": "c7642533f86114bff2895110674c9e66c4962de4da80eda90f05a1e1fda59410",
+      "input_tokens": 63,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14013470208,
+        "1": 13913378816
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14176081920,
+        "1": 13913378816
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.06961795315146446,
+          "native_module_seconds": 0.001997903920710087,
+          "s3_only_module_seconds": 0.004088602960109711,
+          "native_total_seconds": 0.07161585707217455,
+          "s3_total_seconds": 0.07370655611157417,
+          "native_peak_total_bytes": 27926849024,
+          "s3_peak_total_bytes": 28089460736
+        },
+        {
+          "forward_seconds": 0.06953115016222,
+          "native_module_seconds": 0.0019254796206951141,
+          "s3_only_module_seconds": 0.004095420241355896,
+          "native_total_seconds": 0.07145662978291512,
+          "s3_total_seconds": 0.0736265704035759,
+          "native_peak_total_bytes": 27926849024,
+          "s3_peak_total_bytes": 28089460736
+        },
+        {
+          "forward_seconds": 0.06954209506511688,
+          "native_module_seconds": 0.0019278191030025482,
+          "s3_only_module_seconds": 0.004124058410525322,
+          "native_total_seconds": 0.07146991416811943,
+          "s3_total_seconds": 0.0736661534756422,
+          "native_peak_total_bytes": 27926849024,
+          "s3_peak_total_bytes": 28089460736
+        },
+        {
+          "forward_seconds": 0.06958285812288523,
+          "native_module_seconds": 0.0019490662962198257,
+          "s3_only_module_seconds": 0.004168442450463772,
+          "native_total_seconds": 0.07153192441910505,
+          "s3_total_seconds": 0.073751300573349,
+          "native_peak_total_bytes": 27926849024,
+          "s3_peak_total_bytes": 28089460736
+        },
+        {
+          "forward_seconds": 0.0698130177333951,
+          "native_module_seconds": 0.001924116164445877,
+          "s3_only_module_seconds": 0.004130661487579346,
+          "native_total_seconds": 0.07173713389784098,
+          "s3_total_seconds": 0.07394367922097445,
+          "native_peak_total_bytes": 27926849024,
+          "s3_peak_total_bytes": 28089460736
+        }
+      ],
+      "forward_seconds_median": 0.06958285812288523,
+      "forward_seconds_p95": 0.06977400481700897,
+      "native_module_seconds_median": 0.0019278191030025482,
+      "native_module_seconds_p95": 0.0019881363958120348,
+      "s3_only_module_seconds_median": 0.004124058410525322,
+      "s3_only_module_seconds_p95": 0.004160886257886886,
+      "native_total_seconds_median": 0.07153192441910505,
+      "native_total_seconds_p95": 0.07171287853270769,
+      "s3_total_seconds_median": 0.07370655611157417,
+      "s3_total_seconds_p95": 0.07390520349144936,
+      "native_peak_total_bytes_median": 27926849024.0,
+      "native_peak_total_bytes_p95": 27926849024.0,
+      "s3_peak_total_bytes_median": 28089460736.0,
+      "s3_peak_total_bytes_p95": 28089460736.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "identical_raw_text",
+      "requested_tokens": 128,
+      "raw_text_sha256": "8a09325b17f3e581280da019731d74c528ce0a693c1213b65a12f0627da55c7e",
+      "input_tokens": 128,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14121674240,
+        "1": 13922972160
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14458792448,
+        "1": 13922972160
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.08217166364192963,
+          "native_module_seconds": 0.0038176272064447403,
+          "s3_only_module_seconds": 0.007541109807789326,
+          "native_total_seconds": 0.08598929084837437,
+          "s3_total_seconds": 0.08971277344971895,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08171317912638187,
+          "native_module_seconds": 0.003833593800663948,
+          "s3_only_module_seconds": 0.007551250047981739,
+          "native_total_seconds": 0.08554677292704582,
+          "s3_total_seconds": 0.08926442917436361,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08197647891938686,
+          "native_module_seconds": 0.0038080094382166862,
+          "s3_only_module_seconds": 0.007531200535595417,
+          "native_total_seconds": 0.08578448835760355,
+          "s3_total_seconds": 0.08950767945498228,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08199693448841572,
+          "native_module_seconds": 0.0038046548143029213,
+          "s3_only_module_seconds": 0.00756980013102293,
+          "native_total_seconds": 0.08580158930271864,
+          "s3_total_seconds": 0.08956673461943865,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        },
+        {
+          "forward_seconds": 0.08176124561578035,
+          "native_module_seconds": 0.003840993158519268,
+          "s3_only_module_seconds": 0.007577679120004177,
+          "native_total_seconds": 0.08560223877429962,
+          "s3_total_seconds": 0.08933892473578453,
+          "native_peak_total_bytes": 28044646400,
+          "s3_peak_total_bytes": 28381764608
+        }
+      ],
+      "forward_seconds_median": 0.08197647891938686,
+      "forward_seconds_p95": 0.08213671781122685,
+      "native_module_seconds_median": 0.0038176272064447403,
+      "native_module_seconds_p95": 0.003839513286948204,
+      "s3_only_module_seconds_median": 0.007551250047981739,
+      "s3_only_module_seconds_p95": 0.007576103322207928,
+      "native_total_seconds_median": 0.08578448835760355,
+      "native_total_seconds_p95": 0.08595175053924323,
+      "s3_total_seconds_median": 0.08950767945498228,
+      "s3_total_seconds_p95": 0.0896835656836629,
+      "native_peak_total_bytes_median": 28044646400.0,
+      "native_peak_total_bytes_p95": 28044646400.0,
+      "s3_peak_total_bytes_median": 28381764608.0,
+      "s3_peak_total_bytes_p95": 28381764608.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "identical_raw_text",
+      "requested_tokens": 256,
+      "raw_text_sha256": "b97bdceeb9ec2eb6839d29de1de473c9158687ac48e2d544b63841d1351ee882",
+      "input_tokens": 258,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14340299264,
+        "1": 13940516352
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14581935104,
+        "1": 13940516352
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.1947843711823225,
+          "native_module_seconds": 0.007637860253453255,
+          "s3_only_module_seconds": 0.01639767549932003,
+          "native_total_seconds": 0.20242223143577576,
+          "s3_total_seconds": 0.21118204668164253,
+          "native_peak_total_bytes": 28280815616,
+          "s3_peak_total_bytes": 28522451456
+        },
+        {
+          "forward_seconds": 0.1949755884706974,
+          "native_module_seconds": 0.007619687356054783,
+          "s3_only_module_seconds": 0.01627579052001238,
+          "native_total_seconds": 0.20259527582675219,
+          "s3_total_seconds": 0.21125137899070978,
+          "native_peak_total_bytes": 28280815616,
+          "s3_peak_total_bytes": 28522451456
+        },
+        {
+          "forward_seconds": 0.19467364996671677,
+          "native_module_seconds": 0.007613438181579113,
+          "s3_only_module_seconds": 0.016274535097181797,
+          "native_total_seconds": 0.20228708814829588,
+          "s3_total_seconds": 0.21094818506389856,
+          "native_peak_total_bytes": 28280815616,
+          "s3_peak_total_bytes": 28522451456
+        },
+        {
+          "forward_seconds": 0.19458732940256596,
+          "native_module_seconds": 0.00760889146476984,
+          "s3_only_module_seconds": 0.01623094268143177,
+          "native_total_seconds": 0.2021962208673358,
+          "s3_total_seconds": 0.21081827208399773,
+          "native_peak_total_bytes": 28280815616,
+          "s3_peak_total_bytes": 28522451456
+        },
+        {
+          "forward_seconds": 0.19409167766571045,
+          "native_module_seconds": 0.007615065202116966,
+          "s3_only_module_seconds": 0.01629020646214485,
+          "native_total_seconds": 0.20170674286782742,
+          "s3_total_seconds": 0.2103818841278553,
+          "native_peak_total_bytes": 28280815616,
+          "s3_peak_total_bytes": 28522451456
+        }
+      ],
+      "forward_seconds_median": 0.19467364996671677,
+      "forward_seconds_p95": 0.19493734501302243,
+      "native_module_seconds_median": 0.007615065202116966,
+      "native_module_seconds_p95": 0.007634225673973561,
+      "s3_only_module_seconds_median": 0.01627579052001238,
+      "s3_only_module_seconds_p95": 0.016376181691884994,
+      "native_total_seconds_median": 0.20228708814829588,
+      "native_total_seconds_p95": 0.2025606669485569,
+      "s3_total_seconds_median": 0.21094818506389856,
+      "s3_total_seconds_p95": 0.21123751252889633,
+      "native_peak_total_bytes_median": 28280815616.0,
+      "native_peak_total_bytes_p95": 28280815616.0,
+      "s3_peak_total_bytes_median": 28522451456.0,
+      "s3_peak_total_bytes_p95": 28522451456.0
+    },
+    {
+      "pair": "falcon",
+      "panel": "identical_raw_text",
+      "requested_tokens": 512,
+      "raw_text_sha256": "b0ef2d88441691813912ead1c52a259305b1bed7ac039ad1f0c70ff6839a3522",
+      "input_tokens": 525,
+      "batch_size": 1,
+      "warmup": 2,
+      "measured_repeats": 5,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090",
+        "NVIDIA GeForce RTX 3090"
+      ],
+      "native_gpu_peak_bytes_last_repeat": {
+        "0": 14790643200,
+        "1": 14012487680
+      },
+      "s3_gpu_peak_bytes_last_repeat": {
+        "0": 14617053184,
+        "1": 14012487680
+      },
+      "max_s3_parity_error": 0.0,
+      "raw_timings": [
+        {
+          "forward_seconds": 0.3043136764317751,
+          "native_module_seconds": 0.015316861681640148,
+          "s3_only_module_seconds": 0.03171074204146862,
+          "native_total_seconds": 0.31963053811341524,
+          "s3_total_seconds": 0.3360244184732437,
+          "native_peak_total_bytes": 28803130880,
+          "s3_peak_total_bytes": 28629540864
+        },
+        {
+          "forward_seconds": 0.3048034207895398,
+          "native_module_seconds": 0.015377357602119446,
+          "s3_only_module_seconds": 0.03185261972248554,
+          "native_total_seconds": 0.32018077839165926,
+          "s3_total_seconds": 0.33665604051202536,
+          "native_peak_total_bytes": 28803130880,
+          "s3_peak_total_bytes": 28629540864
+        },
+        {
+          "forward_seconds": 0.3055827869102359,
+          "native_module_seconds": 0.015302170068025589,
+          "s3_only_module_seconds": 0.031836146488785744,
+          "native_total_seconds": 0.32088495697826147,
+          "s3_total_seconds": 0.3374189333990216,
+          "native_peak_total_bytes": 28803130880,
+          "s3_peak_total_bytes": 28629540864
+        },
+        {
+          "forward_seconds": 0.30493810027837753,
+          "native_module_seconds": 0.015342563390731812,
+          "s3_only_module_seconds": 0.03173759859055281,
+          "native_total_seconds": 0.32028066366910934,
+          "s3_total_seconds": 0.33667569886893034,
+          "native_peak_total_bytes": 28803130880,
+          "s3_peak_total_bytes": 28629540864
+        },
+        {
+          "forward_seconds": 0.30503449589014053,
+          "native_module_seconds": 0.015386377461254597,
+          "s3_only_module_seconds": 0.03183083422482014,
+          "native_total_seconds": 0.32042087335139513,
+          "s3_total_seconds": 0.33686533011496067,
+          "native_peak_total_bytes": 28803130880,
+          "s3_peak_total_bytes": 28629540864
+        }
+      ],
+      "forward_seconds_median": 0.30493810027837753,
+      "forward_seconds_p95": 0.3054731287062168,
+      "native_module_seconds_median": 0.015342563390731812,
+      "native_module_seconds_p95": 0.015384573489427567,
+      "s3_only_module_seconds_median": 0.03183083422482014,
+      "s3_only_module_seconds_p95": 0.03184932507574558,
+      "native_total_seconds_median": 0.32028066366910934,
+      "native_total_seconds_p95": 0.3207921402528882,
+      "s3_total_seconds_median": 0.33667569886893034,
+      "s3_total_seconds_p95": 0.33730821274220946,
+      "native_peak_total_bytes_median": 28803130880.0,
+      "native_peak_total_bytes_p95": 28803130880.0,
+      "s3_peak_total_bytes_median": 28629540864.0,
+      "s3_peak_total_bytes_p95": 28629540864.0
+    }
+  ],
+  "exclusive_compute_process_checks": {
+    "before": {
+      "pid": 2273725,
+      "gpu_uuids": [
+        "GPU-643229be-5a15-7e89-5ee4-2885fdb0e7d3",
+        "GPU-efa465cf-c0a1-01e5-f0a4-acc17b6dd2cc"
+      ],
+      "other_compute_processes": 0
+    },
+    "after": {
+      "pid": 2273725,
+      "gpu_uuids": [
+        "GPU-643229be-5a15-7e89-5ee4-2885fdb0e7d3",
+        "GPU-efa465cf-c0a1-01e5-f0a4-acc17b6dd2cc"
+      ],
+      "other_compute_processes": 0
+    }
+  },
+  "scope": "Two panels: identical raw text with reported native token counts; exact native token counts from the same source passages. Dedicated GPUs within a shared host. No path/factorial/validation computation in measured S3 time or memory. Device peak sums are conservative across-device bounds.",
+  "native_pair_resources": "OPT self: one2.7B model/GPU; Falcon original: two7B models on twoGPUs, sequential forward execution as in the reproduction.",
+  "dtype": "float16 model forward, float32 conditional moments",
+  "numerical_variance": "unchanged second-moment subtraction and epsilon clamp"
+}

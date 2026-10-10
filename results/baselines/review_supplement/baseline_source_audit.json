@@ -1,0 +1,23 @@
+{
+  "verified_on": "2026-09-07",
+  "paper": {
+    "url": "https://arxiv.org/pdf/2310.05130",
+    "version": "v3, 2024-12-16",
+    "pdf_pages_1_based": [
+      6,
+      7
+    ],
+    "tables": [
+      2,
+      3
+    ],
+    "black_box_sampling": "GPT-J-6B",
+    "black_box_scoring": "GPT-Neo-2.7B"
+  },
+  "official_repository": {
+    "url": "https://github.com/baoguangsheng/fast-detect-gpt",
+    "Falcon_pair": "subsequent stronger sampling/scoring configuration; default demonstration arguments",
+    "later_recommendation": "2026-01-31 README also recommends Llama3-8B / Llama3-8B-Instruct"
+  },
+  "actual_primary_baseline": "Falcon-7B sampling / Falcon-7B-Instruct scoring, original analytic signed discrepancy"
+}

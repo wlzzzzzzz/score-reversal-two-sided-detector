@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "12367b3dd0d3946ecae2ad0ed81d0c31bd6f2a42dc4c29ab826e9a83daeb2aaa",
+  "rows": 2388,
+  "input_sha256": "74f6dc25477af2e46d34e4539ad568276a55085d3d2d49fab241548e0c05697a",
+  "parity_checks": [
+    {
+      "row_id": "imdb:llama-2-7b:194:human",
+      "native_error": 0.0,
+      "s3_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "1671e50199584c6365dd043708c9c24f602039e220726c3c8ae31e1e990dc44d",
+  "rows": 2400,
+  "input_sha256": "9a246691709cb32ea3653b7f2d668e73a2ff720514f76e65ea08a27a4df4928e",
+  "parity_checks": [
+    {
+      "row_id": "cnn:falcon:179:SWEET",
+      "native_error": 8.344650268554688e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

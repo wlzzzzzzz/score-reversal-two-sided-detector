@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "f5de13ac6e4751364cb4185910ea77e3a62ef173285c7a0dd92296ec436b89d0",
+  "rows": 2400,
+  "input_sha256": "767dcc3e5b68822c6484be63ee1dc9f151584a84d42afe103441bd5072b69afc",
+  "parity_checks": [
+    {
+      "row_id": "roct:llama-2-7b:18:human",
+      "native_error": 7.152557373046875e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

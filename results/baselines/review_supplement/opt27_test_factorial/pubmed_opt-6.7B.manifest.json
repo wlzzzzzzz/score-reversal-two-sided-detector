@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "d757271b5c90c42df541fa4a8eb5ff6e2bd89b9ddbc004322e0d3f3671a3b5ad",
+  "rows": 2400,
+  "input_sha256": "216af522efc7aedf7e7c49b676680b39623f173b047d85d3e8b0ba61b2d97b5b",
+  "parity_checks": [
+    {
+      "row_id": "pubmed:opt-6.7B:185:ITSEdit",
+      "native_error": 2.9802322387695312e-08,
+      "s3_error": 0.0
+    }
+  ]
+}

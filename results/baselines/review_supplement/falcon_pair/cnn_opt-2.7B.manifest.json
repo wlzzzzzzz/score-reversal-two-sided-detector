@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "ce522fa28e060eec1b275d1a6743277fc11ba6d4500327d1261aa59db6061348",
+  "rows": 2400,
+  "input_sha256": "da359004190457295d86d5ccbc6aa6d9b0d3c27e801abfcf6465efc1d5c7a18f",
+  "parity_checks": [
+    {
+      "row_id": "cnn:opt-2.7B:8:unwatermarked",
+      "native_error": 5.960464477539062e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

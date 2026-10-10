@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "bf00d01a8477220b88c64db00a403611b4e29b632ebffd9fe276e8bcd1c4c528",
+  "rows": 2400,
+  "input_sha256": "1b77fd3a35e0fda247cc386d5d5da491a865ff5a24472cce73b2952ec3c8256a",
+  "parity_checks": [
+    {
+      "row_id": "c4:falcon:150:DIP",
+      "native_error": 1.1920928955078125e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

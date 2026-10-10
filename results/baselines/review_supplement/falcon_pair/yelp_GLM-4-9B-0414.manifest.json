@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "23bcbf07908ea277cb169df15b3c1482ceea625d3f4ad0834045ee4c51a9ec18",
+  "rows": 2400,
+  "input_sha256": "fca921535eb43e3f6ba8045584240581f2104317d89f645bd7310cecac881633",
+  "parity_checks": [
+    {
+      "row_id": "yelp:GLM-4-9B-0414:166:human",
+      "native_error": 0.0,
+      "s3_error": 0.0
+    }
+  ]
+}

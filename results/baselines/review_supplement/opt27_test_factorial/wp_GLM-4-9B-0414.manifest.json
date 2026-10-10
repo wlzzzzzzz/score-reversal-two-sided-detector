@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "c3096bb8b0228b7b5ef03030364fd35bbe164dadb9aa9b68c39798aa610c6db6",
+  "rows": 2400,
+  "input_sha256": "0bf860fb6330ed646393a903e3c5d55b1c38be594ee0ac24a61bb8621c8b4cab",
+  "parity_checks": [
+    {
+      "row_id": "wp:GLM-4-9B-0414:12:human",
+      "native_error": 1.430511474609375e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

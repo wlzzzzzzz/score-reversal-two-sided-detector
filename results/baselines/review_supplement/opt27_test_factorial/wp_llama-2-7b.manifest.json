@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "1695cc3da2694709a9450d20673c65bcac2249eceee596e842047344f6cda457",
+  "rows": 2400,
+  "input_sha256": "d62da5a27fe405f43daf53920086d9ab855549a51285633fb93a4414b98e43f2",
+  "parity_checks": [
+    {
+      "row_id": "wp:llama-2-7b:141:SemStamp",
+      "native_error": 1.4901161193847656e-08,
+      "s3_error": 0.0
+    }
+  ]
+}

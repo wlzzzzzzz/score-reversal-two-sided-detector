@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "2bb98671c807b2f766ae0be5cd69cc853a66392047904b52b2fcdb8d50042a06",
+  "rows": 2400,
+  "input_sha256": "da74876e4dc29259d347c99b4bd90d2154f8965dfb7f8336c0fe0e28a472f262",
+  "parity_checks": [
+    {
+      "row_id": "cnn:llama-2-7b:45:ITSEdit",
+      "native_error": 4.76837158203125e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

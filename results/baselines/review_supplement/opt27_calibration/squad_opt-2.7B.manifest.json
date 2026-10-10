@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "8c77ac95b4375a38088d4f86c6e37eb14347fa26c09ad7889e09c5f150ee39b0",
+  "rows": 2400,
+  "input_sha256": "3c17e2cb9065cba146ca459c7b8e9d5837b3f38b796756ed58ca37bec73d53d1",
+  "parity_checks": [
+    {
+      "row_id": "squad:opt-2.7B:49:SynthID",
+      "native_error": 1.1920928955078125e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

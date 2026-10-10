@@ -1,0 +1,2 @@
+score,fixed_canonical_calibration_threshold,unique_test_sources,minimum_possible_exceedances,maximum_possible_exceedances,interpretation
+FastDetect_Falcon_native,2.2312045097351074,2361,69,69,"Numerical envelope over observed repeated-human batch scores, with fixed canonical calibration threshold; not a confidence interval."

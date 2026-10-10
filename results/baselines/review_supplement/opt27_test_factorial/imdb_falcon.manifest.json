@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "6388bb90144a8e6f288f8ec0a477da32458b98b2e383922c5a841eee4402bd36",
+  "rows": 2388,
+  "input_sha256": "28d980615d1777f4483b76d4a5dc766d1107e6339347ce64febacc6e8c4ea769",
+  "parity_checks": [
+    {
+      "row_id": "imdb:falcon:112:unwatermarked",
+      "native_error": 2.0265579223632812e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

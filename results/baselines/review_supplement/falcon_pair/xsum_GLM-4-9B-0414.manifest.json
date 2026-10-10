@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "f5f815015af82c2ec9e243efa499ceab3ccd8f48a725b5ad9d3cd6969bc27696",
+  "rows": 2400,
+  "input_sha256": "048b3ff2d277433fc18bcd389a51b2fa35ffef9b702e4c05a0feb9ba38c37c09",
+  "parity_checks": [
+    {
+      "row_id": "xsum:GLM-4-9B-0414:23:ITSEdit",
+      "native_error": 8.940696716308594e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

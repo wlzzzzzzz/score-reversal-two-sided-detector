@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "3c2cc27bb5e3b4e04ba22a88712e3632389bd92ea8111380e8303fa09e07f63c",
+  "rows": 2400,
+  "input_sha256": "fd3e5f1730cd9fde679874e129e1399a384234e72dc22637ee7c0d003e5bf0dd",
+  "parity_checks": [
+    {
+      "row_id": "eli5:llama-2-7b:156:DIP",
+      "native_error": 5.960464477539062e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

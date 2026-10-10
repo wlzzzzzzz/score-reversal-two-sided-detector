@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "5d05ce49d5bf37c87f583d8acf3cb385999396b0d8fcbcae0011c6a7a2298e2b",
+  "rows": 2400,
+  "input_sha256": "8b0b0ba383e49bef0b481918911692fe599765c660438fd63ded8d557790ae4a",
+  "parity_checks": [
+    {
+      "row_id": "c4:GLM-4-9B-0414:121:CGW",
+      "native_error": 1.1920928955078125e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

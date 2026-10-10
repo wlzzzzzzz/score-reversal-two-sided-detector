@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "human_source_ids": 3161,
+  "unique_normalized_texts": 3161,
+  "normalized_duplicate_groups": [],
+  "all_shared_5gram_candidates": 5495,
+  "pairs_containment_ge_0p8": [
+    {
+      "left": "wp:11",
+      "right": "writing:72",
+      "left_split": "test",
+      "right_split": "calibration",
+      "containment": 0.8947368421052632
+    }
+  ],
+  "scope": "Exhaustive shared5-word-shingle candidates across all main Human sources; no author-independence or semantic-duplicate guarantee."
+}

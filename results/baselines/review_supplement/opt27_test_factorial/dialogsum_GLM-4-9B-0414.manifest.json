@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "c9165a7cbfeca28c19831841d7309d24a83939613b24567f5492e378fdf0983d",
+  "rows": 1944,
+  "input_sha256": "4eaa02f2e4135f05c68e330fe55ce84b861d073a43defa41ebdf4339e959c2e1",
+  "parity_checks": [
+    {
+      "row_id": "dialogsum:GLM-4-9B-0414:126:SWEET",
+      "native_error": 1.6689300537109375e-06,
+      "s3_error": 0.0
+    }
+  ]
+}

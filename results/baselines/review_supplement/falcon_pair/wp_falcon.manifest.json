@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "b2817037afa4b60df03483f29dd46cc2c31b5f5e121e4a99995ffd398e6969ff",
+  "rows": 2400,
+  "input_sha256": "a2b1191f6cdd137e2010688f023dbe4a860c7479fe4984a1dff0199ad16f5f7c",
+  "parity_checks": [
+    {
+      "row_id": "wp:falcon:141:SWEET",
+      "native_error": 8.940696716308594e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

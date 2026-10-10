@@ -1,0 +1,13 @@
+{
+  "config_sha256": "518e3406e2671a2063a74dd62304e4ceed28a3203b7c69a91e283f6cb2680086",
+  "sha256": "6ef64e2440be5a43be9af4fdd6d0dd8bf5f717117f8560be9f75fe568f6d7d77",
+  "rows": 2388,
+  "input_sha256": "8881b392b117e6e9c6ba7c0ae57655d2c66ce308ca27a62430e7e07a1c825908",
+  "parity_checks": [
+    {
+      "row_id": "imdb:opt-2.7B:194:human",
+      "native_error": 4.76837158203125e-07,
+      "s3_error": 0.0
+    }
+  ]
+}

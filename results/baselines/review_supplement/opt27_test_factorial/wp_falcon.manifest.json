@@ -1,0 +1,13 @@
+{
+  "config_sha256": "0866fd422de06cb386d6ba4deb0c9acadc1f63db6482b34719bcf3d2dd87078c",
+  "sha256": "57089bac2ce881301e4e56cd553ae0adcae43125fc5bcd40ac2321208b7ead31",
+  "rows": 2400,
+  "input_sha256": "a2b1191f6cdd137e2010688f023dbe4a860c7479fe4984a1dff0199ad16f5f7c",
+  "parity_checks": [
+    {
+      "row_id": "wp:falcon:26:unwatermarked",
+      "native_error": 1.4901161193847656e-06,
+      "s3_error": 0.0
+    }
+  ]
+}
