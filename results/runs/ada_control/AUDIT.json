@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "matched_task_rows": 2640,
+  "original_ada_max_task_auc_error": 1.1102230246251565e-16,
+  "repeated_human_max_score_difference": 0.0,
+  "all_text_hashes_matched": true,
+  "calibration_test_sources_disjoint": true,
+  "same_800_humans_as_fd_control": true,
+  "inclusive_rank_direct_checks": 283200,
+  "joint_threshold_equivalence": true,
+  "equal_comparison_task_counts": true
+}

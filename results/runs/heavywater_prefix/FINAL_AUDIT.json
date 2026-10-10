@@ -1,0 +1,56 @@
+{
+  "checks_passed": true,
+  "script_sha256": "517bbca58712843c1a958b46718e197d07a12c1a3cb4b9999bb412f76c336f2d",
+  "v1_v2_unaffected_numeric_columns_exactly_equal": true,
+  "corrected_baseline_top_k": 50,
+  "source_count": 4,
+  "continuation_count": 8,
+  "group_summary": {
+    "HeavyWater": {
+      "prefixes": 14,
+      "sources": 4,
+      "mean_nats": {
+        "prompt_context": -0.39933325898418687,
+        "repetition": -0.39656692811892846,
+        "ngram": 0.0,
+        "nucleus": 0.011408478938479516,
+        "ot_uniform_numerical": -4.131984247804762e-06,
+        "selected_state": -0.07304320246107146,
+        "total_to_detector_reference": -0.8575390426099548,
+        "current_baseline_to_raw": 1.3775332481361942,
+        "to_current_baseline": -1.8357390317619624
+      },
+      "negative_selected_state_prefixes": 12,
+      "negative_repetition_prefixes": 12,
+      "selected_state_min": -0.7210379592640788,
+      "selected_state_max": 2.55947727088687,
+      "observed_next_residual_mean": -1.101453276221264
+    },
+    "unwatermarked": {
+      "prefixes": 11,
+      "sources": 4,
+      "mean_nats": {
+        "prompt_context": -0.011614364634233966,
+        "repetition": -0.655493723014252,
+        "ngram": -0.008893194152375264,
+        "nucleus": 0.012997163292676382,
+        "ot_uniform_numerical": -4.102130449526958e-06,
+        "selected_state": 0.1750716512076595,
+        "total_to_detector_reference": -0.4879365694309749,
+        "current_baseline_to_raw": 0.6457277808894542,
+        "to_current_baseline": -1.1220499856861952
+      },
+      "negative_selected_state_prefixes": 5,
+      "negative_repetition_prefixes": 10,
+      "selected_state_min": -1.6486441265052116,
+      "selected_state_max": 2.7716278415925566,
+      "observed_next_residual_mean": 0.9665487130211097
+    }
+  },
+  "max_abs_numerical_mean_effect_nats": 3.1957565886267525e-05,
+  "max_abs_selected_float64_effect_nats": 1.0861250568708826e-05,
+  "max_uniform_marginal_l1": 3.197642945451662e-05,
+  "max_selected_float64_l1": 2.836495433525649e-05,
+  "scope": "Descriptive same-prefix processor effects; correlated prefixes, reconstructed tokenization, no new generation or document AUROC inference.",
+  "floating_point_note": "Selected probabilities are recovered by exp(processor log output); HF sampling additionally normalizes with softmax. Column parity is below 1e-6 L1; do not interpret rounded effects as exact sampler probabilities."
+}

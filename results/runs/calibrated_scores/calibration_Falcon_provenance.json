@@ -1,0 +1,156 @@
+[
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/c4__GLM-4-9B-0414.jsonl",
+    "sha256": "ec8e00340cf911face7d9de76bac8f178febbc9207f1131144c4beda782a6b58",
+    "manifest_sha256": "711504f55af8c29104c8053193f57d301f64d97e70d114cc2a8024df56f9fffe",
+    "raw_input_sha256": "8b0b0ba383e49bef0b481918911692fe599765c660438fd63ded8d557790ae4a",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/c4__falcon.jsonl",
+    "sha256": "5e146fae8787be85068aec2c3a04a502045f9d53c10b3dd4af8f98cfccef5ea3",
+    "manifest_sha256": "c16f7fceca722861e7d7d06fa5b541ccc51e9ea888e0a80ce2f2af72d700cd00",
+    "raw_input_sha256": "1b77fd3a35e0fda247cc386d5d5da491a865ff5a24472cce73b2952ec3c8256a",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/c4__llama-2-7b.jsonl",
+    "sha256": "ee2a49afc0655c4dba8e837fb227da31b8098040a4821956dedc90145d3836a0",
+    "manifest_sha256": "f39a5aa57f400471644d6ad6a5f961b92f7899ca2b44c21f86101a279e185f09",
+    "raw_input_sha256": "d422e6f24bf1215e0e94506a9ac0d6ee700c81cd660ed10c9b427fce7959a750",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/c4__opt-2.7B.jsonl",
+    "sha256": "f6f973eaf396a45cbc34af902c66f2bdb68cda29beb633b9a56c5f2c5ed4042f",
+    "manifest_sha256": "68270822d73d32bf36e7c379f5162b6dc893946ac6cd117b0f1cd9357fdae2b6",
+    "raw_input_sha256": "a9969a32c8c61a71dca15abe89448d64a47985cf990e76e38aeaf4add345996f",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/c4__opt-6.7B.jsonl",
+    "sha256": "6f640808e4688b78ba5814c9451cca32448791668e1f61cedc27af6f4fa11ce5",
+    "manifest_sha256": "ea8d4f0e05bd48b03bae1ff4aad4ceeeef19dae56dad878ce6c84dd0e614cbf9",
+    "raw_input_sha256": "cf9a35e45414dc7e5cde7ac7c5d4551997a1ef2689840960024a77ac5bb0b64e",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/squad__GLM-4-9B-0414.jsonl",
+    "sha256": "ac076b6d42d0797c5d3f3523c24b5ad95853cf78cda431af3fdb1665bba5579a",
+    "manifest_sha256": "1e906169c1e5024a8c1a4365a7c99126cd863d0aa62dd6d57a29359966754082",
+    "raw_input_sha256": "14dfeb99a768d7f19a4a6d1229e24f1695e6a84a3cc97fbb6a4042cdfe649fde",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/squad__falcon.jsonl",
+    "sha256": "0f147d34c5167556d208532df542c3104de80be0534b5a24fbaedbd9804a1cc5",
+    "manifest_sha256": "a55282c331e8e4b25a83eba9ae2522962130e3e3b81b8b351bff7dfa047e4a0a",
+    "raw_input_sha256": "818deff9022d3904a8890e919cb6e82ee41ef64ac763937d69cc2960daa03332",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/squad__llama-2-7b.jsonl",
+    "sha256": "8e641a1482ea82b911f96072fed49d8ecb729fc85cdbbfee904cdf35f25cb2e7",
+    "manifest_sha256": "ae5d32e5d7895f3a6f3bed549238a3f38cc8f010c18fd1e64b5dc877a0a4cd4d",
+    "raw_input_sha256": "cbce17ffff3694bbf168ed5416ba71baf701f3b8a00dc540dfa9d28d6f6521c2",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/squad__opt-2.7B.jsonl",
+    "sha256": "5e79985ce2451dff4a0e7d52e7da22f19b8995fe21c3ddcf9c01d93bfde6a419",
+    "manifest_sha256": "42932f9e21461c7d0abdc8862b60b715cfb6189a88058e6517462a436b794bff",
+    "raw_input_sha256": "3c17e2cb9065cba146ca459c7b8e9d5837b3f38b796756ed58ca37bec73d53d1",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/squad__opt-6.7B.jsonl",
+    "sha256": "b77692bd22f8e97e4992ee388a7492c9d29b3d858e17819ec2a4e20672466e42",
+    "manifest_sha256": "dd509e6782738a00011fa0a29ed99e0f39176fb06a4927806d07181d0ef1c4cf",
+    "raw_input_sha256": "39b9bf9c39869a28f80d0da39aaa3407edd972792963505ac0599aab8c8eca8b",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/writing__GLM-4-9B-0414.jsonl",
+    "sha256": "d9c0f2c9e88029b8d40c2c7a788d0630afefd08725f6c9f139f171b4962c7c1b",
+    "manifest_sha256": "af602fa34d363a2acc846a93b75a036470320e5a87f20366bd292115a8a74aa5",
+    "raw_input_sha256": "8ce68d65ccc4c55090f150201bda2a17c7cc04275a7e6c4630353e4cca74494c",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/writing__falcon.jsonl",
+    "sha256": "2c85438bbc2691e7c22e81c1ef1ce4f1c5c0317141238bab28694e52cfb27d48",
+    "manifest_sha256": "021331d1695dd69004dc2b7f089286db172ec0784c7ab2531ea2f0ac9ad71c51",
+    "raw_input_sha256": "3af4acfe59572260e8a3ca791f607df8a1f2157793f2c8f5eef48f22c841a7bc",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/writing__llama-2-7b.jsonl",
+    "sha256": "8febcd0de71b328a976cfe20222688cfdbf1cc31eb26d4a60ec79df57bb9b946",
+    "manifest_sha256": "7b02454ee8acfbf794d7878802426a33f938782701299d09e0eb61dbfe6b7cac",
+    "raw_input_sha256": "dafccce33c537c8aa9cebf461cfa69a7bbd066f22f51710a340937cae652ae5d",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/writing__opt-2.7B.jsonl",
+    "sha256": "4c00eed859eae3f864555fc3cc502d0535ac771bf237b29f8d7cb88d75aeb9e9",
+    "manifest_sha256": "96c9697e4e9a1fc50dbbfe857c3cb9fc03bd99bfaae36636127744e047f93d5e",
+    "raw_input_sha256": "1e7e6db4c6497a7231d68ebad1dc1a460e60dcc435db15655c737212bc4d1a97",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/writing__opt-6.7B.jsonl",
+    "sha256": "6faa12351fc84a35cc3217af5153ae24cc32dbdd039c0973d2e0845373dfff60",
+    "manifest_sha256": "a10f9f62bdd5709c05f0fc40f55f7af40fbe37501308762d2c0c14c4f1664f3e",
+    "raw_input_sha256": "424776c5ab5c6001af58cc58b2525afc550f3b9eae386c93e40b8f752c4c234f",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/xsum__GLM-4-9B-0414.jsonl",
+    "sha256": "05d68fe82efac7b89f3d86999c4e50c7fd2f3fe6fe78bd2a6ae52e65302d48d6",
+    "manifest_sha256": "01756ad7bbf89e9d0bfe636b639b3fe518a90d0e5221198df4fb51d559239c67",
+    "raw_input_sha256": "048b3ff2d277433fc18bcd389a51b2fa35ffef9b702e4c05a0feb9ba38c37c09",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/xsum__falcon.jsonl",
+    "sha256": "5907bef93108483d174538933e7a15121955aae16d40badbae13275980ebbac5",
+    "manifest_sha256": "1d5de5c48aac888ccfaf05cc6e2d3ced37a1e8bfce4558f86f43ce5514e89e57",
+    "raw_input_sha256": "9177c4e64d9c3dc0c9871998eef13300acf529daae7d6f3c7d199a78bffe83d7",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/xsum__llama-2-7b.jsonl",
+    "sha256": "af9266f47be7b6faf84f45773356a35c286b2a25b166ec8cacfa7c167aba09f7",
+    "manifest_sha256": "c5ffffdd34ad0adcc11a9bfd6e9e118cdfc2d439511cc01f6c944650f749fb27",
+    "raw_input_sha256": "c57f93c258949bd346f354769e08614e71bc67c9997c29174c79c29e0a806911",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/xsum__opt-2.7B.jsonl",
+    "sha256": "ea07ada6efa6c3fa09fce0b2f8d00a29b509378c374c4b349d1a8cdf90e4a2b2",
+    "manifest_sha256": "e447091bc56ead536d052954b334a378b9e56c6365a2fa3900960b8ecf2a993b",
+    "raw_input_sha256": "e9cf64fd845c2516bdb00a0032f68018130964f4520da5748c5eae2e43b5a114",
+    "rows": 2400
+  },
+  {
+    "path": "outputs/reference_shaping_dev20_test60_20260910_v1/development/Falcon/xsum__opt-6.7B.jsonl",
+    "sha256": "282d26118208834fa94b5ff98418b8607fdccc5b61f966392422d8c9387768e3",
+    "manifest_sha256": "57eda43a4f90cb26a4a61e9106879f5ca2c96b2b084059d3084dac830440c569",
+    "raw_input_sha256": "dd76d1ea76a478217baa87461956efb991f103af4ffb4736fe423fc44a91f228",
+    "rows": 2400
+  },
+  {
+    "human_canonicalization": "lexicographic generator,row_id per source",
+    "affected_sources": 368,
+    "maximum_moment_ranges": {
+      "entropy_N0": 0.0014395713806152344,
+      "entropy_N1": 0.001560211181640625,
+      "entropy_V0": 0.00010320544242858887,
+      "entropy_V1": 0.0001359879970550537,
+      "uniform_N0": 0.0009860992431640625,
+      "uniform_N1": 0.0024302005767822266,
+      "uniform_V0": 3.808736801147461e-05,
+      "uniform_V1": 0.00012483447790145874
+    }
+  }
+]

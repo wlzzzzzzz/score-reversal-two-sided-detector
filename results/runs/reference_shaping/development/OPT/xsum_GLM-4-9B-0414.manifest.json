@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "config_sha256": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+  "script_sha256": "79384e5bb602aabf4cce7e3d43712345b4fc98032296f08ed28720335c965c6b",
+  "sha256": "fb24e495e3f3212cfe42b697df3680ba11d103fb5e25d263b89f6f076c7c1633",
+  "rows": 2400,
+  "input_sha256": "048b3ff2d277433fc18bcd389a51b2fa35ffef9b702e4c05a0feb9ba38c37c09",
+  "access": {
+    "split": "development",
+    "frozen_protocol_sha256": "151ed44c03ce9203f7f7e32ce2b30705e47c89948e2c9299a89d87aaff9f7e95"
+  },
+  "smoke_rows": 0,
+  "proxy": "OPT",
+  "parity_checks": [
+    {
+      "row_id": "xsum:GLM-4-9B-0414:23:ITSEdit",
+      "errors": {
+        "T1p0_P1p0_uniform": 0.0,
+        "T1p0_P1p0_entropy": 0.0,
+        "T1p0_P0p8_uniform": 0.0,
+        "T1p0_P0p8_entropy": 0.0,
+        "T1p2_P1p0_uniform": 0.0,
+        "T1p2_P1p0_entropy": 0.0,
+        "T1p2_P0p8_uniform": 0.0,
+        "T1p2_P0p8_entropy": 0.0
+      }
+    }
+  ],
+  "run_id": "b6a13b60c9334768ac01b6d515b94775"
+}

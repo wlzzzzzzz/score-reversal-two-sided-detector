@@ -1,0 +1,433 @@
+{
+  "stage": "development",
+  "H1": {
+    "by_proxy": {
+      "OPT": {
+        "task_count": 220,
+        "domain_count": 4,
+        "rho": 0.024902106299405122,
+        "reason": null,
+        "ci95_low": -0.04195823899144911,
+        "ci95_high": 0.3391392357135855,
+        "valid_draws": 2000
+      },
+      "Falcon": {
+        "task_count": 220,
+        "domain_count": 4,
+        "rho": -0.44963126064528575,
+        "reason": null,
+        "ci95_low": -0.665686620939665,
+        "ci95_high": -0.35710018957372597,
+        "valid_draws": 2000
+      }
+    },
+    "macro_within_proxy_rho": -0.2123645771729403,
+    "ci95_low": -0.27945415667721435,
+    "ci95_high": -0.006452048333135479,
+    "valid_draws": 2000,
+    "bootstrap_draws": 2000,
+    "interval_note": "whole domains jointly resampled across proxies; invalid draws omitted and counted",
+    "supported": false
+  },
+  "H2_G_positive": {
+    "by_proxy": {
+      "OPT": {
+        "task_count": 220,
+        "domain_count": 4,
+        "rho": -0.42391671854167723,
+        "reason": null,
+        "ci95_low": -0.6535728778541625,
+        "ci95_high": -0.29316333917806464,
+        "valid_draws": 2000
+      },
+      "Falcon": {
+        "task_count": 0,
+        "domain_count": 0,
+        "rho": null,
+        "reason": "fewer than three observed domains",
+        "ci95_low": null,
+        "ci95_high": null,
+        "valid_draws": 0
+      }
+    },
+    "macro_within_proxy_rho": null,
+    "ci95_low": null,
+    "ci95_high": null,
+    "valid_draws": 0,
+    "bootstrap_draws": 2000,
+    "interval_note": "whole domains jointly resampled across proxies; invalid draws omitted and counted",
+    "supported": false
+  },
+  "H2_all_tasks": {
+    "by_proxy": {
+      "OPT": {
+        "task_count": 220,
+        "domain_count": 4,
+        "rho": -0.42391671854167723,
+        "reason": null,
+        "ci95_low": -0.6535728778541625,
+        "ci95_high": -0.29316333917806464,
+        "valid_draws": 2000
+      },
+      "Falcon": {
+        "task_count": 220,
+        "domain_count": 4,
+        "rho": -0.471629965858003,
+        "reason": null,
+        "ci95_low": -0.6226505269960547,
+        "ci95_high": -0.3569374064849573,
+        "valid_draws": 2000
+      }
+    },
+    "macro_within_proxy_rho": -0.4477733421998401,
+    "ci95_low": -0.6381117024251086,
+    "ci95_high": -0.32505037283151095,
+    "valid_draws": 2000,
+    "bootstrap_draws": 2000,
+    "interval_note": "whole domains jointly resampled across proxies; invalid draws omitted and counted"
+  },
+  "H3": {
+    "by_proxy": {
+      "OPT": {
+        "hard_harmful_rate": 0.2318181818181818,
+        "half_harmful_rate": 0.20454545454545456,
+        "harmful_rate_difference_half_minus_hard": {
+          "point": -0.02727272727272727,
+          "ci95_low": -0.045454545454545456,
+          "ci95_high": -0.00909090909090909,
+          "valid_draws": 2000
+        },
+        "mean_auc_difference_half_minus_hard": {
+          "point": -0.00886215909090909,
+          "ci95_low": -0.015559545454545444,
+          "ci95_high": -0.0021647727272727365,
+          "valid_draws": 2000
+        },
+        "supported": false
+      },
+      "Falcon": {
+        "hard_harmful_rate": 0.05454545454545454,
+        "half_harmful_rate": 0.07272727272727272,
+        "harmful_rate_difference_half_minus_hard": {
+          "point": 0.01818181818181818,
+          "ci95_low": 0.004545454545454545,
+          "ci95_high": 0.031818181818181815,
+          "valid_draws": 2000
+        },
+        "mean_auc_difference_half_minus_hard": {
+          "point": -0.014235909090909079,
+          "ci95_low": -0.0182719318181818,
+          "ci95_high": -0.009861931818181817,
+          "valid_draws": 2000
+        },
+        "supported": false
+      }
+    },
+    "supported": false
+  },
+  "G_sign_groups": [
+    {
+      "proxy": "OPT",
+      "condition": "G<=0",
+      "task_count": 0,
+      "domain_count": 0,
+      "mean_delta_center": null,
+      "mean_delta_hard_vs_base": null
+    },
+    {
+      "proxy": "OPT",
+      "condition": "G>0",
+      "task_count": 220,
+      "domain_count": 4,
+      "mean_delta_center": 0.028988522727272738,
+      "mean_delta_hard_vs_base": 0.027275568181818182
+    },
+    {
+      "proxy": "Falcon",
+      "condition": "G<=0",
+      "task_count": 220,
+      "domain_count": 4,
+      "mean_delta_center": 0.02751886363636363,
+      "mean_delta_hard_vs_base": 0.025270681818181807
+    },
+    {
+      "proxy": "Falcon",
+      "condition": "G>0",
+      "task_count": 0,
+      "domain_count": 0,
+      "mean_delta_center": null,
+      "mean_delta_hard_vs_base": null
+    }
+  ],
+  "foldwise_descriptive": [
+    {
+      "proxy": "Falcon",
+      "dataset": "c4",
+      "task_count": 55,
+      "analysis_bias": 0.053588069677352905,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.31125541125541134,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 0,
+        "domain_count": 0,
+        "rho": null,
+        "reason": "fewer than three observed domains"
+      }
+    },
+    {
+      "proxy": "Falcon",
+      "dataset": "squad",
+      "task_count": 55,
+      "analysis_bias": 0.03880576848983764,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.6408845759443729,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 0,
+        "domain_count": 0,
+        "rho": null,
+        "reason": "fewer than three observed domains"
+      }
+    },
+    {
+      "proxy": "Falcon",
+      "dataset": "writing",
+      "task_count": 55,
+      "analysis_bias": 0.04086148897806804,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.8397546897546899,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 0,
+        "domain_count": 0,
+        "rho": null,
+        "reason": "fewer than three observed domains"
+      }
+    },
+    {
+      "proxy": "Falcon",
+      "dataset": "xsum",
+      "task_count": 55,
+      "analysis_bias": 0.04094823439915975,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.5619509732330704,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 0,
+        "domain_count": 0,
+        "rho": null,
+        "reason": "fewer than three observed domains"
+      }
+    },
+    {
+      "proxy": "OPT",
+      "dataset": "c4",
+      "task_count": 55,
+      "analysis_bias": -0.1120318309466044,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": 0.5332611832611833,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.5028771405527024,
+        "reason": null
+      }
+    },
+    {
+      "proxy": "OPT",
+      "dataset": "squad",
+      "task_count": 55,
+      "analysis_bias": -0.12053248286247253,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": 0.24791211966730822,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.5790147730879361,
+        "reason": null
+      }
+    },
+    {
+      "proxy": "OPT",
+      "dataset": "writing",
+      "task_count": 55,
+      "analysis_bias": -0.10143555879592896,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": 0.5361471861471863,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.6199855699855701,
+        "reason": null
+      }
+    },
+    {
+      "proxy": "OPT",
+      "dataset": "xsum",
+      "task_count": 55,
+      "analysis_bias": -0.11504641969998676,
+      "H1": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.06623376623376626,
+        "reason": null
+      },
+      "H2": {
+        "task_count": 55,
+        "domain_count": 1,
+        "rho": -0.6599444428696631,
+        "reason": null
+      }
+    }
+  ],
+  "split_half_sensitivity": {
+    "H1": {
+      "OPT": {
+        "directions": [
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.028114608743574004,
+            "reason": null
+          },
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": 0.11894031965545956,
+            "reason": null
+          }
+        ],
+        "mean_rho": 0.04541285545594278,
+        "defined_directions": 2,
+        "not_used_for_selection": true
+      },
+      "Falcon": {
+        "directions": [
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.44315337101856556,
+            "reason": null
+          },
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.34608597701385135,
+            "reason": null
+          }
+        ],
+        "mean_rho": -0.39461967401620845,
+        "defined_directions": 2,
+        "not_used_for_selection": true
+      }
+    },
+    "H2_G_positive": {
+      "OPT": {
+        "directions": [
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.45874895726232656,
+            "reason": null
+          },
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.32819175808846524,
+            "reason": null
+          }
+        ],
+        "mean_rho": -0.3934703576753959,
+        "defined_directions": 2,
+        "not_used_for_selection": true
+      },
+      "Falcon": {
+        "directions": [
+          {
+            "task_count": 0,
+            "domain_count": 0,
+            "rho": null,
+            "reason": "fewer than three observed domains"
+          },
+          {
+            "task_count": 0,
+            "domain_count": 0,
+            "rho": null,
+            "reason": "fewer than three observed domains"
+          }
+        ],
+        "mean_rho": null,
+        "defined_directions": 0,
+        "not_used_for_selection": true
+      }
+    },
+    "H2_all": {
+      "OPT": {
+        "directions": [
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.45874895726232656,
+            "reason": null
+          },
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.32819175808846524,
+            "reason": null
+          }
+        ],
+        "mean_rho": -0.3934703576753959,
+        "defined_directions": 2,
+        "not_used_for_selection": true
+      },
+      "Falcon": {
+        "directions": [
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.43188821417310963,
+            "reason": null
+          },
+          {
+            "task_count": 220,
+            "domain_count": 4,
+            "rho": -0.4145348379716791,
+            "reason": null
+          }
+        ],
+        "mean_rho": -0.4232115260723944,
+        "defined_directions": 2,
+        "not_used_for_selection": true
+      }
+    }
+  },
+  "inference_note": "Development OOF b; intervals condition on fixed overlapping-fold predictions. Four domains are unstable; these are descriptive, not held-domain confirmation.",
+  "no_lambda_selection": true,
+  "support_failure_is_not_proof_of_opposite": true
+}

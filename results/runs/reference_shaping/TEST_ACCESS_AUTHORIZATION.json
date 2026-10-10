@@ -1,0 +1,9 @@
+{
+  "authorized": true,
+  "config_sha256": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+  "frozen_protocol_sha256": "151ed44c03ce9203f7f7e32ce2b30705e47c89948e2c9299a89d87aaff9f7e95",
+  "frozen_selection_sha256": "2d25aae7635e5425ab38a59464cda739cbb1f395f20e03235c15959144b00f21",
+  "development_observation_lock_sha256": "c1184ca6c09f3fde2b27d89f312a2b170af41d62059a5a896ab1d4f57bfaf7f3",
+  "opened_at_utc": "2026-09-10T15:26:01.727106+00:00",
+  "authorization_basis": "The fixed 20-cell development analysis was completed and frozen before the 60-cell test stage."
+}

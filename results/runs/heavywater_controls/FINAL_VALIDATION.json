@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "controlled_documents": 360,
+  "paired_sources": 40,
+  "all_generation_seeds_paired": true,
+  "fixed_state_mapping_consistent": true,
+  "unique_previous_tokens_checked": 4563,
+  "original_main_result_files_unchanged": 20,
+  "exact_test_record_matches": 11800,
+  "experiment_scope": "Four calibration-domain OPT cells, not all 20 calibration or 60 test cells."
+}

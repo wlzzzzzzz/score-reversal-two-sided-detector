@@ -1,0 +1,98 @@
+{
+  "completed": true,
+  "hashes": {
+    "scripts/run_directional_closure_20260911.py": "08149f78c538de692e612d5ce05e4c82e9fea36b05053327e338490bbfaeaa73",
+    "docs/DIRECTIONAL_TWO_AXIS_CLOSURE_PROTOCOL_20260911.md": "da1196cfe83ea78bc72bcbe525d2a5f984744223a763d8a26e85563a57bd9327",
+    "configs/reference_shaping_dev20_test60_20260910_v1.json": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+    "scripts/asymmetric_two_sided_core_20260911.py": "b9d7de5a4fe4e6cc488d9c5a1370cdd333ff64b74053a768f301638580670e20",
+    "scripts/analyze_asymmetric_two_sided_experiment_20260911.py": "ef9de346e0b799ebc48348f156bdf2a264ede156f7afab50c3f33c70bc0212bd",
+    "scripts/run_els_full20_calibration_test60_20260912.py": "27d53050742e1b12a6d8fc792bf1c94332570e2b3db3fb8e6a87513d00d22e17",
+    "docs/ELS_FULL20_CALIBRATION_TEST60_PROTOCOL_20260912.md": "b2d90cde440cdaacfc72e137b0044f9e3412cec779723f8d4d168bec2a69f2ac"
+  },
+  "new_model_forwards": 0,
+  "proxies": {
+    "OPT": {
+      "relative_gates": {
+        "auc": true,
+        "cvar": true,
+        "unwm_auc": true,
+        "unwm_power": true,
+        "fpr": true,
+        "worst_fpr": true,
+        "reverse_power": true,
+        "power_gain": true
+      },
+      "positive_domain_power_ci": true,
+      "relative_improvement_supported": true,
+      "actual_els_fpr_meets_nominal": {
+        "a01": false,
+        "a05": false
+      },
+      "calibration_humans": 800,
+      "test_humans": 2360,
+      "test_machines": 129800,
+      "test_tasks": 660,
+      "test_cells": 60,
+      "exact_text_overlap": 0,
+      "threshold_and_pvalue_decisions_exactly_equal": true,
+      "human_false_positives": {
+        "TT": {
+          "a01": 30,
+          "a05": 124
+        },
+        "ELS": {
+          "a01": 26,
+          "a05": 128
+        },
+        "energy": {
+          "a01": 29,
+          "a05": 118
+        }
+      }
+    },
+    "Falcon": {
+      "relative_gates": {
+        "auc": true,
+        "cvar": true,
+        "unwm_auc": true,
+        "unwm_power": true,
+        "fpr": true,
+        "worst_fpr": true,
+        "reverse_power": true,
+        "power_gain": true
+      },
+      "positive_domain_power_ci": true,
+      "relative_improvement_supported": true,
+      "actual_els_fpr_meets_nominal": {
+        "a01": false,
+        "a05": false
+      },
+      "calibration_humans": 800,
+      "test_humans": 2360,
+      "test_machines": 129800,
+      "test_tasks": 660,
+      "test_cells": 60,
+      "exact_text_overlap": 0,
+      "threshold_and_pvalue_decisions_exactly_equal": true,
+      "human_false_positives": {
+        "TT": {
+          "a01": 54,
+          "a05": 144
+        },
+        "ELS": {
+          "a01": 53,
+          "a05": 148
+        },
+        "energy": {
+          "a01": 60,
+          "a05": 205
+        }
+      }
+    }
+  },
+  "relative_improvement_supported_on_both_proxies": true,
+  "independent_confirmation": false,
+  "parameter_selection_this_round": false,
+  "calibration_bootstrap": "1000 stratified draws; fixed test texts; excludes historical selection uncertainty",
+  "test_bootstrap": "2000 paired source draws and 2000 domain draws; fixed calibration"
+}

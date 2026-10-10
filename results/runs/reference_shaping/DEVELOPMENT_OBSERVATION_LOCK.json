@@ -1,0 +1,13 @@
+{
+  "locked_at_utc": "2026-09-10T15:26:01.721678+00:00",
+  "test_sources_opened": 0,
+  "frozen_selection_sha256": "2d25aae7635e5425ab38a59464cda739cbb1f395f20e03235c15959144b00f21",
+  "artifact_sha256": {
+    "results/runs/reference_shaping/figures/development_figure_manifest.json": "a76eba38f9078ca6ab8e1ade6136c81bdd799fef86fdf1519114dc6f10acfd7a",
+    "results/runs/reference_shaping/figures/development_mechanism.pdf": "173531fb2d37d37813084280d30b7d5159a9f2e06fb4db9c22021f820ffb9179",
+    "results/runs/reference_shaping/figures/development_mechanism.png": "812369165dff0a28cd7899ec94149ae79cd1654b85db2229a4543e10869ccc6c",
+    "results/runs/reference_shaping/figures/development_summary.pdf": "6cd63f711191a0bfd2634fd1317f01d576bf15006a5796a98f319a182d40958a",
+    "results/runs/reference_shaping/figures/development_summary.png": "8ea64544536032aacca97201a4fd2c66afb8e5607478b24345ba81354c7f3437"
+  },
+  "note": "Pre-test development figures and frozen observations. Historical digests describe the original run; current file integrity is verified by manifest.json."
+}

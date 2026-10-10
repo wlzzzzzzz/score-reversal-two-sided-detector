@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "shard": 1,
+  "rows": 18995,
+  "seconds": 406.7691621175036,
+  "max_default_forward_difference": 0.015451916397389298,
+  "sha256": "b6f87e21ea570d94f4eb543fdeb717bdcf4a136809399cd4b7cf906685f1dc1d",
+  "torch": "2.4.1+cu121",
+  "cuda": "12.1",
+  "device": "NVIDIA GeForce RTX 3090",
+  "gpu_visibility": "1",
+  "cohort_sha256": "52de61303b919834b485b42a7e378f25260c6c8fc54027dcf26223818bbbc8ba",
+  "script_sha256": "e227026badb5f9651648dea73728c912a6c387fa1ef81df81f7f5edf5c356a2b"
+}

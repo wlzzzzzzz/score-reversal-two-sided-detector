@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "config_sha256": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+  "script_sha256": "79384e5bb602aabf4cce7e3d43712345b4fc98032296f08ed28720335c965c6b",
+  "input_sha256": "dafccce33c537c8aa9cebf461cfa69a7bbd066f22f51710a340937cae652ae5d",
+  "access": {
+    "split": "development",
+    "frozen_protocol_sha256": "151ed44c03ce9203f7f7e32ce2b30705e47c89948e2c9299a89d87aaff9f7e95"
+  },
+  "smoke_rows": 0,
+  "proxy": "Falcon",
+  "sha256": "8febcd0de71b328a976cfe20222688cfdbf1cc31eb26d4a60ec79df57bb9b946",
+  "rows": 2400,
+  "runner_script_sha256": "41a4551b5c416e0fe1c236a62bc49b28f88f3445f4a60b1359a2269a971e1223",
+  "physical_gpus": [
+    1,
+    2
+  ],
+  "provenance_note": "script_sha256 identifies the imported numerical precompute module; runner_script_sha256 identifies the queue execution driver. Both are bound by the frozen selection. physical_gpus is runtime scheduling only.",
+  "parity_checks": [
+    {
+      "row_id": "writing:llama-2-7b:4:SemStamp",
+      "errors": {
+        "T1p0_P1p0_uniform": 0.0,
+        "T1p0_P1p0_entropy": 0.0,
+        "T1p0_P0p8_uniform": 0.0,
+        "T1p0_P0p8_entropy": 0.0,
+        "T1p2_P1p0_uniform": 0.0,
+        "T1p2_P1p0_entropy": 0.0,
+        "T1p2_P0p8_uniform": 0.0,
+        "T1p2_P0p8_entropy": 0.0
+      }
+    }
+  ],
+  "run_id": "e493425afede4494b5c7fd70f59be056"
+}

@@ -1,0 +1,36 @@
+{
+  "banks": {
+    "OPT": {
+      "humans": 800,
+      "sha256": "6436f368b1b7f5aed9cd27ece3b51befc86717eff6e73b80c01928db58f5b535",
+      "cells": 20,
+      "domains": {
+        "c4": 200,
+        "squad": 200,
+        "writing": 200,
+        "xsum": 200
+      }
+    },
+    "Falcon": {
+      "humans": 800,
+      "sha256": "bd957a9f886ba5b76127ded97c016a707e4292b5a400cebce099a6666a6f6071",
+      "cells": 20,
+      "domains": {
+        "c4": 200,
+        "squad": 200,
+        "writing": 200,
+        "xsum": 200
+      }
+    }
+  },
+  "hashes": {
+    "scripts/run_directional_closure_20260911.py": "08149f78c538de692e612d5ce05e4c82e9fea36b05053327e338490bbfaeaa73",
+    "docs/DIRECTIONAL_TWO_AXIS_CLOSURE_PROTOCOL_20260911.md": "da1196cfe83ea78bc72bcbe525d2a5f984744223a763d8a26e85563a57bd9327",
+    "configs/reference_shaping_dev20_test60_20260910_v1.json": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+    "scripts/asymmetric_two_sided_core_20260911.py": "b9d7de5a4fe4e6cc488d9c5a1370cdd333ff64b74053a768f301638580670e20",
+    "scripts/analyze_asymmetric_two_sided_experiment_20260911.py": "ef9de346e0b799ebc48348f156bdf2a264ede156f7afab50c3f33c70bc0212bd",
+    "scripts/run_els_full20_calibration_test60_20260912.py": "27d53050742e1b12a6d8fc792bf1c94332570e2b3db3fb8e6a87513d00d22e17",
+    "docs/ELS_FULL20_CALIBRATION_TEST60_PROTOCOL_20260912.md": "b2d90cde440cdaacfc72e137b0044f9e3412cec779723f8d4d168bec2a69f2ac"
+  },
+  "created_utc": "2026-09-12T15:36:33.023617+00:00"
+}

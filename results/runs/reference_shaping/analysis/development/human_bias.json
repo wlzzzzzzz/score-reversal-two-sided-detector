@@ -1,0 +1,36 @@
+{
+  "full_development_by_proxy": {
+    "OPT": -0.11226157307624816,
+    "Falcon": 0.04355089038610458
+  },
+  "lodo_by_proxy": {
+    "OPT": {
+      "c4": -0.1120318309466044,
+      "squad": -0.12053248286247253,
+      "writing": -0.10143555879592896,
+      "xsum": -0.11504641969998676
+    },
+    "Falcon": {
+      "c4": 0.053588069677352905,
+      "squad": 0.03880576848983764,
+      "writing": 0.04086148897806804,
+      "xsum": 0.04094823439915975
+    }
+  },
+  "domain_means_by_proxy": {
+    "OPT": {
+      "c4": -0.11295079946517944,
+      "squad": -0.08744884371757507,
+      "writing": -0.1447396159172058,
+      "xsum": -0.10390703320503235
+    },
+    "Falcon": {
+      "c4": 0.01343935251235962,
+      "squad": 0.057786256074905396,
+      "writing": 0.05161909461021423,
+      "xsum": 0.05135885834693909
+    }
+  },
+  "canonical_human_count": 1600,
+  "definition": "domain-equal mean N0; one lexicographically-first generator per proxy,dataset,source_id; never enters score"
+}

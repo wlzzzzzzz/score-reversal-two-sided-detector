@@ -1,0 +1,7 @@
+{
+  "calibration_humans_per_proxy": 800,
+  "test_cells_per_proxy": 60,
+  "test_tasks_per_proxy": 660,
+  "near_duplicate_exclusion": "wp:11 complete bundle",
+  "report_prediction_recomputation_passed": true
+}

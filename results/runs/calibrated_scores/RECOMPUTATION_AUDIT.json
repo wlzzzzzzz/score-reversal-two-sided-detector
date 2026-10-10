@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "proxies": {
+    "OPT": {
+      "recomputed_predictions_identical": true,
+      "calibration_unique_humans": 800,
+      "calibration_machine_rows": 0,
+      "test_unique_humans": 2360,
+      "test_tasks": 660
+    },
+    "Falcon": {
+      "recomputed_predictions_identical": true,
+      "calibration_unique_humans": 800,
+      "calibration_machine_rows": 0,
+      "test_unique_humans": 2360,
+      "test_tasks": 660
+    }
+  },
+  "frozen_hashes_unchanged": true,
+  "report_script_sha256": "0a25dd50aff3ee6aa37e325ab10e94c4bfb9652eed72fbe17e662f783a09b61d"
+}

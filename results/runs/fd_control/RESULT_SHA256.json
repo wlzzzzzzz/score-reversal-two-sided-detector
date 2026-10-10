@@ -1,0 +1,10 @@
+{
+  "PROTOCOL.json": "be59c2e7d0f5e989fe2f7035f0003eb901ca491bb5ae450cf115fd3b7a229f72",
+  "decision_transitions.csv": "1ddc47d6dcdae9d36124304fc52b84072099d842fc70a127d6fc693a94a37d58",
+  "paired_domain_intervals.csv": "7989914d22cbf559536d01e6dc5a409f4ee4989822e24db9e7babf1adc412a01",
+  "by_mechanism.csv": "dac0a863b585455e176027c06d28e89fa21a461bcd79a7fa584afa30b06d4734",
+  "summary.csv": "e7d30894e283fc1aa44f979998ce4eba920b5c3c8d4b01d6d174553730f77909",
+  "by_task.csv": "a6b80fbf41baf788c90aa6f5e5abb8ebc6ffd255547d25e6a1405e27aa97a66e",
+  "AUDIT.json": "6e2111db648ba9220d769717a37101a3eb468f54d0cf00bd8d2873c13b45e712",
+  "REPORT_ZH.md": "41407d829a872b2daded1f2fb3ebb9ade995b3e528929d296d9a50b32649e86a"
+}

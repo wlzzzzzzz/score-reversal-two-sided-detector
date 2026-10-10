@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "config_sha256": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+  "script_sha256": "79384e5bb602aabf4cce7e3d43712345b4fc98032296f08ed28720335c965c6b",
+  "input_sha256": "fa9a308b9f4c20b17b042b91839da4b6149e36b258644dedb7789496fa17f896",
+  "access": {
+    "split": "test",
+    "frozen_protocol_sha256": "151ed44c03ce9203f7f7e32ce2b30705e47c89948e2c9299a89d87aaff9f7e95",
+    "config_sha256": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+    "frozen_selection_sha256": "2d25aae7635e5425ab38a59464cda739cbb1f395f20e03235c15959144b00f21",
+    "test_authorization_sha256": "672ca8e59670d5bd7ab6dc969a50b39e717a3eb7e356b5ac1ab9c864158dc2a3"
+  },
+  "smoke_rows": 0,
+  "proxy": "OPT",
+  "sha256": "c969f8104eaed81223c78f4953aad1e0e3ac1d09ddcb60ccbfc4aed012a2d559",
+  "rows": 2400,
+  "runner_script_sha256": "41a4551b5c416e0fe1c236a62bc49b28f88f3445f4a60b1359a2269a971e1223",
+  "physical_gpus": [
+    0
+  ],
+  "provenance_note": "script_sha256 identifies the imported numerical precompute module; runner_script_sha256 identifies the queue execution driver. Both are bound by the frozen selection. physical_gpus is runtime scheduling only.",
+  "parity_checks": [
+    {
+      "row_id": "yelp:opt-2.7B:166:human",
+      "errors": {
+        "T1p0_P1p0_uniform": 0.0,
+        "T1p0_P1p0_entropy": 0.0,
+        "T1p0_P0p8_uniform": 0.0,
+        "T1p0_P0p8_entropy": 0.0,
+        "T1p2_P1p0_uniform": 0.0,
+        "T1p2_P1p0_entropy": 0.0,
+        "T1p2_P0p8_uniform": 0.0,
+        "T1p2_P0p8_entropy": 0.0
+      }
+    }
+  ],
+  "run_id": "a0d1af63de4a46eca82a42b5deaaf099"
+}

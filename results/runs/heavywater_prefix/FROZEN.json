@@ -1,0 +1,96 @@
+{
+  "protocol_sha256": "b5a1623da3ac9e227d4d402d56c32ad66cb5f488420ce080c43434379734e8c0",
+  "script_sha256": "dacdff3e2f434b0ef9136adf28a9b9e1d81dec0a788f51678f6c3cc8c39939c4",
+  "requests_sha256": "04fee89966e510096c91aeb154f1a9c4bca9e3827c92b48262cdbfcc40483fbf",
+  "source_metadata": [
+    {
+      "dataset": "cmv",
+      "mechanism": "unwatermarked",
+      "source_id": "cmv:0",
+      "prompt_sha256": "36b747b862dab39d9bc079343bf4763b31b9eed22d3c2b35c7349eb66908f94c",
+      "datafile": "data/benchmark/complete_prompt_free/cmv/opt-2.7B/data.json",
+      "data_sha256": "b2f054dd134e954f831269014cd3e6df198a142be783eceb7916fd388dbe5688"
+    },
+    {
+      "dataset": "cmv",
+      "mechanism": "HeavyWater",
+      "source_id": "cmv:0",
+      "prompt_sha256": "36b747b862dab39d9bc079343bf4763b31b9eed22d3c2b35c7349eb66908f94c",
+      "datafile": "data/benchmark/complete_prompt_free/cmv/opt-2.7B/data.json",
+      "data_sha256": "b2f054dd134e954f831269014cd3e6df198a142be783eceb7916fd388dbe5688"
+    },
+    {
+      "dataset": "cnn",
+      "mechanism": "unwatermarked",
+      "source_id": "cnn:0",
+      "prompt_sha256": "808180ff6cea5b939597c6fabfefc5b314b30b43a24335a3281979a38623c51b",
+      "datafile": "data/benchmark/complete_prompt_free/cnn/opt-2.7B/data.json",
+      "data_sha256": "da359004190457295d86d5ccbc6aa6d9b0d3c27e801abfcf6465efc1d5c7a18f"
+    },
+    {
+      "dataset": "cnn",
+      "mechanism": "HeavyWater",
+      "source_id": "cnn:0",
+      "prompt_sha256": "808180ff6cea5b939597c6fabfefc5b314b30b43a24335a3281979a38623c51b",
+      "datafile": "data/benchmark/complete_prompt_free/cnn/opt-2.7B/data.json",
+      "data_sha256": "da359004190457295d86d5ccbc6aa6d9b0d3c27e801abfcf6465efc1d5c7a18f"
+    },
+    {
+      "dataset": "hswag",
+      "mechanism": "unwatermarked",
+      "source_id": "hswag:0",
+      "prompt_sha256": "7742619db71ca026d6bf7f886fe04ce216d630cdbb908557fee1c0e5a9186018",
+      "datafile": "data/benchmark/complete_prompt_free/hswag/opt-2.7B/data.json",
+      "data_sha256": "20878425e4eeca7d4229da0d3b6813790e11184c592459d86cf9e4f5634fd550"
+    },
+    {
+      "dataset": "hswag",
+      "mechanism": "HeavyWater",
+      "source_id": "hswag:0",
+      "prompt_sha256": "7742619db71ca026d6bf7f886fe04ce216d630cdbb908557fee1c0e5a9186018",
+      "datafile": "data/benchmark/complete_prompt_free/hswag/opt-2.7B/data.json",
+      "data_sha256": "20878425e4eeca7d4229da0d3b6813790e11184c592459d86cf9e4f5634fd550"
+    },
+    {
+      "dataset": "sci",
+      "mechanism": "unwatermarked",
+      "source_id": "sci:0",
+      "prompt_sha256": "7a9384135cf76994164b1b59b1cc51184372355277e64b74418e8f8259d7c6a6",
+      "datafile": "data/benchmark/complete_prompt_free/sci/opt-2.7B/data.json",
+      "data_sha256": "c7c164a95bcbca8e2d96a0a2480ba83f1aa615fe63a78a01f698e9c7115e7479"
+    },
+    {
+      "dataset": "sci",
+      "mechanism": "HeavyWater",
+      "source_id": "sci:0",
+      "prompt_sha256": "7a9384135cf76994164b1b59b1cc51184372355277e64b74418e8f8259d7c6a6",
+      "datafile": "data/benchmark/complete_prompt_free/sci/opt-2.7B/data.json",
+      "data_sha256": "c7c164a95bcbca8e2d96a0a2480ba83f1aa615fe63a78a01f698e9c7115e7479"
+    }
+  ],
+  "positions": [
+    64,
+    96,
+    128,
+    160
+  ],
+  "gpu": 6,
+  "torch": "2.10.0+cu128",
+  "POT": "0.9.6.post1",
+  "reconstructed_prefixes_not_original_token_trace": true,
+  "new_generations": false,
+  "code_sha256": {
+    "scripts/run_clean20_watermark_extension_worker.py": "dac1a1a5675b08dd7e651cdfa223ef4521513b94fd6d161f2942a2f30f5d35af",
+    "external_watermarks/HeavyWater_SimplexWater/watermark/heavy_tail_randscore.py": "2da826e2ca6781c1a66ca2f925dd58670345a98d815392f44eaa47e0964f2dec"
+  },
+  "model_config_sha256": {
+    "vocab.json": "06b4d46c8e752d410213d9548eb27a54db70fda0319b6271fb8d59dead5e1cab",
+    "tokenizer_config.json": "d1e4185b43a0a06421ab7218d5c1a775350bd13024507b34fbed25dcf6c14c6b",
+    "special_tokens_map.json": "0f3cd5f307a2735cfee31ddf33be88655e8be165ee2cdc26ced966f04258adf0",
+    "generation_config.json": "d37de99f9835d7a4d0916257f724504d12c4a668f36a50b2d42e09ba4ebd05d5",
+    "config.json": "78e28adcb451e26ca38b4a808a53318dc12c711a26d2f04158586672de0f1482"
+  },
+  "model_weight_sha256": {
+    "pytorch_model.bin": "476391562b9b2635c672d15bd69cfa881c5c824ebe89b00fee6c58947541e6e4"
+  }
+}

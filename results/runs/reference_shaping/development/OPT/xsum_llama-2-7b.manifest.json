@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "config_sha256": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+  "script_sha256": "79384e5bb602aabf4cce7e3d43712345b4fc98032296f08ed28720335c965c6b",
+  "sha256": "fae79f2e229f5fa4397685e8a2aed297d1834bca474996296249cf3b89667ad8",
+  "rows": 2400,
+  "input_sha256": "c57f93c258949bd346f354769e08614e71bc67c9997c29174c79c29e0a806911",
+  "access": {
+    "split": "development",
+    "frozen_protocol_sha256": "151ed44c03ce9203f7f7e32ce2b30705e47c89948e2c9299a89d87aaff9f7e95"
+  },
+  "smoke_rows": 0,
+  "proxy": "OPT",
+  "parity_checks": [
+    {
+      "row_id": "xsum:llama-2-7b:97:SemStamp",
+      "errors": {
+        "T1p0_P1p0_uniform": 0.0,
+        "T1p0_P1p0_entropy": 0.0,
+        "T1p0_P0p8_uniform": 0.0,
+        "T1p0_P0p8_entropy": 0.0,
+        "T1p2_P1p0_uniform": 0.0,
+        "T1p2_P1p0_entropy": 0.0,
+        "T1p2_P0p8_uniform": 0.0,
+        "T1p2_P0p8_entropy": 0.0
+      }
+    }
+  ],
+  "run_id": "d827192dfab14cb0921eb2a8b15cb02e"
+}

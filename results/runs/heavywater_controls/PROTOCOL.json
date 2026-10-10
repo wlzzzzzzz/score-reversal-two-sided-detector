@@ -1,0 +1,150 @@
+{
+  "schema": "heavywater-causal-controls-v1",
+  "created_utc": "2026-09-17T10:02:55Z",
+  "source_count": 40,
+  "domains": [
+    "c4",
+    "squad",
+    "writing",
+    "xsum"
+  ],
+  "calibration_cells_used": 4,
+  "parent_calibration_cells": 20,
+  "no_new_test_generations": true,
+  "detector_parameters_changed": false,
+  "selection": "first 10 SHA256-ordered identity-verified sources per calibration domain",
+  "model": "models/opt-2.7B",
+  "max_new_tokens": 200,
+  "arms": [
+    {
+      "name": "plain_topk50",
+      "top_k": 50,
+      "repetition": 1.0,
+      "ngram": 0,
+      "mechanism": "none",
+      "min_new": 64
+    },
+    {
+      "name": "plain_full",
+      "top_k": 0,
+      "repetition": 1.0,
+      "ngram": 0,
+      "mechanism": "none",
+      "min_new": 64
+    },
+    {
+      "name": "plain_repetition",
+      "top_k": 0,
+      "repetition": 1.1,
+      "ngram": 0,
+      "mechanism": "none",
+      "min_new": 64
+    },
+    {
+      "name": "plain_constraints",
+      "top_k": 0,
+      "repetition": 1.1,
+      "ngram": 4,
+      "mechanism": "none",
+      "min_new": 64
+    },
+    {
+      "name": "processed_input",
+      "top_k": 0,
+      "repetition": 1.1,
+      "ngram": 4,
+      "mechanism": "nucleus",
+      "min_new": 64
+    },
+    {
+      "name": "hw_fixed",
+      "top_k": 0,
+      "repetition": 1.1,
+      "ngram": 4,
+      "mechanism": "fixed",
+      "min_new": 64
+    },
+    {
+      "name": "hw_fresh",
+      "top_k": 0,
+      "repetition": 1.1,
+      "ngram": 4,
+      "mechanism": "fresh",
+      "min_new": 64
+    },
+    {
+      "name": "hw_fixed_no_constraints",
+      "top_k": 0,
+      "repetition": 1.0,
+      "ngram": 0,
+      "mechanism": "fixed",
+      "min_new": 64
+    },
+    {
+      "name": "plain_topk50_stop0",
+      "top_k": 50,
+      "repetition": 1.0,
+      "ngram": 0,
+      "mechanism": "none",
+      "min_new": 0
+    }
+  ],
+  "seeds": "SHA256(20260917|dataset|source_id); same token-sampling seed across arms, independent state RNG",
+  "scoring": "Original OPT R0^U, higher-is-machine; serialized continuation-only score, raw-token continuation-only score, and exact prompt-conditioned score. Human comparisons use same score view.",
+  "primary_contrasts": [
+    [
+      "plain_full",
+      "plain_topk50"
+    ],
+    [
+      "plain_repetition",
+      "plain_full"
+    ],
+    [
+      "plain_constraints",
+      "plain_repetition"
+    ],
+    [
+      "processed_input",
+      "plain_constraints"
+    ],
+    [
+      "hw_fixed",
+      "processed_input"
+    ],
+    [
+      "hw_fresh",
+      "processed_input"
+    ],
+    [
+      "hw_fixed",
+      "hw_fresh"
+    ],
+    [
+      "hw_fixed",
+      "hw_fixed_no_constraints"
+    ],
+    [
+      "plain_topk50",
+      "plain_topk50_stop0"
+    ]
+  ],
+  "no_outcome_filtering": true,
+  "no_retry_selection": true,
+  "quality_flags_recorded_only": true,
+  "scope": "Controlled diagnostic on 40 calibration-domain prompts. Does not recreate historical token traces or replace the 60-cell benchmark.",
+  "source_files": {
+    "external_data/legacy/clean20_complete_regeneration/source_registry.json": "0d36294ff1556a3ac32b45cf389e5d871e5cbe8fa56ed0154b8b10eabe22a4f9",
+    "configs/original/reference_shaping.json": "38abf86814eb36188289b0c981858d51cac3c23843783ad58a9caeb91edfeca7",
+    "data/benchmark/complete_prompt_free/c4/opt-2.7B/data.json": "a9969a32c8c61a71dca15abe89448d64a47985cf990e76e38aeaf4add345996f",
+    "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/opt-2.7B/manifest.json": "0bfcd8d25a32e314d14f5089cd9ec1ca64dea0a0bfd264e52ba606ff7a97f1a1",
+    "data/benchmark/complete_prompt_free/squad/opt-2.7B/data.json": "3c17e2cb9065cba146ca459c7b8e9d5837b3f38b796756ed58ca37bec73d53d1",
+    "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/squad/opt-2.7B/manifest.json": "f54f5ab0f5417fe897cba297d678e1c0c63ceb9676e8c3ac7367796a9a85095f",
+    "data/benchmark/complete_prompt_free/writing/opt-2.7B/data.json": "1e7e6db4c6497a7231d68ebad1dc1a460e60dcc435db15655c737212bc4d1a97",
+    "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/writing/opt-2.7B/manifest.json": "c6bd24c3c49d1becb29d2c3ae1808dfb29f7c3557785c0741bc394cff17990d7",
+    "data/benchmark/complete_prompt_free/xsum/opt-2.7B/data.json": "e9cf64fd845c2516bdb00a0032f68018130964f4520da5748c5eae2e43b5a114",
+    "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/xsum/opt-2.7B/manifest.json": "8094fa9c45fa601b5c41f14e5ce37c840860537514665372f82f2feded8f3802"
+  },
+  "sources_sha256": "cc6ed3b354bf2fb7b509f17ea93c92d29602bedd371de088362697827b6e7a84",
+  "script_sha256": "3dcd835407a0ecb97a7b39a3249888643bf884b25fecaeb6de4ff15cf41f02d2"
+}

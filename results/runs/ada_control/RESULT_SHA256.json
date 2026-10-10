@@ -1,0 +1,9 @@
+{
+  "PROTOCOL.json": "2af07d59b71f06346d2ea5c25fa234292481d9a03a11f943f5df2873ac1d613e",
+  "paired_domain_intervals.csv": "8c70aa6e46646df60c113452a77631f54344abf32fb6dab711db161796cd21b0",
+  "by_mechanism.csv": "c2783bf8db2e3bb11e638abfd5eac5c3b532e1c8ac9d6af72aac40f7f31cba70",
+  "summary.csv": "db01e90a3fd48f74cebc0606c676f2dbbdd0c24e6188ba8aa200c295c06ef876",
+  "by_task.csv": "ef36b8f050d8c70c71f7d75b6e14c2a2447127d961890abf1b79fd11cf20c47d",
+  "AUDIT.json": "1ac04759724588e6343e914eb8698c44671b933a4864cfd5b98710e092424ee2",
+  "REPORT_ZH.md": "d434aa30bfe4e04f12b399a08f0c7df9e9f97825c0af1b4d31ad2aca19fd7e24"
+}

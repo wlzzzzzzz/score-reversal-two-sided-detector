@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "cmv",
+    "mechanism": "unwatermarked",
+    "position": 128,
+    "reason": "continuation_too_short"
+  },
+  {
+    "dataset": "cmv",
+    "mechanism": "unwatermarked",
+    "position": 160,
+    "reason": "continuation_too_short"
+  },
+  {
+    "dataset": "cmv",
+    "mechanism": "HeavyWater",
+    "position": 128,
+    "reason": "continuation_too_short"
+  },
+  {
+    "dataset": "cmv",
+    "mechanism": "HeavyWater",
+    "position": 160,
+    "reason": "continuation_too_short"
+  },
+  {
+    "dataset": "cnn",
+    "mechanism": "unwatermarked",
+    "position": 160,
+    "reason": "continuation_too_short"
+  },
+  {
+    "dataset": "hswag",
+    "mechanism": "unwatermarked",
+    "position": 128,
+    "reason": "continuation_too_short"
+  },
+  {
+    "dataset": "hswag",
+    "mechanism": "unwatermarked",
+    "position": 160,
+    "reason": "continuation_too_short"
+  }
+]

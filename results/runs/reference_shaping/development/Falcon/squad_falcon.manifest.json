@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "config_sha256": "47a56af194d79b59d0793ae8a32db183cea2df4a0063c1ce871537eb9712717f",
+  "script_sha256": "79384e5bb602aabf4cce7e3d43712345b4fc98032296f08ed28720335c965c6b",
+  "sha256": "0f147d34c5167556d208532df542c3104de80be0534b5a24fbaedbd9804a1cc5",
+  "rows": 2400,
+  "input_sha256": "818deff9022d3904a8890e919cb6e82ee41ef64ac763937d69cc2960daa03332",
+  "access": {
+    "split": "development",
+    "frozen_protocol_sha256": "151ed44c03ce9203f7f7e32ce2b30705e47c89948e2c9299a89d87aaff9f7e95"
+  },
+  "smoke_rows": 0,
+  "proxy": "Falcon",
+  "parity_checks": [
+    {
+      "row_id": "squad:falcon:3:Unigram",
+      "errors": {
+        "T1p0_P1p0_uniform": 0.0,
+        "T1p0_P1p0_entropy": 0.0,
+        "T1p0_P0p8_uniform": 0.0,
+        "T1p0_P0p8_entropy": 0.0,
+        "T1p2_P1p0_uniform": 0.0,
+        "T1p2_P1p0_entropy": 0.0,
+        "T1p2_P0p8_uniform": 0.0,
+        "T1p2_P0p8_entropy": 0.0
+      }
+    }
+  ],
+  "run_id": "1541b39fe2864266b7d990667cb3b4b7"
+}
