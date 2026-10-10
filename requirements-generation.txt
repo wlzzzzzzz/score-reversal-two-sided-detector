@@ -1,0 +1,10 @@
+# Additional imports for the paper token-watermark and CGW/HeavyWater workers.
+-r requirements-gpu.txt
+POT==0.9.4
+dacite==1.8.1
+dahuffman==0.4.1
+PyYAML>=6
+nltk>=3.9
+# Optional acceleration of ITSEdit verification; generation has a Python fallback.
+Cython
+# SemStamp uses a separately obtained upstream checkout and embedding dependencies.

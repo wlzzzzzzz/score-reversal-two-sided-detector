@@ -1,0 +1,33 @@
+{
+  "performance_scores": [
+    "Likelihood",
+    "Entropy",
+    "Rank",
+    "Log-Rank",
+    "Fast-DetectGPT",
+    "AdaDetectGPT",
+    "Binoculars",
+    "NTS",
+    "Ours_OPT",
+    "Ours_Falcon"
+  ],
+  "detector_responses_unchanged": true,
+  "historical_source_sha256": {
+    "data/asymmetric/summary.csv": "9aac314efc279bf2cdc148e10be2190156f928435a68620e34144e0a2bab462b",
+    "data/asymmetric/task_metrics.csv": "650feca88e93e00f046581f236afa148d0517ea588799388b5efa2c5c5c125e7",
+    "data/asymmetric/deployment.csv": "290e8bcd645aee43d60876c5380769e8fdd85fdc2761357b32947e454e2cb9a3",
+    "data/asymmetric/thresholds.csv": "9493303bd84de5094cc2c9cf0118fb00ae703ddee4458e338e04d896e697ef95",
+    "data/asymmetric/paired_domain_intervals.csv": "daf70376b2356e0a89da3ff19afa219b6d78986c61eb9e8f5a2b0f16bfce5684",
+    "data/asymmetric/score_distributions.csv": "af8d0707fd9a22901dcb4959805ba624d77746dd6f49263df3d99056075ca42a",
+    "data/asymmetric/effective_length_summary.csv": "0cf295957c20f790ceb278f66f83e794f18d84000034b8bd9725088dda179749",
+    "data/asymmetric/human_effective_length.csv": "28d1ca22d58b783960cba6d7ca8eba7c7b38e3258a17e3b5cb7b0624b7b7bbf2",
+    "data/asymmetric/rank_quantization.csv": "b280c40e69d7c98acb425d74ba8c7e1e469acdb35341b40fce907972e168378f",
+    "data/mechanism_bridge/summary.csv": "e5a5cd2fae14718cae78f4ae562a9748a65c2f1988afaf2939a622e6f1ff023c",
+    "data/mechanism_bridge/by_task.csv": "beeff53ce7fbbcbd7f513ad0d8410b3d0369068b4e9a90d6eae89f857825346e",
+    "data/review_v6/allocation.csv": "9a2e2ab96f94bdfe7fdbe3cf31906b40aea8aa34b97551b5e8184b43ccce109b",
+    "data/review_v6/bank_replicates.csv": "5a22ebc347e8b9f532aa2bd5c443935cff924b79e84b21090983136bb889aa44",
+    "data/review_v6/bank_summary.csv": "d58e6de6f172a58e0d63f94dd5b03c012602e3faddb232c2ac2d7378278253d2",
+    "tables/watermark_mechanism_observations.tex": "7379a99fdaff4a55d5784f071bba06588b73d258dc9cdc684a8c497b091b4233"
+  },
+  "digest_scope": "Original input exports before column selection and portable path naming. Current published bytes are verified by manifest.json."
+}

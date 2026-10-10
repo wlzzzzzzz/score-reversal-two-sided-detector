@@ -1,0 +1,64 @@
+{
+  "version": "directional-sensitivity-v8",
+  "created": "2026-09-13",
+  "fixed_before_new_results": true,
+  "default": {
+    "T": 1.2,
+    "c": 0.8,
+    "kappa": 1.5,
+    "beta": 0.5,
+    "m": 800,
+    "input_budget": 2048
+  },
+  "no_retuning": true,
+  "data_use": "Diagnostic reuse of the existing evaluation cohort, not an untouched validation set.",
+  "full_cohort": [
+    "tail attribution",
+    "natural detector-position length strata",
+    "T/c grid"
+  ],
+  "T_grid": [
+    1.0,
+    1.2
+  ],
+  "c_grid": [
+    0.8,
+    1.0
+  ],
+  "kappa_grid": [
+    1.0,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    3.0
+  ],
+  "kappa_proxy": "OPT",
+  "kappa_sampling": "Full cohort: all 800 unique calibration humans, 2360 unique evaluation humans and 129800 machine texts. Human forwards are deduplicated across generators; task evaluation reuses each human for its corresponding generator/mechanism.",
+  "length_edges": [
+    0,
+    64,
+    128,
+    256,
+    512,
+    2047
+  ],
+  "length_calibration": "Retain the same full human calibration bank for every stratum; no conditional recalibration.",
+  "alphas": [
+    0.01,
+    0.05
+  ],
+  "tail_events": "U: p_plus <= alpha/2; L: p_minus <= alpha/2. Partition into U-only, L-only, both, neither.",
+  "averaging": "Tail machine rates are task-macro; human false positives count each unique source once. Length-stratum machine power is text-pooled, AUROC macro over tasks with both classes in the bin; include coverage.",
+  "uncertainty": "Human FPR Wilson 95% intervals; small length strata reported with counts. Kappa paired domain bootstrap on differences relative to 1.5, 10000 draws, seed 20260913.",
+  "kappa_floors": [
+    1e-06,
+    1e-08,
+    1e-09
+  ],
+  "kappa_calibration": "Recompute upper weights and upper calibration ranks for every kappa. Reuse identical cached original uniform lower response, fixed for all settings. Recompute the default on the same forward passes.",
+  "scope_extension": {
+    "reason": "Initial runtime measurement permits full-cohort inference; expansion fixed before examining any sensitivity performance results. Parameter grid unchanged.",
+    "initial_protocol_sha256": "163dc52b5e2ae462264b72598a95d2a21b9442904694bf6296dfd65550545c96"
+  }
+}

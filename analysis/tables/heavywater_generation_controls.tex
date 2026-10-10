@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Generation condition & Mean $R_0^U$ & AUROC \\
+\midrule
+No watermark, top-$k=50$ & 1.9640 & \textbf{0.9575} \\
+No watermark, unrestricted & -0.8155 & \reversal{0.3700} \\
+No watermark, repetition penalty 1.1 & -3.4696 & \reversal{0.0275} \\
+No watermark, repetition constraints & -3.4521 & \reversal{0.0350} \\
+Processed input, without OT & -3.4709 & \reversal{0.0350} \\
+HeavyWater, fixed states & -3.6952 & \reversal{0.0125} \\
+HeavyWater, independent states & -3.6615 & \reversal{0.0050} \\
+HeavyWater, no repetition constraints & -0.2044 & 0.5525 \\
+No watermark, top-$k=50$, no minimum & 1.8289 & 0.9375 \\
+\bottomrule
+\end{tabular}

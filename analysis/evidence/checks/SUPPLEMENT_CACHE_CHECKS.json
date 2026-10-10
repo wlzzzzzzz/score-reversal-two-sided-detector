@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "default_main_parity": "<=1e-12",
+  "parameter_settings": 8,
+  "parameter_task_rows": 5280,
+  "tail_partition_rows": 52,
+  "tail_task_rows": 2640,
+  "length_strata": 10,
+  "length_supported_task_rows": 2647,
+  "unique_humans_per_proxy": 2360,
+  "machines_per_proxy": 129800,
+  "protocol_sha256": "647dceff00bfb016406cf28c136c147a69d455b78bf7b480317ff8a79ec93355"
+}

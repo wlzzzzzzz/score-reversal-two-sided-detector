@@ -1,0 +1,25 @@
+{
+  "scope": "Fixed current upper-reference shaping versus no shaping, entropy and lower branch unchanged. No development candidates, parameter selection, or LM forwards.",
+  "cohort": "20-cell800human calibration;60-cell2360human129800machine660tasks per proxy",
+  "params": {
+    "T": 1.2,
+    "c": 0.8,
+    "kappa": 1.5,
+    "beta": 0.5
+  },
+  "sources": {
+    "results/runs/calibrated_scores/calibration_OPT.pkl": "6436f368b1b7f5aed9cd27ece3b51befc86717eff6e73b80c01928db58f5b535",
+    "results/runs/calibrated_scores/calibration_Falcon.pkl": "bd957a9f886ba5b76127ded97c016a707e4292b5a400cebce099a6666a6f6071",
+    "results/runs/calibrated_scores/test/OPT/scoring_frame.pkl": "c444282e39e749ee12706b0154e3a721f24a66c7dead0fe04a32b5a0dab8a24b",
+    "results/runs/calibrated_scores/test/Falcon/scoring_frame.pkl": "f3b1821ad9cefd371505f0091d1cce84ad2b3c47ab1e38f251abee83bb68f75f"
+  },
+  "script_sha256": "d36ee3be8b05fc0f8ea80b3424ae00da52c8b173c988c1c6bea79c0cf47a3f0f",
+  "prior_test_exposure": true,
+  "analysis_not_parameter_selection": true,
+  "checks": {
+    "temperature_derivative_max_error": 3.448978880271625e-10,
+    "tie_crossings": true,
+    "monotone_invariance": true,
+    "boundary_sufficient_condition": true
+  }
+}

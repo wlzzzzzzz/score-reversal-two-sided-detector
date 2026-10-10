@@ -1,0 +1,2 @@
+# Preserve published bytes, including CSV line endings, for SHA-256 verification.
+* -text

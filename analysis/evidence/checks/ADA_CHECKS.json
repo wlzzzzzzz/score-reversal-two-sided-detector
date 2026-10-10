@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "table": 3,
+  "ada_tasks": 660,
+  "rows": [
+    {
+      "mechanism": "unwatermarked",
+      "ada_auroc": 0.899
+    },
+    {
+      "mechanism": "KGW",
+      "ada_auroc": 0.7462
+    },
+    {
+      "mechanism": "SWEET",
+      "ada_auroc": 0.7682
+    },
+    {
+      "mechanism": "Unigram",
+      "ada_auroc": 0.6563
+    },
+    {
+      "mechanism": "EXP",
+      "ada_auroc": 0.9974
+    },
+    {
+      "mechanism": "SynthID",
+      "ada_auroc": 0.9924
+    },
+    {
+      "mechanism": "DIP",
+      "ada_auroc": 0.8358
+    },
+    {
+      "mechanism": "ITSEdit",
+      "ada_auroc": 0.4603
+    },
+    {
+      "mechanism": "CGW",
+      "ada_auroc": 0.125
+    },
+    {
+      "mechanism": "HeavyWater",
+      "ada_auroc": 0.0887
+    },
+    {
+      "mechanism": "SemStamp",
+      "ada_auroc": 0.395
+    }
+  ]
+}

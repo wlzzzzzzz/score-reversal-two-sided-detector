@@ -1,0 +1,17 @@
+\begin{tabular}{@{}lrrrrrrrrrrrr@{}}
+\toprule
+Detector & CMV & CNN/DM & DialogSum & ELI5 & HellaSwag & IMDb & PubMedQA & ROCStories & SciXGen & TLDR News & WritingPrompts & Yelp \\
+\midrule
+Likelihood & \reversal{0.4815} & \reversal{0.2767} & \reversal{0.3300} & \reversal{0.4831} & 0.7448 & 0.5633 & 0.5684 & 0.7780 & 0.5130 & 0.6294 & \reversal{0.4540} & 0.5313 \\
+Entropy & 0.7184 & \textbf{0.8801} & 0.7547 & 0.6331 & \reversal{0.1477} & 0.5696 & \reversal{0.4736} & \reversal{0.1257} & 0.6130 & \reversal{0.3425} & 0.7121 & 0.5683 \\
+Rank & 0.5880 & \reversal{0.4124} & \reversal{0.4159} & 0.6074 & 0.6819 & 0.6244 & 0.5473 & 0.6826 & 0.5585 & 0.5963 & 0.5673 & 0.5597 \\
+Log-Rank & \reversal{0.4963} & \reversal{0.2964} & \reversal{0.3412} & \reversal{0.4983} & 0.7568 & 0.5889 & 0.5853 & 0.7829 & 0.5343 & 0.6415 & \reversal{0.4780} & 0.5424 \\
+Fast-DetectGPT & 0.6906 & 0.5417 & 0.5758 & 0.6491 & 0.6025 & 0.6939 & 0.6406 & 0.6718 & 0.6529 & 0.6138 & 0.6579 & 0.6746 \\
+AdaDetectGPT$^\dagger$ & 0.6860 & 0.5485 & 0.5646 & 0.6238 & 0.5920 & 0.6946 & 0.6394 & 0.6565 & 0.6454 & 0.6064 & 0.6639 & 0.6762 \\
+Binoculars$^\dagger$ & 0.7040 & 0.5824 & 0.5614 & 0.6577 & \reversal{0.4444} & 0.6919 & 0.6328 & 0.5254 & 0.6547 & 0.5466 & 0.6950 & 0.6661 \\
+NTS & 0.8604 & 0.7760 & 0.7109 & 0.8128 & \reversal{0.4611} & 0.8267 & 0.7490 & 0.5444 & 0.7859 & 0.6585 & \textbf{0.8700} & 0.7531 \\
+\midrule
+\textbf{Ours (OPT)} & 0.8152 & 0.7762 & \textbf{0.8340} & 0.8078 & \textbf{0.8387} & 0.8241 & 0.8147 & \textbf{0.8644} & 0.7971 & \textbf{0.8592} & 0.8212 & 0.8104 \\
+\textbf{Ours (Falcon pair)} & \textbf{0.8647} & 0.8100 & 0.8325 & \textbf{0.8557} & 0.7939 & \textbf{0.8565} & \textbf{0.8175} & 0.8398 & \textbf{0.8042} & 0.8226 & 0.8578 & \textbf{0.8247} \\
+\bottomrule
+\end{tabular}

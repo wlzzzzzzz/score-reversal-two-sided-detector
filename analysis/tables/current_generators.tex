@@ -1,0 +1,17 @@
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Detector & GLM-4-9B(0414) & Falcon-7B & Llama-2-7B & OPT-2.7B & OPT-6.7B \\
+\midrule
+Likelihood & 0.6052 & 0.6179 & 0.5701 & \reversal{0.4115} & \reversal{0.4426} \\
+Entropy & \reversal{0.4321} & 0.5063 & 0.5381 & 0.6380 & 0.6100 \\
+Rank & 0.5657 & 0.6371 & 0.5647 & 0.5308 & 0.5524 \\
+Log-Rank & 0.6121 & 0.6394 & 0.5782 & \reversal{0.4327} & \reversal{0.4635} \\
+Fast-DetectGPT & 0.6453 & 0.6781 & 0.6590 & 0.6009 & 0.6106 \\
+AdaDetectGPT$^\dagger$ & 0.6500 & 0.6710 & 0.6589 & 0.5887 & 0.5970 \\
+Binoculars$^\dagger$ & 0.6122 & 0.6467 & 0.6428 & 0.5771 & 0.5889 \\
+NTS & 0.7033 & 0.6993 & 0.8275 & 0.7263 & 0.7138 \\
+\midrule
+\textbf{Ours (OPT)} & 0.7838 & 0.7878 & 0.8469 & \textbf{0.8631} & \textbf{0.8279} \\
+\textbf{Ours (Falcon pair)} & \textbf{0.8169} & \textbf{0.8061} & \textbf{0.8627} & 0.8469 & 0.8258 \\
+\bottomrule
+\end{tabular}

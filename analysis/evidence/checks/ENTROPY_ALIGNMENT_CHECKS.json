@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "random_trials": 300,
+  "seed": 20260915,
+  "maximum_errors": {
+    "operator_bridge": 1.0658141036401503e-13,
+    "covariance_criterion": 5.995204332975845e-15,
+    "approximate_alignment": 6.661338147750939e-16,
+    "shared_losses": 8.881784197001252e-16,
+    "compromise_attainment": 9.992007221626409e-16,
+    "positive_gap": 3.0531133177191805e-16,
+    "opposed_margins": 8.881784197001252e-16,
+    "complete_event_identity": 1.1102230246251565e-16
+  },
+  "sparse_shaped_reference_checked": true,
+  "common_sharpening_counterexample": true,
+  "gaussian_branch_power_checked": true,
+  "affine_rank_invariance": true,
+  "scope": "Fixed-context effects; Gaussian power only under the stated model; no empirical optimality claim."
+}

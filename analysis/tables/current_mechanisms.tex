@@ -1,0 +1,19 @@
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+ & \multicolumn{3}{c}{Baselines} & \multicolumn{2}{c}{Ours (OPT)} & \multicolumn{2}{c}{Ours (Falcon pair)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}\cmidrule(l){7-8}
+Mechanism & FD & Ada$^\dagger$ & NTS & Upper & Two-sided & Upper & Two-sided \\
+\midrule
+Unwatermarked & 0.9141 & 0.8990 & 0.8239 & \textbf{0.9331} & 0.8803 & 0.9295 & 0.9053 \\
+KGW & 0.7861 & 0.7462 & 0.6499 & \textbf{0.8584} & 0.7880 & 0.8566 & 0.8204 \\
+SWEET & 0.8067 & 0.7682 & 0.6849 & 0.8602 & 0.7782 & \textbf{0.8604} & 0.8215 \\
+Unigram & 0.7023 & 0.6563 & 0.5798 & \textbf{0.7940} & 0.7450 & 0.7867 & 0.7532 \\
+EXP & 0.9970 & \textbf{0.9974} & 0.9702 & 0.9934 & 0.9882 & 0.9956 & 0.9942 \\
+SynthID & 0.9918 & \textbf{0.9924} & 0.9673 & 0.9894 & 0.9802 & 0.9894 & 0.9857 \\
+DIP & 0.8612 & 0.8358 & 0.7475 & \textbf{0.8942} & 0.8180 & 0.8858 & 0.8488 \\
+ITSEdit & \reversal{0.4204} & \reversal{0.4603} & 0.5218 & 0.5005 & 0.6217 & 0.5403 & \textbf{0.6274} \\
+CGW & \reversal{0.1084} & \reversal{0.1250} & 0.7933 & \reversal{0.2024} & \textbf{0.9077} & \reversal{0.2633} & 0.8907 \\
+HeavyWater & \reversal{0.0812} & \reversal{0.0887} & 0.7887 & \reversal{0.1465} & \textbf{0.9114} & \reversal{0.1978} & 0.8790 \\
+SemStamp & \reversal{0.3573} & \reversal{0.3950} & 0.5472 & \reversal{0.4322} & \textbf{0.6222} & \reversal{0.4771} & 0.6221 \\
+\bottomrule
+\end{tabular}

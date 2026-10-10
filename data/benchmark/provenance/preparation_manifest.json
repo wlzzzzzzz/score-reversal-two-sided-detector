@@ -1,0 +1,1101 @@
+{
+  "schema_version": "clean80-english-plus3wm-preparation-v1",
+  "status": "READY",
+  "parent_protocol": "external_data/legacy/clean80_english20_test60_benchmark/source_manifest.json",
+  "parent_protocol_sha256": "3b6abe589b952dd1e9c3ecd9d79c4749885c463e7117601a049223169213c6fb",
+  "methods": [
+    "unwatermarked",
+    "KGW",
+    "SWEET",
+    "Unigram",
+    "EXP",
+    "SynthID",
+    "DIP",
+    "ITSEdit",
+    "CGW",
+    "HeavyWater",
+    "SemStamp"
+  ],
+  "added_methods": [
+    "CGW",
+    "HeavyWater",
+    "SemStamp"
+  ],
+  "cells": [
+    {
+      "cell": "c4::GLM-4-9B-0414",
+      "dataset": "c4",
+      "generator": "GLM-4-9B-0414",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/GLM-4-9B-0414/data.json",
+      "parent_sha256": "18efa22c4871c69cc6bef47f43495e94c445f3b75b3a6375ef2acca453220216",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/c4/GLM-4-9B-0414/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/GLM-4-9B-0414/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "c4::falcon",
+      "dataset": "c4",
+      "generator": "falcon",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/falcon/data.json",
+      "parent_sha256": "2fd388d4318c65132be927e1c0e807935ae8544ee159310a8ad51008b6210756",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/c4/falcon/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/falcon/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "c4::llama-2-7b",
+      "dataset": "c4",
+      "generator": "llama-2-7b",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/llama-2-7b/data.json",
+      "parent_sha256": "c782b2e2da3657894e600d98347fb35844a2620217c2c877e3050a12c2968667",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/c4/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "c4::opt-2.7B",
+      "dataset": "c4",
+      "generator": "opt-2.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/opt-2.7B/data.json",
+      "parent_sha256": "1546e38bdf46bcbd4eb4e84a55a27d72029ee43f72c0e675eaaa96c88f6fabe7",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/c4/opt-2.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/opt-2.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "c4::opt-6.7B",
+      "dataset": "c4",
+      "generator": "opt-6.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/opt-6.7B/data.json",
+      "parent_sha256": "ae0c167393f2943c96b335a9874bf0b5362d4da5da2a1b2d3c007374b18270f7",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/c4/opt-6.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/c4/opt-6.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "cmv::GLM-4-9B-0414",
+      "dataset": "cmv",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cmv/GLM-4-9B-0414/data.json",
+      "parent_sha256": "b96f04d8c7f603d50e3e1bebacd90220d04f362d401e22f69be171c635d7404d",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cmv/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cmv::falcon",
+      "dataset": "cmv",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cmv/falcon/data.json",
+      "parent_sha256": "cf30f2303ec019d39cc7c82f9750f0fc3297ff5d09fc9cbfc7ae92aefc581934",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cmv/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cmv::llama-2-7b",
+      "dataset": "cmv",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cmv/llama-2-7b/data.json",
+      "parent_sha256": "794883b24381ec2070e2c0bdf2e2f4d85532ec2773425bfc6c4836f0a9179b35",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cmv/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cmv::opt-2.7B",
+      "dataset": "cmv",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cmv/opt-2.7B/data.json",
+      "parent_sha256": "3eb745dfac115fc57d9cc5f68d72af270eafc20a5c1b92acb0b4e2b283ed2f6f",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cmv/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cmv::opt-6.7B",
+      "dataset": "cmv",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cmv/opt-6.7B/data.json",
+      "parent_sha256": "47611ee2ce6fd6968b78b9180888bc5746c8617885c1a42e94da622834af01f5",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cmv/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cnn::GLM-4-9B-0414",
+      "dataset": "cnn",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cnn/GLM-4-9B-0414/data.json",
+      "parent_sha256": "9ca907c9d45d92fa773b5e558b257a7bff64827646fcab40b350b98ebb5181f1",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cnn/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cnn::falcon",
+      "dataset": "cnn",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cnn/falcon/data.json",
+      "parent_sha256": "41aa7d3807aa4499da7e1743bb6ca242d75060d7933ea8d009c9b67faf26f2e9",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cnn/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cnn::llama-2-7b",
+      "dataset": "cnn",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cnn/llama-2-7b/data.json",
+      "parent_sha256": "e3c4092963d6d835e3751fc9f2c223d8fb80b4a1ef39837f7c718ba14dd17583",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cnn/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/broad_watermark_dataset/complete_prompt_free/cnn/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "cnn::opt-2.7B",
+      "dataset": "cnn",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cnn/opt-2.7B/data.json",
+      "parent_sha256": "025d1b6b5cd757d41bc59bd8e6bc44eadf497a78caa558f47a7d41a5b1cba5c4",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cnn/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "cnn::opt-6.7B",
+      "dataset": "cnn",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/cnn/opt-6.7B/data.json",
+      "parent_sha256": "194e841a587f5c5a5694657d96600ca5507b8c8eb77cd2ca2d502e3d98453020",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/cnn/opt-6.7B/data.json",
+      "reuse_source": "external_data/legacy/broad_watermark_dataset/complete_prompt_free/cnn/opt-6.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "dialogsum::GLM-4-9B-0414",
+      "dataset": "dialogsum",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 162,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/dialogsum/GLM-4-9B-0414/data.json",
+      "parent_sha256": "a1b346184cc99cf4267a959a5ab5abca6577be55feed9ab5cb6e1113dad702cc",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/dialogsum/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "dialogsum::falcon",
+      "dataset": "dialogsum",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 162,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/dialogsum/falcon/data.json",
+      "parent_sha256": "3854fb761433ffc371a524d27f56f3441361d44d61813490ac7ba1cc7e4f8467",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/dialogsum/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "dialogsum::llama-2-7b",
+      "dataset": "dialogsum",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 162,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/dialogsum/llama-2-7b/data.json",
+      "parent_sha256": "524c2d379f9ebda72e237ca1a3157d75519332079b671fef6f7d4f1a1d4cbcd4",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/dialogsum/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/broad_watermark_dataset/complete_prompt_free/dialogsum/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "dialogsum::opt-2.7B",
+      "dataset": "dialogsum",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 162,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/dialogsum/opt-2.7B/data.json",
+      "parent_sha256": "79dcdabebc0acd8de6b9e6ce61a30feaae6506e86d25b19ca63d59dbf6a7dd5c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/dialogsum/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "dialogsum::opt-6.7B",
+      "dataset": "dialogsum",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 162,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/dialogsum/opt-6.7B/data.json",
+      "parent_sha256": "8e1076d1a3b0c5c2bc7b4cd6ed6503f2b431e8780cfa5af53698f80e192bcabc",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/dialogsum/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "eli5::GLM-4-9B-0414",
+      "dataset": "eli5",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/eli5/GLM-4-9B-0414/data.json",
+      "parent_sha256": "33e97b993aa7464f4d935efe5474c38e082da6d057eb393d495e3e5fdbfd74b5",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/eli5/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "eli5::falcon",
+      "dataset": "eli5",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/eli5/falcon/data.json",
+      "parent_sha256": "510da570acc155b4159f2056eb5e278c8e0a46a556a55e1e83db11a2d5b2b5b0",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/eli5/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "eli5::llama-2-7b",
+      "dataset": "eli5",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/eli5/llama-2-7b/data.json",
+      "parent_sha256": "4c2431483da044cf32d65ffe43abde3ee51fbd046a6df52acab926aec84581cb",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/eli5/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "eli5::opt-2.7B",
+      "dataset": "eli5",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/eli5/opt-2.7B/data.json",
+      "parent_sha256": "9a4d98e4115de938b5da5f172468fa732d216609ba074a916dea433170562ea0",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/eli5/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "eli5::opt-6.7B",
+      "dataset": "eli5",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/eli5/opt-6.7B/data.json",
+      "parent_sha256": "4aad3a2b1fcdcb1b8d515a7263be8bfff46ba1d7e33821cdbb6e090c58cd6f48",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/eli5/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "hswag::GLM-4-9B-0414",
+      "dataset": "hswag",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/hswag/GLM-4-9B-0414/data.json",
+      "parent_sha256": "2f26e338205303f281e4554114e3ddb242a9ac834d0212771aa422ba0519ad77",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/hswag/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "hswag::falcon",
+      "dataset": "hswag",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/hswag/falcon/data.json",
+      "parent_sha256": "e59e0903be4745393624a91fa469a5c74557db99ab77773c699a1845a2fbd833",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/hswag/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "hswag::llama-2-7b",
+      "dataset": "hswag",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/hswag/llama-2-7b/data.json",
+      "parent_sha256": "67578d3a0ea2ba595bfe444cd7ecb49264fbe2474cf0543086cf43af1bd0550a",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/hswag/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "hswag::opt-2.7B",
+      "dataset": "hswag",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/hswag/opt-2.7B/data.json",
+      "parent_sha256": "77516ce3d2f96dfda9a368465a21f9c03c4a28b1733dcb1a7fddddda5344d06d",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/hswag/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "hswag::opt-6.7B",
+      "dataset": "hswag",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/hswag/opt-6.7B/data.json",
+      "parent_sha256": "7339d0fbdc4536217f6b0284e04663ce31dfbb90e3ad4b202e9ad714be286f46",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/hswag/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "imdb::GLM-4-9B-0414",
+      "dataset": "imdb",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 199,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/imdb/GLM-4-9B-0414/data.json",
+      "parent_sha256": "77e21d66275c659985d428a9cb35191196007415b5fbd1257c4f0dc5037fd730",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/imdb/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "imdb::falcon",
+      "dataset": "imdb",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 199,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/imdb/falcon/data.json",
+      "parent_sha256": "b8745e1733136b25a5f2f34f3a539477b29da0fc56af5399b20b25e9b3929a4d",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/imdb/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "imdb::llama-2-7b",
+      "dataset": "imdb",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 199,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/imdb/llama-2-7b/data.json",
+      "parent_sha256": "507c64c2d954af037e9eb151ea31412f764209a32a56f0520527eac6fd54cb26",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/imdb/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "imdb::opt-2.7B",
+      "dataset": "imdb",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 199,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/imdb/opt-2.7B/data.json",
+      "parent_sha256": "73b8c803b58823680cce25e3d2fdbb456464b7755ad35b8c7be6ef1045d2ec54",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/imdb/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "imdb::opt-6.7B",
+      "dataset": "imdb",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 199,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/imdb/opt-6.7B/data.json",
+      "parent_sha256": "da6d8c65986ddc4aeceb1e78411aa2127ff4eaf2fc19c39499d3e594fbf97f2a",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/imdb/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "pubmed::GLM-4-9B-0414",
+      "dataset": "pubmed",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/pubmed/GLM-4-9B-0414/data.json",
+      "parent_sha256": "bb77509543a8c87a01002c86aab5517859b26798b4f64b58a8606d82feaa8f2c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/pubmed/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "pubmed::falcon",
+      "dataset": "pubmed",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/pubmed/falcon/data.json",
+      "parent_sha256": "769ca44b54281c87914356f4751ac2052fab05d229c3bcd3fffb7b63883b086e",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/pubmed/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "pubmed::llama-2-7b",
+      "dataset": "pubmed",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/pubmed/llama-2-7b/data.json",
+      "parent_sha256": "cb35c5a14e198c63cacae0aaeaa532e252acb53551802e748a1d24f85543cab1",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/pubmed/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/broad_watermark_dataset/complete_prompt_free/pubmed/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "pubmed::opt-2.7B",
+      "dataset": "pubmed",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/pubmed/opt-2.7B/data.json",
+      "parent_sha256": "c20715255ed260b03083c87b11010dad5dd9cf635d70622708adccc1a21670d9",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/pubmed/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "pubmed::opt-6.7B",
+      "dataset": "pubmed",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/pubmed/opt-6.7B/data.json",
+      "parent_sha256": "fda00176672a8948f648f02bd189693396e8561fec1a3e644b51d366201746a6",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/pubmed/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "roct::GLM-4-9B-0414",
+      "dataset": "roct",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/roct/GLM-4-9B-0414/data.json",
+      "parent_sha256": "cf8c50555d5465cd14318491aecb68652d32e109fc159a7d50af8455d895ae2e",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/roct/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "roct::falcon",
+      "dataset": "roct",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/roct/falcon/data.json",
+      "parent_sha256": "17415e271f0fabe5e1df5e265f0152f8169c5e245f1672d774e975409eb7e2fe",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/roct/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "roct::llama-2-7b",
+      "dataset": "roct",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/roct/llama-2-7b/data.json",
+      "parent_sha256": "30f0ea9b95c70a017bf1b05aba392ff0a1d26b433809e4291af2ace88fa8f9f3",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/roct/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "roct::opt-2.7B",
+      "dataset": "roct",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/roct/opt-2.7B/data.json",
+      "parent_sha256": "bb20833a057a0f73830b47b768cda3fbb48c5d99b950706406e71e370873830e",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/roct/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "roct::opt-6.7B",
+      "dataset": "roct",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/roct/opt-6.7B/data.json",
+      "parent_sha256": "0e8a4cce2bfeb43d4f00daf1b6d120380ac557bdad45b4342d5745a6a26399be",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/roct/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "sci::GLM-4-9B-0414",
+      "dataset": "sci",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/sci/GLM-4-9B-0414/data.json",
+      "parent_sha256": "af41d4d4a505957032a8371625478ae2b103495f96f02adfa1bbd14b2bd58f0c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/sci/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "sci::falcon",
+      "dataset": "sci",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/sci/falcon/data.json",
+      "parent_sha256": "077d66c3d20316879263897360a3174cc5e4d6b038a648a7c312e20845060582",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/sci/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "sci::llama-2-7b",
+      "dataset": "sci",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/sci/llama-2-7b/data.json",
+      "parent_sha256": "4692d3dd381220fd94b8a5d3d9a652cee1561a5f728ef6e3b016aa9531573b3c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/sci/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "sci::opt-2.7B",
+      "dataset": "sci",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/sci/opt-2.7B/data.json",
+      "parent_sha256": "823d0357298f342d8338f5199e8efb19ebf5c551fc48c9333eb282abd86ffd41",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/sci/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "sci::opt-6.7B",
+      "dataset": "sci",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/sci/opt-6.7B/data.json",
+      "parent_sha256": "909ef46615c381c7060d1e4cfd8cfc50610b75fe248a3b78bae913c99ece3573",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/sci/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "squad::GLM-4-9B-0414",
+      "dataset": "squad",
+      "generator": "GLM-4-9B-0414",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/squad/GLM-4-9B-0414/data.json",
+      "parent_sha256": "0147b23f40579e36e3d7b82518b223163e175c72bd5fdcd6002a680c5cec18b6",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/squad/GLM-4-9B-0414/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/squad/GLM-4-9B-0414/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "squad::falcon",
+      "dataset": "squad",
+      "generator": "falcon",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/squad/falcon/data.json",
+      "parent_sha256": "d74d376fc4a425f5aec98cd0929fd1d2980d3669cb45f0d8bc01899994becf9c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/squad/falcon/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/squad/falcon/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "squad::llama-2-7b",
+      "dataset": "squad",
+      "generator": "llama-2-7b",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/squad/llama-2-7b/data.json",
+      "parent_sha256": "c5306916b22f97e55f82eabc4e40db379cf1ee50dab4bc8b2b2b8c5bce9ea689",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/squad/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/squad/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "squad::opt-2.7B",
+      "dataset": "squad",
+      "generator": "opt-2.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/squad/opt-2.7B/data.json",
+      "parent_sha256": "c90217218db43253846481f5679d725e116fa562a8e6eea206bcb5e0833cb4e5",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/squad/opt-2.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/squad/opt-2.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "squad::opt-6.7B",
+      "dataset": "squad",
+      "generator": "opt-6.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/squad/opt-6.7B/data.json",
+      "parent_sha256": "a835d4a4e1c042123469f530169bf74e76cff1f13fa1b80478c558a89ac60e53",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/squad/opt-6.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/squad/opt-6.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "tldr::GLM-4-9B-0414",
+      "dataset": "tldr",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/tldr/GLM-4-9B-0414/data.json",
+      "parent_sha256": "4bc157a7d97f00d14e6a5419785b36711456e4364dfbb0b5165124d56bd2f4f7",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/tldr/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "tldr::falcon",
+      "dataset": "tldr",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/tldr/falcon/data.json",
+      "parent_sha256": "6b41ec0d708364ce7d108f2a2a2715b7cd76957fd4b4ca50ea4437859be60c78",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/tldr/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "tldr::llama-2-7b",
+      "dataset": "tldr",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/tldr/llama-2-7b/data.json",
+      "parent_sha256": "4b5a97acd45d4b6f33d7e8a0dd39b5ac29dc71e74040a3e044ac4a4fd675770e",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/tldr/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "tldr::opt-2.7B",
+      "dataset": "tldr",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/tldr/opt-2.7B/data.json",
+      "parent_sha256": "bca3364688df861389dae53419ad0af9cb66529de53825fb241c71733579bf6c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/tldr/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "tldr::opt-6.7B",
+      "dataset": "tldr",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/tldr/opt-6.7B/data.json",
+      "parent_sha256": "c832fb46f1cb3dc23f9b28549d7a0558e46cab404ee3fd902a77512b5a3f4e14",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/tldr/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "wp::GLM-4-9B-0414",
+      "dataset": "wp",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/wp/GLM-4-9B-0414/data.json",
+      "parent_sha256": "b1c70140e1e42d6db5bad732fc0050dd27550f3ec20d12734b21544277ced27b",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/wp/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "wp::falcon",
+      "dataset": "wp",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/wp/falcon/data.json",
+      "parent_sha256": "714aee89a372878705021c060cb6a889837a565585c7e761c641d345fa7d87c2",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/wp/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "wp::llama-2-7b",
+      "dataset": "wp",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/wp/llama-2-7b/data.json",
+      "parent_sha256": "0b99e7d9c2469be081ebdce933f5880f309e18571ea8d7f331773c680e23c60c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/wp/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/broad_watermark_dataset/complete_prompt_free/wp/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "wp::opt-2.7B",
+      "dataset": "wp",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/wp/opt-2.7B/data.json",
+      "parent_sha256": "0c2db9c46c67670498fa5702c119ca31c8eaec23668a9a30ca9ff1740c5abcf3",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/wp/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "wp::opt-6.7B",
+      "dataset": "wp",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/wp/opt-6.7B/data.json",
+      "parent_sha256": "bed615db27e33ff972a22bfd48febcd579527a39bcaac55d01c72e57fd4b80e8",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/wp/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "writing::GLM-4-9B-0414",
+      "dataset": "writing",
+      "generator": "GLM-4-9B-0414",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/writing/GLM-4-9B-0414/data.json",
+      "parent_sha256": "0267c93f1ceb9cd9e12378fc02eb33ffab16fe141866a49fc85bfdaf19943231",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/writing/GLM-4-9B-0414/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/writing/GLM-4-9B-0414/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "writing::falcon",
+      "dataset": "writing",
+      "generator": "falcon",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/writing/falcon/data.json",
+      "parent_sha256": "2188524d95d9bbf33f0a5ff1668bbe93aa24975d9e05bdf4cf0fd22ce674044a",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/writing/falcon/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/writing/falcon/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "writing::llama-2-7b",
+      "dataset": "writing",
+      "generator": "llama-2-7b",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/writing/llama-2-7b/data.json",
+      "parent_sha256": "3606ec942163744004f0ae9a070e931ac6d14774a68538e442fb9a9ccfdb809c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/writing/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/writing/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "writing::opt-2.7B",
+      "dataset": "writing",
+      "generator": "opt-2.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/writing/opt-2.7B/data.json",
+      "parent_sha256": "6064667e80a026f6bab8a7c24d4c10c6946b7f42df5cdead9633965a12342dc1",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/writing/opt-2.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/writing/opt-2.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "writing::opt-6.7B",
+      "dataset": "writing",
+      "generator": "opt-6.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/writing/opt-6.7B/data.json",
+      "parent_sha256": "445efd2b0061f68705e9aca5ecb7aa8e4c838f70fd889eb0e272ae9447026f97",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/writing/opt-6.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/writing/opt-6.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "xsum::GLM-4-9B-0414",
+      "dataset": "xsum",
+      "generator": "GLM-4-9B-0414",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/xsum/GLM-4-9B-0414/data.json",
+      "parent_sha256": "785046aebd870c42fc5a865e4e03ea56f0ad79ca9a06854242059e64bbac1dc1",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/xsum/GLM-4-9B-0414/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/xsum/GLM-4-9B-0414/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "xsum::falcon",
+      "dataset": "xsum",
+      "generator": "falcon",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/xsum/falcon/data.json",
+      "parent_sha256": "8612e337ce5ecf31ab440f4d58df314cf10a7906604a08694af20c8605fcd6b7",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/xsum/falcon/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/xsum/falcon/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "xsum::llama-2-7b",
+      "dataset": "xsum",
+      "generator": "llama-2-7b",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/xsum/llama-2-7b/data.json",
+      "parent_sha256": "285b852690820acfca8d8e5f1a4da72fdac3d1968195453b5fab7677fd14f23c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/xsum/llama-2-7b/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/xsum/llama-2-7b/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "xsum::opt-2.7B",
+      "dataset": "xsum",
+      "generator": "opt-2.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/xsum/opt-2.7B/data.json",
+      "parent_sha256": "383795db0ef4129e026ba9c6d261fbd08e36b21de66e92b07d9790346c949113",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/xsum/opt-2.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/xsum/opt-2.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "xsum::opt-6.7B",
+      "dataset": "xsum",
+      "generator": "opt-6.7B",
+      "split": "calibration",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/xsum/opt-6.7B/data.json",
+      "parent_sha256": "24e32657a20f835c575167049883c6e7bd372f788b8c59c71a58fb67409e2b2c",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/xsum/opt-6.7B/data.json",
+      "reuse_source": "external_data/legacy/clean20_all_anomalies_repaired/complete_prompt_free/xsum/opt-6.7B/data.json",
+      "reuse_methods": [
+        "CGW",
+        "HeavyWater",
+        "SemStamp"
+      ]
+    },
+    {
+      "cell": "yelp::GLM-4-9B-0414",
+      "dataset": "yelp",
+      "generator": "GLM-4-9B-0414",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/yelp/GLM-4-9B-0414/data.json",
+      "parent_sha256": "b26fdae95305e2cf204e6f78a13ff1d57362fb832b95218cfcf0151a63703482",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/yelp/GLM-4-9B-0414/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "yelp::falcon",
+      "dataset": "yelp",
+      "generator": "falcon",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/yelp/falcon/data.json",
+      "parent_sha256": "ae705278d7e0ade89b95460052292a74bbca5bf60ee4c5b0d0b8a48be248ae26",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/yelp/falcon/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "yelp::llama-2-7b",
+      "dataset": "yelp",
+      "generator": "llama-2-7b",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/yelp/llama-2-7b/data.json",
+      "parent_sha256": "31928de4f79ab6132390dc83ae66fed3477ed674474f1af57ab6f3fab495a1b3",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/yelp/llama-2-7b/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "yelp::opt-2.7B",
+      "dataset": "yelp",
+      "generator": "opt-2.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/yelp/opt-2.7B/data.json",
+      "parent_sha256": "338c4a7b41bc33766097608056ba80bac8487bda1a7e4788bfa92ffd7ec9ae57",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/yelp/opt-2.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    },
+    {
+      "cell": "yelp::opt-6.7B",
+      "dataset": "yelp",
+      "generator": "opt-6.7B",
+      "split": "test",
+      "source_count": 200,
+      "parent_data": "external_data/legacy/clean80_fullfactorial_completion/complete_prompt_free/yelp/opt-6.7B/data.json",
+      "parent_sha256": "53efe28f379ecc7380bfc0183c543ed910ebec4a00f423e2049c0c3188685b8e",
+      "prepared_data": "external_data/legacy/clean80_english20_test60_plus3wm/dataset/prepared_raw/yelp/opt-6.7B/data.json",
+      "reuse_source": null,
+      "reuse_methods": []
+    }
+  ],
+  "cell_count": 80,
+  "reused_rows_by_method": {
+    "CGW": 4962,
+    "HeavyWater": 4962,
+    "SemStamp": 4962
+  },
+  "generation_rows_by_method": {
+    "CGW": 10843,
+    "HeavyWater": 10843,
+    "SemStamp": 10843
+  },
+  "total_generation_rows": 32529,
+  "extension_request_count": 32529,
+  "test_labels_used": false,
+  "original_data_overwritten": false
+}

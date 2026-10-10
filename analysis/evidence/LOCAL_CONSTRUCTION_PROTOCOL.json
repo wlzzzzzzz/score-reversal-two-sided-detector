@@ -1,0 +1,42 @@
+{
+  "study": "Local T and c sensitivity of the complete current OPT test",
+  "created": "2026-09-13",
+  "fixed_before_local_forward_evaluation": true,
+  "reason": "The coarse 2x2 grid shows coupled center/scale sensitivity; examine the immediate neighborhood using the same full cohort.",
+  "settings": [
+    [
+      1.1,
+      0.8
+    ],
+    [
+      1.2,
+      0.7
+    ],
+    [
+      1.2,
+      0.8
+    ],
+    [
+      1.2,
+      0.9
+    ],
+    [
+      1.3,
+      0.8
+    ]
+  ],
+  "fixed_kappa": 1.5,
+  "default": [
+    1.2,
+    0.8
+  ],
+  "beta": 0.5,
+  "m": 800,
+  "calibration_humans": 800,
+  "evaluation_humans": 2360,
+  "evaluation_machines": 129800,
+  "lower_response": "identical cached original uniform response for all settings",
+  "parameter_selection": false,
+  "data_use": "Diagnostic reuse of existing evaluation data; no independent validation claim.",
+  "batching": "Same sorted full-cohort shards as entropy-cap study, FP16 forwards and FP32 moments."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "score": "J_plus = -log(p_plus); inclusive add-one upper ranks",
+  "T": 1.2,
+  "c": 0.8,
+  "kappa": 1.5,
+  "calibration_unique_humans": 800,
+  "calibration_cells": 20,
+  "test_cells": 60,
+  "test_unique_humans": 2360,
+  "test_unwatermarked_machine_texts": 11800,
+  "aggregation": "Equal-weight mean of 60 task AUROCs",
+  "parameter_selection": false,
+  "new_model_forwards": false,
+  "baseline_scores_rerun": false,
+  "baseline_source": "Same-cohort current task export; AdaDetectGPT uses the documented adapted configuration",
+  "full_test_auc_parity_tolerance": 1e-12,
+  "source_sha256": {
+    "data/sensitivity/cached_OPT.npz": "75f2e2f949b228ff2ebfe2ee808868b3713b5d5e709e2fd4345e1cfdff94f7c7",
+    "data/sensitivity/cached_Falcon.npz": "e905f57afbb6a9cc611e92ebfdb8382bd2e58391a07086b7d6aeb3316a520c8c",
+    "data/current/task_metrics.csv": "1de537364164a1bc80fdf7ad2c8fc4fb6e4f1ca1e0c5cfab98bb3401da6d643c"
+  }
+}

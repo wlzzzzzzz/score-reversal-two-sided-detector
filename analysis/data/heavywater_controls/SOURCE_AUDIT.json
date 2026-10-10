@@ -1,0 +1,26 @@
+{
+  "scope": "40 calibration-domain OPT prompts; nine fixed generation controls; existing 60-cell records audited without new test generations.",
+  "source_output_root": "outputs/heavywater_causal_20260917_v1",
+  "sha256": {
+    "SUMMARY.csv": "cb976bb622f2a0cf860139c1dea115e31e7ab05cafee1d97fb3f88226a846afe",
+    "BY_DOMAIN.csv": "86327bcfd015e773cbc8566dd231b6e14ed8d77c12e9983f331162e0a6d466a1",
+    "DOCUMENT_SCORES.csv": "8053d55f3ad40af90bf17d128757487665be0774d24f851c6253646339707ce0",
+    "PAIRED_EFFECTS.csv": "f98bc2d73b0901671230004ef8dce21652fea0af6ffc9cd93f5cbb42ee5bd8bb",
+    "SCORING_VIEW_EFFECTS.csv": "83e5433f5c45093862039d25164c4ba36dc798b8e98db835c64ac7532ccf20a1",
+    "GENERATION_METADATA.csv": "223ac3635f9b369644f5fc9c37e50a2b29cec0b37645e8c3efad9b204c09941d",
+    "PROVENANCE_AUDIT.json": "4a9df69d8aef04ab811198eeda09794afddd03bd68081407bba6213120c0ca22",
+    "SAVED_PREFIX_STATE_AUDIT.json": "b9ebb16234a51a1c7b4be615ee74aac947cc199aa07170b6263e60e2e1e9555d",
+    "FIRST_ATTEMPT_AUDIT.json": "f5dc1672a264f65d8ebfaf5363aacab59ceaaaff684a4fd8cd8c2121c16a5cc0",
+    "FIRST_ATTEMPT_BY_CELL.csv": "2465e1b068278b395f1c5c3f3693a7bddd1d57c2d286bf245704ceb2565b4dc6",
+    "ANALYSIS_AUDIT.json": "fd9de798f28330e236d497f6e7d37d1239e7971b6ca90f7af533c54e302c0ed2",
+    "PROTOCOL.json": "18254c92122422b32f8475f3626214ae47e196e80e6b2e281ab3408ec654d9ad"
+  },
+  "source_code_sha256": {
+    "analyze.py": "c8681ce16a9de88469cb95e8795b4eded9cd30d302a777993e1e061e7b5e1c85",
+    "integrate.py": "739e66ca4f57547e250bf82b486f64ec5659ad1bd5fee54ffd3f1ae084ee1812",
+    "validate.py": "1cf4268e22dd85af2ae2fd8585fe0ed04b00296321080abb9137f8ac25a13d34",
+    "study.py": "3dcd835407a0ecb97a7b39a3249888643bf884b25fecaeb6de4ff15cf41f02d2",
+    "audit.py": "8b9b4f48b7f7080d4fbd6eb3e71cfa7e935035e81c16308ac6929141ae4b1c98",
+    "first_attempt.py": "1dd92befab675f9065113a3114d38108b47a0b0c4a856a1b9240232e00588106"
+  }
+}

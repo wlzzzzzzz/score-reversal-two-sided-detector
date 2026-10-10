@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "cohorts": [
+    {
+      "proxy": "OPT",
+      "rank_crossing_values": 132160,
+      "cohort_and_baseline_parity": true,
+      "threshold_margin_identity": true,
+      "lower_invariant": true
+    },
+    {
+      "proxy": "Falcon",
+      "rank_crossing_values": 132160,
+      "cohort_and_baseline_parity": true,
+      "threshold_margin_identity": true,
+      "lower_invariant": true
+    }
+  ],
+  "analytic_checks": {
+    "temperature_derivative_max_error": 3.448978880271625e-10,
+    "tie_crossings": true,
+    "monotone_invariance": true,
+    "boundary_sufficient_condition": true
+  },
+  "calibration_humans": 800,
+  "no_parameter_selection": true,
+  "new_lm_forwards": 0,
+  "script_sha256": "d36ee3be8b05fc0f8ea80b3424ae00da52c8b173c988c1c6bea79c0cf47a3f0f"
+}

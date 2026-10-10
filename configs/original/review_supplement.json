@@ -1,0 +1,1209 @@
+{
+  "schema_version": "iclr-review-supplement-v1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "evidence_label": "REUSED_DEVELOPMENT_BENCHMARK_FIXED_MODEL_PAIR",
+  "created": "2026-09-07",
+  "output_root": "results/baselines/review_supplement",
+  "source_manifest": "results/baselines/benchmark/source_manifest.json",
+  "source_manifest_sha256": "92c56d5995a59087cd38c9f5b031a952027e677779af1001abcc7348536c478e",
+  "methods": [
+    "unwatermarked",
+    "KGW",
+    "SWEET",
+    "Unigram",
+    "EXP",
+    "SynthID",
+    "DIP",
+    "ITSEdit",
+    "CGW",
+    "HeavyWater",
+    "SemStamp"
+  ],
+  "max_tokens": 2048,
+  "batch_size": 8,
+  "max_batch_tokens": 2048,
+  "score_direction": "machine_high_native_no_label_flip",
+  "workers": [
+    {
+      "name": "falcon_pair",
+      "q": "models/falcon-7b",
+      "p": "models/falcon-7b-instruct",
+      "gpus": [
+        0,
+        1
+      ],
+      "temperatures": [
+        1.0,
+        1.2
+      ],
+      "masses": [
+        0.8,
+        1.0
+      ],
+      "cells": [
+        {
+          "cell": "c4::GLM-4-9B-0414",
+          "dataset": "c4",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/GLM-4-9B-0414/data.json",
+          "sha256": "8b0b0ba383e49bef0b481918911692fe599765c660438fd63ded8d557790ae4a",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "c4::opt-2.7B",
+          "dataset": "c4",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/opt-2.7B/data.json",
+          "sha256": "a9969a32c8c61a71dca15abe89448d64a47985cf990e76e38aeaf4add345996f",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cmv::falcon",
+          "dataset": "cmv",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cmv/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cmv/falcon/data.json",
+          "sha256": "8454d7e14cf880d3e639521bc2e355c39470317f3b1636af650f58d725c0973b",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cmv::opt-6.7B",
+          "dataset": "cmv",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cmv/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cmv/opt-6.7B/data.json",
+          "sha256": "8e1f110bd7371730c1c9ba5afd54276f80fe30fc8fd0d266ba59faac41d018f5",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cnn::llama-2-7b",
+          "dataset": "cnn",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cnn/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cnn/llama-2-7b/data.json",
+          "sha256": "da74876e4dc29259d347c99b4bd90d2154f8965dfb7f8336c0fe0e28a472f262",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "eli5::GLM-4-9B-0414",
+          "dataset": "eli5",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/eli5/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/eli5/GLM-4-9B-0414/data.json",
+          "sha256": "1882183b509e37fd0a3727fb4798a5a4209538b5d0e1c29d33f5f2dfd6b6e0f1",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "eli5::opt-2.7B",
+          "dataset": "eli5",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/eli5/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/eli5/opt-2.7B/data.json",
+          "sha256": "22573fbd1780c59ac0fb2c93cfec303285a201cd4617a2f4b4ab49738cf03787",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "hswag::falcon",
+          "dataset": "hswag",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/hswag/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/hswag/falcon/data.json",
+          "sha256": "2d3896d1b76ab65e072cf30267422684a516265d6c85cf082f519a6a7c8cd5d5",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "hswag::opt-6.7B",
+          "dataset": "hswag",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/hswag/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/hswag/opt-6.7B/data.json",
+          "sha256": "8c2231893546111c3a13209fb28aa4c65917504d6046e94967296a5dd93d41ed",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "pubmed::llama-2-7b",
+          "dataset": "pubmed",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/pubmed/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/pubmed/llama-2-7b/data.json",
+          "sha256": "ecd9b30eb531fbf5c59c45bfe5687c763a99e7507385616764a81f888d23f717",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "roct::GLM-4-9B-0414",
+          "dataset": "roct",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/roct/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/roct/GLM-4-9B-0414/data.json",
+          "sha256": "53e558f93db29fcd81e18320e9ec9fd36c62339b0b4980f4b598b4454af07b07",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "roct::opt-2.7B",
+          "dataset": "roct",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/roct/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/roct/opt-2.7B/data.json",
+          "sha256": "84bef6a9fa698443beffa78256465f76f61fc58e43d6f0b8de474df907666b42",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "sci::falcon",
+          "dataset": "sci",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/sci/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/sci/falcon/data.json",
+          "sha256": "9a3da4be9970ad37d9e5b611d748f2613bb89df6129a7b493ff0aa212d5f7f2e",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "sci::opt-6.7B",
+          "dataset": "sci",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/sci/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/sci/opt-6.7B/data.json",
+          "sha256": "b255359494394b19c388e0f7c2084ed2a787177c57b72aac05589d46c834a2b4",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::llama-2-7b",
+          "dataset": "squad",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/llama-2-7b/data.json",
+          "sha256": "cbce17ffff3694bbf168ed5416ba71baf701f3b8a00dc540dfa9d28d6f6521c2",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "tldr::GLM-4-9B-0414",
+          "dataset": "tldr",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/tldr/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/tldr/GLM-4-9B-0414/data.json",
+          "sha256": "cc269cb366cd847efce5def38648fdf094557935e3c8c78466362a1dfa4a1623",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "tldr::opt-2.7B",
+          "dataset": "tldr",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/tldr/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/tldr/opt-2.7B/data.json",
+          "sha256": "cd27a411a8c083d8ff928d943c26cef5d05d3c02216bdc3ee1ddb02b8b86aa49",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "wp::falcon",
+          "dataset": "wp",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/wp/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/wp/falcon/data.json",
+          "sha256": "a2b1191f6cdd137e2010688f023dbe4a860c7479fe4984a1dff0199ad16f5f7c",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "wp::opt-6.7B",
+          "dataset": "wp",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/wp/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/wp/opt-6.7B/data.json",
+          "sha256": "d1eb322fc8acf29da09c1a89367aa304bf3c3250cebf2591b2fcf74fa682c2d6",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::llama-2-7b",
+          "dataset": "writing",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/llama-2-7b/data.json",
+          "sha256": "dafccce33c537c8aa9cebf461cfa69a7bbd066f22f51710a340937cae652ae5d",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::GLM-4-9B-0414",
+          "dataset": "xsum",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/GLM-4-9B-0414/data.json",
+          "sha256": "048b3ff2d277433fc18bcd389a51b2fa35ffef9b702e4c05a0feb9ba38c37c09",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::opt-2.7B",
+          "dataset": "xsum",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/opt-2.7B/data.json",
+          "sha256": "e9cf64fd845c2516bdb00a0032f68018130964f4520da5748c5eae2e43b5a114",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "yelp::falcon",
+          "dataset": "yelp",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/yelp/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/yelp/falcon/data.json",
+          "sha256": "3eb42c9c40a459e68d865ecdc27b5dcdbc3acf74f956be77a0f4c62680ffac20",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "yelp::opt-6.7B",
+          "dataset": "yelp",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/yelp/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/yelp/opt-6.7B/data.json",
+          "sha256": "686cb8ffa65763219f88de65bbaef64f1d8d84b94689968af5d8910e81a78092",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "imdb::opt-6.7B",
+          "dataset": "imdb",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 199,
+          "data_path": "data/benchmark/complete_prompt_free/imdb/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/imdb/opt-6.7B/data.json",
+          "sha256": "66a843f3dc1803d4a8b331764013528699546a68ce02f6e2f6595ee6ef27b7df",
+          "expected_rows": 2388
+        },
+        {
+          "cell": "dialogsum::llama-2-7b",
+          "dataset": "dialogsum",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 162,
+          "data_path": "data/benchmark/complete_prompt_free/dialogsum/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/dialogsum/llama-2-7b/data.json",
+          "sha256": "c6e64eb13ae2092f26a338523619426e545d30fd88a826930a7ab43a8bf17ef2",
+          "expected_rows": 1944
+        }
+      ]
+    },
+    {
+      "name": "falcon_pair",
+      "q": "models/falcon-7b",
+      "p": "models/falcon-7b-instruct",
+      "gpus": [
+        2,
+        3
+      ],
+      "temperatures": [
+        1.0,
+        1.2
+      ],
+      "masses": [
+        0.8,
+        1.0
+      ],
+      "cells": [
+        {
+          "cell": "c4::falcon",
+          "dataset": "c4",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/falcon/data.json",
+          "sha256": "1b77fd3a35e0fda247cc386d5d5da491a865ff5a24472cce73b2952ec3c8256a",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "c4::opt-6.7B",
+          "dataset": "c4",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/opt-6.7B/data.json",
+          "sha256": "cf9a35e45414dc7e5cde7ac7c5d4551997a1ef2689840960024a77ac5bb0b64e",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cmv::llama-2-7b",
+          "dataset": "cmv",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cmv/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cmv/llama-2-7b/data.json",
+          "sha256": "68237e671b0ad1d50bbc981738c017bae8797c250b72155a83419dd2eb2c243e",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cnn::GLM-4-9B-0414",
+          "dataset": "cnn",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cnn/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cnn/GLM-4-9B-0414/data.json",
+          "sha256": "db5de9b504c59eaaf9c30d4787fc17bf41222bb1ea31d519d0ebce573dccc02c",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cnn::opt-2.7B",
+          "dataset": "cnn",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cnn/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cnn/opt-2.7B/data.json",
+          "sha256": "da359004190457295d86d5ccbc6aa6d9b0d3c27e801abfcf6465efc1d5c7a18f",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "eli5::falcon",
+          "dataset": "eli5",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/eli5/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/eli5/falcon/data.json",
+          "sha256": "812a6634a123f64763be2062d8da8f87a708b8e6a128032d1df6994ddd48ac32",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "eli5::opt-6.7B",
+          "dataset": "eli5",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/eli5/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/eli5/opt-6.7B/data.json",
+          "sha256": "122950acaa9dff1e5265f74925287dd3b6144475b3e329879bdcedb385f9bcc7",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "hswag::llama-2-7b",
+          "dataset": "hswag",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/hswag/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/hswag/llama-2-7b/data.json",
+          "sha256": "70547ef32afa3b2051fe7b4d06a9c3063edfeb32eb6c470b2c7de8d6a4e16dc1",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "pubmed::GLM-4-9B-0414",
+          "dataset": "pubmed",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/pubmed/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/pubmed/GLM-4-9B-0414/data.json",
+          "sha256": "09df735d223039b3a6c298172f5bb5594249a245e39e3d49e35f7584e6923ed5",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "pubmed::opt-2.7B",
+          "dataset": "pubmed",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/pubmed/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/pubmed/opt-2.7B/data.json",
+          "sha256": "b5ce27ec487233dc268f33868856a0011785b5f3105a520d1b64a73acc9a4ff9",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "roct::falcon",
+          "dataset": "roct",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/roct/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/roct/falcon/data.json",
+          "sha256": "10a8d0fe5fca32ae9dd51abc829ea82007e941bf783f17a31f130fdee542ef22",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "roct::opt-6.7B",
+          "dataset": "roct",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/roct/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/roct/opt-6.7B/data.json",
+          "sha256": "add47ec77123dc02b29611f65f54d3257cdaa2c8562b45ff453e9a3f81177ce5",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "sci::llama-2-7b",
+          "dataset": "sci",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/sci/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/sci/llama-2-7b/data.json",
+          "sha256": "ebfc1b7f6dd29a3cce8f2dd6d524395074c5c8b593a89c2b8be93057afffdfde",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::GLM-4-9B-0414",
+          "dataset": "squad",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/GLM-4-9B-0414/data.json",
+          "sha256": "14dfeb99a768d7f19a4a6d1229e24f1695e6a84a3cc97fbb6a4042cdfe649fde",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::opt-2.7B",
+          "dataset": "squad",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/opt-2.7B/data.json",
+          "sha256": "3c17e2cb9065cba146ca459c7b8e9d5837b3f38b796756ed58ca37bec73d53d1",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "tldr::falcon",
+          "dataset": "tldr",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/tldr/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/tldr/falcon/data.json",
+          "sha256": "dc7a994f27a764e6f0b4c45fe75838cdb8b5bfa40a76e330c2dd40d6a0310b60",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "tldr::opt-6.7B",
+          "dataset": "tldr",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/tldr/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/tldr/opt-6.7B/data.json",
+          "sha256": "b19ef389b6f71e46ba1d990ef1ced42f5c6ecb9a0a96f4b8ea82e48da91c9897",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "wp::llama-2-7b",
+          "dataset": "wp",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/wp/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/wp/llama-2-7b/data.json",
+          "sha256": "d62da5a27fe405f43daf53920086d9ab855549a51285633fb93a4414b98e43f2",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::GLM-4-9B-0414",
+          "dataset": "writing",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/GLM-4-9B-0414/data.json",
+          "sha256": "8ce68d65ccc4c55090f150201bda2a17c7cc04275a7e6c4630353e4cca74494c",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::opt-2.7B",
+          "dataset": "writing",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/opt-2.7B/data.json",
+          "sha256": "1e7e6db4c6497a7231d68ebad1dc1a460e60dcc435db15655c737212bc4d1a97",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::falcon",
+          "dataset": "xsum",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/falcon/data.json",
+          "sha256": "9177c4e64d9c3dc0c9871998eef13300acf529daae7d6f3c7d199a78bffe83d7",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::opt-6.7B",
+          "dataset": "xsum",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/opt-6.7B/data.json",
+          "sha256": "dd76d1ea76a478217baa87461956efb991f103af4ffb4736fe423fc44a91f228",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "yelp::llama-2-7b",
+          "dataset": "yelp",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/yelp/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/yelp/llama-2-7b/data.json",
+          "sha256": "21b9623b402bf37dcab791dffc48fd730794c694b8b83be9f0877c74b09739e9",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "imdb::GLM-4-9B-0414",
+          "dataset": "imdb",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 199,
+          "data_path": "data/benchmark/complete_prompt_free/imdb/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/imdb/GLM-4-9B-0414/data.json",
+          "sha256": "a18b5ba47688e576d5641812557b09876de2ea5beacd8fa06fa020db08954b74",
+          "expected_rows": 2388
+        },
+        {
+          "cell": "imdb::llama-2-7b",
+          "dataset": "imdb",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 199,
+          "data_path": "data/benchmark/complete_prompt_free/imdb/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/imdb/llama-2-7b/data.json",
+          "sha256": "74f6dc25477af2e46d34e4539ad568276a55085d3d2d49fab241548e0c05697a",
+          "expected_rows": 2388
+        },
+        {
+          "cell": "dialogsum::GLM-4-9B-0414",
+          "dataset": "dialogsum",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 162,
+          "data_path": "data/benchmark/complete_prompt_free/dialogsum/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/dialogsum/GLM-4-9B-0414/data.json",
+          "sha256": "4eaa02f2e4135f05c68e330fe55ce84b861d073a43defa41ebdf4339e959c2e1",
+          "expected_rows": 1944
+        },
+        {
+          "cell": "dialogsum::opt-2.7B",
+          "dataset": "dialogsum",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 162,
+          "data_path": "data/benchmark/complete_prompt_free/dialogsum/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/dialogsum/opt-2.7B/data.json",
+          "sha256": "4fc7217ca94c47a877b30f7c796effa2b9172ed0134fed07e96aff8e27a598ca",
+          "expected_rows": 1944
+        }
+      ]
+    },
+    {
+      "name": "falcon_pair",
+      "q": "models/falcon-7b",
+      "p": "models/falcon-7b-instruct",
+      "gpus": [
+        4,
+        5
+      ],
+      "temperatures": [
+        1.0,
+        1.2
+      ],
+      "masses": [
+        0.8,
+        1.0
+      ],
+      "cells": [
+        {
+          "cell": "c4::llama-2-7b",
+          "dataset": "c4",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/llama-2-7b/data.json",
+          "sha256": "d422e6f24bf1215e0e94506a9ac0d6ee700c81cd660ed10c9b427fce7959a750",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cmv::GLM-4-9B-0414",
+          "dataset": "cmv",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cmv/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cmv/GLM-4-9B-0414/data.json",
+          "sha256": "dfa9a1f8555f1c9832609bac7daad10962893cbcde1a703dfbd869bdabe22f19",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cmv::opt-2.7B",
+          "dataset": "cmv",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cmv/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cmv/opt-2.7B/data.json",
+          "sha256": "b2f054dd134e954f831269014cd3e6df198a142be783eceb7916fd388dbe5688",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cnn::falcon",
+          "dataset": "cnn",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cnn/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cnn/falcon/data.json",
+          "sha256": "9a246691709cb32ea3653b7f2d668e73a2ff720514f76e65ea08a27a4df4928e",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "cnn::opt-6.7B",
+          "dataset": "cnn",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/cnn/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/cnn/opt-6.7B/data.json",
+          "sha256": "fc4336d9101c5dec15aaf084fa865d6a7c76e6940c639c12a8662cd028817f68",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "eli5::llama-2-7b",
+          "dataset": "eli5",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/eli5/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/eli5/llama-2-7b/data.json",
+          "sha256": "fd3e5f1730cd9fde679874e129e1399a384234e72dc22637ee7c0d003e5bf0dd",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "hswag::GLM-4-9B-0414",
+          "dataset": "hswag",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/hswag/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/hswag/GLM-4-9B-0414/data.json",
+          "sha256": "3441be75d078ed3278115b43a97f8aa4260b4dd83e9c6e56e40f54f6939e939e",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "hswag::opt-2.7B",
+          "dataset": "hswag",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/hswag/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/hswag/opt-2.7B/data.json",
+          "sha256": "20878425e4eeca7d4229da0d3b6813790e11184c592459d86cf9e4f5634fd550",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "pubmed::falcon",
+          "dataset": "pubmed",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/pubmed/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/pubmed/falcon/data.json",
+          "sha256": "1d0b36c7ff6e237009de16c3443a4bbc44e863b730ff7ec14f0839fa8ebc3eda",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "pubmed::opt-6.7B",
+          "dataset": "pubmed",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/pubmed/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/pubmed/opt-6.7B/data.json",
+          "sha256": "216af522efc7aedf7e7c49b676680b39623f173b047d85d3e8b0ba61b2d97b5b",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "roct::llama-2-7b",
+          "dataset": "roct",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/roct/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/roct/llama-2-7b/data.json",
+          "sha256": "767dcc3e5b68822c6484be63ee1dc9f151584a84d42afe103441bd5072b69afc",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "sci::GLM-4-9B-0414",
+          "dataset": "sci",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/sci/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/sci/GLM-4-9B-0414/data.json",
+          "sha256": "cbfa14a5bfc36e301d37d640194e137b768cc984eeaa8a303882e18211530ecb",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "sci::opt-2.7B",
+          "dataset": "sci",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/sci/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/sci/opt-2.7B/data.json",
+          "sha256": "c7c164a95bcbca8e2d96a0a2480ba83f1aa615fe63a78a01f698e9c7115e7479",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::falcon",
+          "dataset": "squad",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/falcon/data.json",
+          "sha256": "818deff9022d3904a8890e919cb6e82ee41ef64ac763937d69cc2960daa03332",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::opt-6.7B",
+          "dataset": "squad",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/opt-6.7B/data.json",
+          "sha256": "39b9bf9c39869a28f80d0da39aaa3407edd972792963505ac0599aab8c8eca8b",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "tldr::llama-2-7b",
+          "dataset": "tldr",
+          "generator": "llama-2-7b",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/tldr/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/tldr/llama-2-7b/data.json",
+          "sha256": "50cf96f59143f4cbd05ce6fb4d11b5f3ee30db1eaa6b352a330fadc518cb1a72",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "wp::GLM-4-9B-0414",
+          "dataset": "wp",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/wp/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/wp/GLM-4-9B-0414/data.json",
+          "sha256": "0bf860fb6330ed646393a903e3c5d55b1c38be594ee0ac24a61bb8621c8b4cab",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "wp::opt-2.7B",
+          "dataset": "wp",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/wp/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/wp/opt-2.7B/data.json",
+          "sha256": "43946effb9ecb917b24cf198896587f93229cb2e1963a0080987ebf02aca5203",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::falcon",
+          "dataset": "writing",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/falcon/data.json",
+          "sha256": "3af4acfe59572260e8a3ca791f607df8a1f2157793f2c8f5eef48f22c841a7bc",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::opt-6.7B",
+          "dataset": "writing",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/opt-6.7B/data.json",
+          "sha256": "424776c5ab5c6001af58cc58b2525afc550f3b9eae386c93e40b8f752c4c234f",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::llama-2-7b",
+          "dataset": "xsum",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/llama-2-7b/data.json",
+          "sha256": "c57f93c258949bd346f354769e08614e71bc67c9997c29174c79c29e0a806911",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "yelp::GLM-4-9B-0414",
+          "dataset": "yelp",
+          "generator": "GLM-4-9B-0414",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/yelp/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/yelp/GLM-4-9B-0414/data.json",
+          "sha256": "fca921535eb43e3f6ba8045584240581f2104317d89f645bd7310cecac881633",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "yelp::opt-2.7B",
+          "dataset": "yelp",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/yelp/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/yelp/opt-2.7B/data.json",
+          "sha256": "fa9a308b9f4c20b17b042b91839da4b6149e36b258644dedb7789496fa17f896",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "imdb::falcon",
+          "dataset": "imdb",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 199,
+          "data_path": "data/benchmark/complete_prompt_free/imdb/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/imdb/falcon/data.json",
+          "sha256": "28d980615d1777f4483b76d4a5dc766d1107e6339347ce64febacc6e8c4ea769",
+          "expected_rows": 2388
+        },
+        {
+          "cell": "imdb::opt-2.7B",
+          "dataset": "imdb",
+          "generator": "opt-2.7B",
+          "split": "test",
+          "source_count": 199,
+          "data_path": "data/benchmark/complete_prompt_free/imdb/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/imdb/opt-2.7B/data.json",
+          "sha256": "8881b392b117e6e9c6ba7c0ae57655d2c66ce308ca27a62430e7e07a1c825908",
+          "expected_rows": 2388
+        },
+        {
+          "cell": "dialogsum::falcon",
+          "dataset": "dialogsum",
+          "generator": "falcon",
+          "split": "test",
+          "source_count": 162,
+          "data_path": "data/benchmark/complete_prompt_free/dialogsum/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/dialogsum/falcon/data.json",
+          "sha256": "ad9a70b2e53c5b0ee55544182fbb411260ff17811fe5f44a3b2b1d35b1f33c32",
+          "expected_rows": 1944
+        },
+        {
+          "cell": "dialogsum::opt-6.7B",
+          "dataset": "dialogsum",
+          "generator": "opt-6.7B",
+          "split": "test",
+          "source_count": 162,
+          "data_path": "data/benchmark/complete_prompt_free/dialogsum/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/dialogsum/opt-6.7B/data.json",
+          "sha256": "ee6404a1c6d14c640ccf9c7f5736b5753c50b8b5ada95be544066d83a21999c9",
+          "expected_rows": 1944
+        }
+      ]
+    },
+    {
+      "name": "opt27_calibration",
+      "q": "models/opt-2.7B",
+      "p": "models/opt-2.7B",
+      "gpus": [
+        6
+      ],
+      "temperatures": [
+        1.0,
+        1.1,
+        1.2,
+        1.3
+      ],
+      "masses": [
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "sensitivity": true,
+      "cells": [
+        {
+          "cell": "c4::GLM-4-9B-0414",
+          "dataset": "c4",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/GLM-4-9B-0414/data.json",
+          "sha256": "8b0b0ba383e49bef0b481918911692fe599765c660438fd63ded8d557790ae4a",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "c4::falcon",
+          "dataset": "c4",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/falcon/data.json",
+          "sha256": "1b77fd3a35e0fda247cc386d5d5da491a865ff5a24472cce73b2952ec3c8256a",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "c4::llama-2-7b",
+          "dataset": "c4",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/llama-2-7b/data.json",
+          "sha256": "d422e6f24bf1215e0e94506a9ac0d6ee700c81cd660ed10c9b427fce7959a750",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "c4::opt-2.7B",
+          "dataset": "c4",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/opt-2.7B/data.json",
+          "sha256": "a9969a32c8c61a71dca15abe89448d64a47985cf990e76e38aeaf4add345996f",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "c4::opt-6.7B",
+          "dataset": "c4",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/c4/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/c4/opt-6.7B/data.json",
+          "sha256": "cf9a35e45414dc7e5cde7ac7c5d4551997a1ef2689840960024a77ac5bb0b64e",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::GLM-4-9B-0414",
+          "dataset": "squad",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/GLM-4-9B-0414/data.json",
+          "sha256": "14dfeb99a768d7f19a4a6d1229e24f1695e6a84a3cc97fbb6a4042cdfe649fde",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::falcon",
+          "dataset": "squad",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/falcon/data.json",
+          "sha256": "818deff9022d3904a8890e919cb6e82ee41ef64ac763937d69cc2960daa03332",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::llama-2-7b",
+          "dataset": "squad",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/llama-2-7b/data.json",
+          "sha256": "cbce17ffff3694bbf168ed5416ba71baf701f3b8a00dc540dfa9d28d6f6521c2",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::opt-2.7B",
+          "dataset": "squad",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/opt-2.7B/data.json",
+          "sha256": "3c17e2cb9065cba146ca459c7b8e9d5837b3f38b796756ed58ca37bec73d53d1",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "squad::opt-6.7B",
+          "dataset": "squad",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/squad/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/squad/opt-6.7B/data.json",
+          "sha256": "39b9bf9c39869a28f80d0da39aaa3407edd972792963505ac0599aab8c8eca8b",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::GLM-4-9B-0414",
+          "dataset": "writing",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/GLM-4-9B-0414/data.json",
+          "sha256": "8ce68d65ccc4c55090f150201bda2a17c7cc04275a7e6c4630353e4cca74494c",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::falcon",
+          "dataset": "writing",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/falcon/data.json",
+          "sha256": "3af4acfe59572260e8a3ca791f607df8a1f2157793f2c8f5eef48f22c841a7bc",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::llama-2-7b",
+          "dataset": "writing",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/llama-2-7b/data.json",
+          "sha256": "dafccce33c537c8aa9cebf461cfa69a7bbd066f22f51710a340937cae652ae5d",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::opt-2.7B",
+          "dataset": "writing",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/opt-2.7B/data.json",
+          "sha256": "1e7e6db4c6497a7231d68ebad1dc1a460e60dcc435db15655c737212bc4d1a97",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "writing::opt-6.7B",
+          "dataset": "writing",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/writing/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/writing/opt-6.7B/data.json",
+          "sha256": "424776c5ab5c6001af58cc58b2525afc550f3b9eae386c93e40b8f752c4c234f",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::GLM-4-9B-0414",
+          "dataset": "xsum",
+          "generator": "GLM-4-9B-0414",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/GLM-4-9B-0414/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/GLM-4-9B-0414/data.json",
+          "sha256": "048b3ff2d277433fc18bcd389a51b2fa35ffef9b702e4c05a0feb9ba38c37c09",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::falcon",
+          "dataset": "xsum",
+          "generator": "falcon",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/falcon/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/falcon/data.json",
+          "sha256": "9177c4e64d9c3dc0c9871998eef13300acf529daae7d6f3c7d199a78bffe83d7",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::llama-2-7b",
+          "dataset": "xsum",
+          "generator": "llama-2-7b",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/llama-2-7b/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/llama-2-7b/data.json",
+          "sha256": "c57f93c258949bd346f354769e08614e71bc67c9997c29174c79c29e0a806911",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::opt-2.7B",
+          "dataset": "xsum",
+          "generator": "opt-2.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/opt-2.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/opt-2.7B/data.json",
+          "sha256": "e9cf64fd845c2516bdb00a0032f68018130964f4520da5748c5eae2e43b5a114",
+          "expected_rows": 2400
+        },
+        {
+          "cell": "xsum::opt-6.7B",
+          "dataset": "xsum",
+          "generator": "opt-6.7B",
+          "split": "calibration",
+          "source_count": 200,
+          "data_path": "data/benchmark/complete_prompt_free/xsum/opt-6.7B/data.json",
+          "dataset_file": "data/benchmark/complete_prompt_free/xsum/opt-6.7B/data.json",
+          "sha256": "dd76d1ea76a478217baa87461956efb991f103af4ffb4736fe423fc44a91f228",
+          "expected_rows": 2400
+        }
+      ]
+    }
+  ],
+  "role": "Document-score cache configuration; final calibrated detector is implemented in scripts/evaluate_detector.py."
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "v2 frozen fixed-prefix diagnostic; raw text, model outputs, and checkpoints are not bundled here",
+  "sources": {
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/prefix_metrics.csv": "72db012ceb290472e21a85babed0039f5efcf4ce2ea1c0015f3271eb2de87e3e",
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/SUMMARY.json": "4cad742e2194560835eb8406b150a37b596ddf3f534d477fd0b8d541fdd45fe1",
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/FINAL_AUDIT.json": "8585b93ae8ed1447a4fe3191f7832429b24f01b9ff18aba81c779dc052092ef8",
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/SKIPS.json": "3bf7706d6b7a179e305850bb317999fc1c96cbc10b520cd13f11214e9f57a529",
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/BASELINE_RECONSTRUCTION.json": "e5aaae88adbb63450d2c9ac738017c0dd53d096cf26d75529cffcb6b22f53bfb",
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/summary_by_mechanism.csv": "c43634f58e1f490238df844eb53d44096dbfd1b315bcd249c4880df9f42e904c",
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/summary_by_dataset.csv": "9fae132c628ecbd0248f0a15391668cbd2a5d0afe0779ccb8c9aa022597687ce"
+  },
+  "outputs": {
+    "data/mechanism_analysis/heavywater_prefix/prefix_metrics.csv": "72db012ceb290472e21a85babed0039f5efcf4ce2ea1c0015f3271eb2de87e3e",
+    "data/mechanism_analysis/heavywater_prefix/SUMMARY.json": "4cad742e2194560835eb8406b150a37b596ddf3f534d477fd0b8d541fdd45fe1",
+    "data/mechanism_analysis/heavywater_prefix/FINAL_AUDIT.json": "8585b93ae8ed1447a4fe3191f7832429b24f01b9ff18aba81c779dc052092ef8",
+    "data/mechanism_analysis/heavywater_prefix/SKIPS.json": "3bf7706d6b7a179e305850bb317999fc1c96cbc10b520cd13f11214e9f57a529",
+    "data/mechanism_analysis/heavywater_prefix/BASELINE_RECONSTRUCTION.json": "e5aaae88adbb63450d2c9ac738017c0dd53d096cf26d75529cffcb6b22f53bfb",
+    "data/mechanism_analysis/heavywater_prefix/summary_by_mechanism.csv": "c43634f58e1f490238df844eb53d44096dbfd1b315bcd249c4880df9f42e904c",
+    "data/mechanism_analysis/heavywater_prefix/summary_by_dataset.csv": "9fae132c628ecbd0248f0a15391668cbd2a5d0afe0779ccb8c9aa022597687ce"
+  }
+}

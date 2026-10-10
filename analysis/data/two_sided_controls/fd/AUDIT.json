@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "rows": 3960,
+  "checks": [
+    {
+      "proxy": "OPT",
+      "current_task_auc_and_threshold_parity": true,
+      "disjoint_calibration_test_sources": true,
+      "identical_lower": true
+    },
+    {
+      "proxy": "Falcon",
+      "current_task_auc_and_threshold_parity": true,
+      "disjoint_calibration_test_sources": true,
+      "identical_lower": true,
+      "falcon_raw_mean_delta_from_paper_baseline": -3.7497140027734724e-08,
+      "falcon_raw_max_task_delta_from_paper_baseline": 2.5251887578403576e-05
+    }
+  ],
+  "tied_rank_check": true,
+  "threshold_score_equivalence": true,
+  "transition_identities": true
+}

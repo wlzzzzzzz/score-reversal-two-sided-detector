@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "Reference-moment identities, rank calibration, and paired result checks",
+  "task_rows": 1320,
+  "current_660_task_scores_per_proxy_unchanged": true,
+  "summary_and_pairwise_identities": true,
+  "paired_domain_intervals": 20,
+  "human_transition_counts": true,
+  "table_values": true,
+  "analytic_checks": {
+    "temperature_derivative_max_error": 3.448978880271625e-10,
+    "tie_crossings": true,
+    "monotone_invariance": true,
+    "boundary_sufficient_condition": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "prefixes": 25,
+  "skipped": 7,
+  "runtime_seconds": 3.7576675415039062,
+  "mean_components": {
+    "delta_prompt_context": -0.2287369454702076,
+    "delta_repetition": -0.5104947178728708,
+    "delta_ngram": -0.003913005427045118,
+    "delta_nucleus": 0.012107500054326186,
+    "delta_ot_uniform_numerical": -4.1188485765625284e-06,
+    "delta_selected_state": 0.03612733315317014,
+    "delta_total_to_detector_reference": -0.6949139544112037,
+    "delta_to_current_baseline": -1.5217158514886249,
+    "delta_current_baseline_to_raw": 1.0555388425476284,
+    "numeric_row_l1": 7.258824211930915e-08,
+    "numeric_col_l1": 8.85949470102787e-06,
+    "uniform_l1": 8.007510940615248e-06,
+    "selected_float64_l1": 3.989259686515723e-06,
+    "selected_float64_score_difference": 5.113106036414969e-08,
+    "selected_parity_l1": 1.1228408354324593e-07,
+    "observed_next_residual": -0.19153240095461949
+  },
+  "max_telescoping_error": 2.220446049250313e-16,
+  "max_implementation_parity_l1": 3.644835544491798e-07,
+  "max_selected_float64_l1": 2.8364954335256492e-05,
+  "warnings": []
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "recovered_from": "BLOCKED_SCORING_FAILURE",
+  "generation_rerun": false,
+  "elapsed_seconds": 29931.907079219818,
+  "report": "results/baselines/benchmark/REPORT.md",
+  "recovery_audit": "external_data/legacy/clean80_english20_test60_plus3wm/pipeline/manifest_contract_recovery/RECOVERY_AUDIT.json"
+}

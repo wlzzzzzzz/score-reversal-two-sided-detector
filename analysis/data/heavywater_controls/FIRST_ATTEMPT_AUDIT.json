@@ -1,0 +1,29 @@
+{
+  "summary": [
+    {
+      "proxy": "OPT",
+      "tasks": 60,
+      "all_n": 11800,
+      "first_attempt_n": 11559,
+      "all_macro_auc": 0.06275641314029407,
+      "first_attempt_macro_auc": 0.06264438379583596,
+      "all_reversed_cells": 60,
+      "first_attempt_reversed_cells": 60
+    },
+    {
+      "proxy": "Falcon",
+      "tasks": 60,
+      "all_n": 11800,
+      "first_attempt_n": 11559,
+      "all_macro_auc": 0.08121668681453108,
+      "first_attempt_macro_auc": 0.08112005038396314,
+      "all_reversed_cells": 60,
+      "first_attempt_reversed_cells": 60
+    }
+  ],
+  "sources": {
+    "analysis/data/sensitivity/cached_OPT.npz": "75f2e2f949b228ff2ebfe2ee808868b3713b5d5e709e2fd4345e1cfdff94f7c7",
+    "analysis/data/sensitivity/cached_Falcon.npz": "e905f57afbb6a9cc611e92ebfdb8382bd2e58391a07086b7d6aeb3316a520c8c"
+  },
+  "interpretation": "Existing score audit: human comparison set unchanged within each domain. First-attempt accepted documents are still selection-conditioned; this is not an unfiltered causal intervention."
+}

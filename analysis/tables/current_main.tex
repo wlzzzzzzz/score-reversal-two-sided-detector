@@ -1,0 +1,17 @@
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Detector & AUROC & CVaR$_{10}$ & Flip & ROC$_1$ & ROC$_5$ \\
+\midrule
+Likelihood & 0.5295 & \reversal{0.0180} & 293 & 16.81 & 25.52 \\
+Entropy & 0.5449 & \reversal{0.0468} & 283 & 10.57 & 20.06 \\
+Rank & 0.5702 & \reversal{0.0801} & 242 & 13.28 & 24.30 \\
+Log-Rank & 0.5452 & \reversal{0.0210} & 285 & 17.87 & 26.64 \\
+Fast-DetectGPT & 0.6388 & \reversal{0.0179} & 228 & 29.94 & 38.90 \\
+AdaDetectGPT$^\dagger$ & 0.6331 & \reversal{0.0195} & 220 & 28.30 & 36.33 \\
+Binoculars$^\dagger$ & 0.6135 & \reversal{0.0263} & 249 & 22.68 & 32.27 \\
+NTS & 0.7341 & \reversal{0.3041} & 107 & 29.22 & 39.08 \\
+\midrule
+\textbf{Ours (OPT)} & 0.8219 & 0.5473 & 13 & \textbf{39.35} & \textbf{52.56} \\
+\textbf{Ours (Falcon pair)} & \textbf{0.8317} & \textbf{0.5835} & \textbf{0} & 31.40 & 52.29 \\
+\bottomrule
+\end{tabular}

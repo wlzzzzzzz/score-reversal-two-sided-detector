@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "artifacts": [
+    {
+      "path": "results/baselines/benchmark/REPORT.md",
+      "size": 2388,
+      "sha256": "2e4262271844378df750bba7cd66f6502fd13546fbf208c5ba710d5537cc41d0"
+    },
+    {
+      "path": "results/baselines/benchmark/analysis_manifest.json",
+      "size": 427,
+      "sha256": "8f4717ecba78e48e31373c873a5932dbb076a81393d98ea2254e106e3c3f649f"
+    },
+    {
+      "path": "results/baselines/benchmark/atomic_task_results.csv",
+      "size": 1132762,
+      "sha256": "7c099132d4082a34623ec64e83d4eed358ca6ec0c6276eea65bca9474c3aae7b"
+    },
+    {
+      "path": "results/baselines/benchmark/by_dataset.csv",
+      "size": 18750,
+      "sha256": "3bc04aeb7b00a21d9d9c7b6c7fed84700c1f9a71b2e28a0495a7f79c646ba198"
+    },
+    {
+      "path": "results/baselines/benchmark/by_generator.csv",
+      "size": 8432,
+      "sha256": "598cbd60d10b974fa75d5ffffe0c634b2da7dd701fa66a745ac0708804f9f8af"
+    },
+    {
+      "path": "results/baselines/benchmark/by_method.csv",
+      "size": 17880,
+      "sha256": "1dfae29dfb63ab74528a9cacebe183e48f767870fc8c9739631e746843daee59"
+    },
+    {
+      "path": "results/baselines/benchmark/evaluation_audit.json",
+      "size": 130009,
+      "sha256": "32eb87f82090b996fcb2c0287677e0c7bb927cb2988d4bc8a308724feec3467d"
+    },
+    {
+      "path": "results/baselines/benchmark/paired_vs_current.csv",
+      "size": 2305,
+      "sha256": "68dad1a229c74247a6171b1ae32fc73a0493bfe1df6c816028c51fb6d9a006ad"
+    },
+    {
+      "path": "results/baselines/benchmark/performance_summary.csv",
+      "size": 2887,
+      "sha256": "2c674083aa05f6ecf0de01cdd1db908d87724df93407ce8dd6e2c57d7e244e00"
+    },
+    {
+      "path": "results/baselines/benchmark/source_manifest.json",
+      "size": 48785,
+      "sha256": "92c56d5995a59087cd38c9f5b031a952027e677779af1001abcc7348536c478e"
+    }
+  ]
+}

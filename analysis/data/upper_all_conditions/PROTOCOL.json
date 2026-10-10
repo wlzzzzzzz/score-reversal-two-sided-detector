@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "one_sided": "Upper only: J_plus=-log(p_plus), inclusive add-one human ranks; fixed direction for every mechanism",
+  "two_sided": "Current asymmetric J, equal tail allocation beta=.5",
+  "T": 1.2,
+  "c": 0.8,
+  "kappa": 1.5,
+  "calibration_cells": 20,
+  "calibration_unique_humans": 800,
+  "test_cells": 60,
+  "tasks_per_score": 660,
+  "test_unique_humans": 2360,
+  "test_machine_texts": 129800,
+  "aggregation": "Equal-weight mean of60 task AUROCs per mechanism",
+  "AdaDetectGPT": "Existing original-direction adapted Falcon pair; not the two-tailed Ada control",
+  "parameter_selection": false,
+  "new_model_forwards": false,
+  "full_joint_and_previous_unwatermarked_parity_tolerance": 1e-12,
+  "source_sha256": {
+    "data/current/task_metrics.csv": "1de537364164a1bc80fdf7ad2c8fc4fb6e4f1ca1e0c5cfab98bb3401da6d643c",
+    "data/upper_unwatermarked/task_metrics.csv": "fb4e0f3ffb548081dbf7405e455184a3321bc46d204266e7a913dad37958545d",
+    "data/sensitivity/cached_OPT.npz": "75f2e2f949b228ff2ebfe2ee808868b3713b5d5e709e2fd4345e1cfdff94f7c7",
+    "data/sensitivity/cached_Falcon.npz": "e905f57afbb6a9cc611e92ebfdb8382bd2e58391a07086b7d6aeb3316a520c8c"
+  }
+}

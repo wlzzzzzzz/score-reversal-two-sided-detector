@@ -1,0 +1,54 @@
+{
+  "groups": {
+    "HeavyWater": {
+      "prefixes": 14,
+      "unique_sources": 4,
+      "unique_previous_tokens": 14,
+      "selected_mean_nats": -0.07304319799365233,
+      "negative_selected_count": 12,
+      "average_uniform_state_negative_fraction": 0.5218331473214286,
+      "occupancy_term": 0.003905558759836586,
+      "state_context_covariance_term": -0.07694875675348888,
+      "independent_state_counterfactual": {
+        "mean": 0.0013224374454711889,
+        "q025": -0.35001985255729706,
+        "q975": 0.3740393776392299,
+        "observed_percentile": 0.3419
+      },
+      "reused_state_counterfactual": {
+        "mean": 0.0005693285054560188,
+        "q025": -0.3564156366726069,
+        "q975": 0.37695797939593645,
+        "observed_percentile": 0.34285
+      },
+      "interpretation": "Empirical decomposition on fixed saved prefixes. Monte Carlo percentiles are descriptive, not a population causal test on independent prefixes."
+    },
+    "unwatermarked": {
+      "prefixes": 11,
+      "unique_sources": 4,
+      "unique_previous_tokens": 11,
+      "selected_mean_nats": 0.17507143625524557,
+      "negative_selected_count": 5,
+      "average_uniform_state_negative_fraction": 0.40385298295454547,
+      "occupancy_term": -0.0027783233537993987,
+      "state_context_covariance_term": 0.1778497596090449,
+      "independent_state_counterfactual": {
+        "mean": -0.0005765164140125936,
+        "q025": -0.4364191286719898,
+        "q975": 0.3909766615024981,
+        "observed_percentile": 0.80825
+      },
+      "reused_state_counterfactual": {
+        "mean": -9.971878718482996e-05,
+        "q025": -0.4405809184781514,
+        "q975": 0.39942487935534826,
+        "observed_percentile": 0.80375
+      },
+      "interpretation": "Empirical decomposition on fixed saved prefixes. Monte Carlo percentiles are descriptive, not a population causal test on independent prefixes."
+    }
+  },
+  "sources": {
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/all_state_shifts.pt": "e466f1cce3c81f221a3eea09d4116e2f6c8ee1c13988cc951a8c15c552075c8b",
+    "outputs/heavywater_no_tilt_prefix_20260913_v2/logits_snapshots.pt": "2ee9b57d0e879da7e5c9b63e11abdea9095e584c68aa913007c626b6ffab4321"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "outputs/fd_two_tail_20260916_v1/summary.csv": "e7d30894e283fc1aa44f979998ce4eba920b5c3c8d4b01d6d174553730f77909",
+    "outputs/fd_two_tail_20260916_v1/by_task.csv": "a6b80fbf41baf788c90aa6f5e5abb8ebc6ffd255547d25e6a1405e27aa97a66e",
+    "outputs/fd_two_tail_20260916_v1/by_mechanism.csv": "dac0a863b585455e176027c06d28e89fa21a461bcd79a7fa584afa30b06d4734",
+    "outputs/fd_two_tail_20260916_v1/paired_domain_intervals.csv": "7989914d22cbf559536d01e6dc5a409f4ee4989822e24db9e7babf1adc412a01",
+    "outputs/fd_two_tail_20260916_v1/PROTOCOL.json": "be59c2e7d0f5e989fe2f7035f0003eb901ca491bb5ae450cf115fd3b7a229f72",
+    "outputs/fd_two_tail_20260916_v1/AUDIT.json": "6e2111db648ba9220d769717a37101a3eb468f54d0cf00bd8d2873c13b45e712",
+    "outputs/ada_two_tail_20260917_v1/summary.csv": "db01e90a3fd48f74cebc0606c676f2dbbdd0c24e6188ba8aa200c295c06ef876",
+    "outputs/ada_two_tail_20260917_v1/by_task.csv": "ef36b8f050d8c70c71f7d75b6e14c2a2447127d961890abf1b79fd11cf20c47d",
+    "outputs/ada_two_tail_20260917_v1/by_mechanism.csv": "c2783bf8db2e3bb11e638abfd5eac5c3b532e1c8ac9d6af72aac40f7f31cba70",
+    "outputs/ada_two_tail_20260917_v1/paired_domain_intervals.csv": "8c70aa6e46646df60c113452a77631f54344abf32fb6dab711db161796cd21b0",
+    "outputs/ada_two_tail_20260917_v1/PROTOCOL.json": "2af07d59b71f06346d2ea5c25fa234292481d9a03a11f943f5df2873ac1d613e",
+    "outputs/ada_two_tail_20260917_v1/AUDIT.json": "1ac04759724588e6343e914eb8698c44671b933a4864cfd5b98710e092424ee2"
+  },
+  "new_parameter_selection": false,
+  "new_model_forwards": 0,
+  "calibration_cells": 20,
+  "calibration_humans": 800,
+  "test_cells": 60,
+  "tasks_per_configuration": 660,
+  "original_experiment_results_unchanged": true
+}

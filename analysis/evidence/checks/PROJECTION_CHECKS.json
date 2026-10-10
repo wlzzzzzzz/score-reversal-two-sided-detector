@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "arbitrary_kernel_trials": 300,
+  "includes_point_mass_alternatives": true,
+  "maximum_errors": {
+    "projection_mean": 4.218847493575595e-15,
+    "projection_orthogonality": 1.609823385706477e-15,
+    "shift": 1.7763568394002505e-15,
+    "operator_bridge": 5.551115123125783e-15,
+    "information": 2.2737367544323206e-13,
+    "weight_optimality": 4.440892098500626e-16,
+    "uniform_common": 3.3861802251067274e-15
+  },
+  "orthogonal_departure_counterexample": true,
+  "matched_preservation_counterexample": true,
+  "claims": "reference-standardized mean optimality in a fixed auxiliary design; not human-null power optimality"
+}

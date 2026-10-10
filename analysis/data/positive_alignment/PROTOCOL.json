@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_frames": {
+    "OPT": {
+      "filename": "scoring_frame.pkl",
+      "sha256": "c444282e39e749ee12706b0154e3a721f24a66c7dead0fe04a32b5a0dab8a24b"
+    },
+    "Falcon": {
+      "filename": "scoring_frame.pkl",
+      "sha256": "f3b1821ad9cefd371505f0091d1cce84ad2b3c47ab1e38f251abee83bb68f75f"
+    }
+  },
+  "source_cohort": "current 60-cell test",
+  "method": "Difference of mean shaped-reference numerator residuals; current uniform and entropy weights.",
+  "aggregation": "60-task macro mean for each proxy; generator-paired human copies used once per task.",
+  "calibration": "No thresholds refitted; this is a numerator diagnostic, not a new detector.",
+  "interpretation": "Observable human-relative retention; not an estimate of each conditional upward strength or of standardized efficiency.",
+  "current_parameters": {
+    "T": 1.2,
+    "c": 0.8,
+    "kappa": 1.5
+  }
+}

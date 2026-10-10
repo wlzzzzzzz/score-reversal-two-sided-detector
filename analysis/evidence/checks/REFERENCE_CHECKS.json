@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "original_uniform_fd_equivalence_trials": 100,
+  "max_absolute_error": 4.440892098500626e-15,
+  "finite_degenerate_responses": true,
+  "inclusive_ties": true,
+  "either_branch_rejects": true,
+  "unclipped_negative_joint_score": true,
+  "small_calibration_no_rejection": true
+}

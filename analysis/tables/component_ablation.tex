@@ -1,0 +1,11 @@
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+ & & \multicolumn{3}{c}{OPT} & \multicolumn{3}{c}{Falcon pair} \\
+\cmidrule(lr){3-5}\cmidrule(l){6-8}
+Upper reference & Weights & AUROC & Power$_1$ & FPR$_1$ & AUROC & Power$_1$ & FPR$_1$ \\
+\midrule
+Original & Uniform & 0.7809 & 37.06 & 1.27 & 0.7768 & 40.26 & 2.58 \\
+Original & Entropy & 0.8191 & 40.87 & 1.23 & 0.8134 & 40.89 & 1.86 \\
+Shaped & Entropy & \textbf{0.8219} & 40.32 & 1.31 & \textbf{0.8317} & 44.54 & 2.29 \\
+\bottomrule
+\end{tabular}

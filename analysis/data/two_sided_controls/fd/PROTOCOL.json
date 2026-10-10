@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "experiment": "matched Fast-DetectGPT same-score two-tail control",
+  "calibration": "20-cell; 800 unique humans",
+  "test": "60-cell; 660 tasks per proxy",
+  "data_previously_inspected": true,
+  "parameter_selection": false,
+  "model_forwards": 0,
+  "beta": 0.5,
+  "alphas": [
+    0.01,
+    0.05
+  ],
+  "ranks": "inclusive add-one empirical human tails",
+  "two_tail_score": "-log(min(p_upper / beta, p_lower / (1-beta))); no score clipping",
+  "fd_score": "original-reference uniform discrepancy R_0^U",
+  "opt_model": "OPT-2.7B for both reference and scoring",
+  "falcon_models": "Falcon-7B reference; Falcon-7B-Instruct scoring",
+  "current_params": {
+    "T": 1.2,
+    "c": 0.8,
+    "kappa": 1.5
+  },
+  "aggregation": "task-macro AUROC/power; unique-human FPR; pooled power separately exported",
+  "intervals": "10000 paired whole-domain resamples of 12 domains, conditional on fixed rules and bank",
+  "raw_baseline_note": "Matched moment-cache implementation; Falcon raw AUROC differs slightly from the paper baseline due to floating-point/canonical-cache evaluation. Original-direction score uses raw discrepancy, fixed thresholds use upper ranks.",
+  "source_sha256": {
+    "data/current/task_metrics.csv": "1de537364164a1bc80fdf7ad2c8fc4fb6e4f1ca1e0c5cfab98bb3401da6d643c",
+    "data/current/deployment.csv": "f34882f819053e4a5903df4ec6c9ba32b945b8ca7f72f192a8bf2b7414ad0c75",
+    "data/sensitivity/cached_OPT.npz": "75f2e2f949b228ff2ebfe2ee808868b3713b5d5e709e2fd4345e1cfdff94f7c7",
+    "outputs/els_full20_calibration_test60_20260912_v1/calibration_OPT.pkl": "6436f368b1b7f5aed9cd27ece3b51befc86717eff6e73b80c01928db58f5b535",
+    "data/sensitivity/cached_Falcon.npz": "e905f57afbb6a9cc611e92ebfdb8382bd2e58391a07086b7d6aeb3316a520c8c",
+    "outputs/els_full20_calibration_test60_20260912_v1/calibration_Falcon.pkl": "bd957a9f886ba5b76127ded97c016a707e4292b5a400cebce099a6666a6f6071"
+  },
+  "script_sha256": "7b886be737d299d62adfa6e858705e178f7e3f06d6cb34e73920aa946c026b1c"
+}
