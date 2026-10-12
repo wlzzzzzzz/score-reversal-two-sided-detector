@@ -17,9 +17,8 @@ These are paper-specific source subsets. Unused algorithms, attacks,
 benchmark frontends and upstream environment dumps are omitted. Local changes
 include portability/compatibility fixes, reduced algorithm registries and
 package imports, and retention of only the C4 loader required by SynthID.
-The original algorithm implementation files and scientific
-execution hashes document the scored experiments; current published bytes
-are recorded in the root manifest.
+The recorded execution hashes identify the implementations used in the
+original experiments.
 
 Install the main analysis/model dependencies from the root requirement files.
 For the generation workers, additionally install `requirements-generation.txt`.

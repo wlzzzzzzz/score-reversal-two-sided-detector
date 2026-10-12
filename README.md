@@ -1,8 +1,8 @@
 # Resolving Score-Ordering Reversal in Watermarked Text
 
-Code, benchmark texts, and experimental results for **“Resolving Score-Ordering
+Code, data, and results for **“Resolving Score-Ordering
 Reversal in Watermarked Text: An Asymmetric Two-Sided Test for LLM Text
-Detection”**. The paper is under review; author information is anonymized.
+Detection”**.
 
 [Installation](#installation) |
 [Reproducing reported artifacts](#reproducing-reported-artifacts) |
@@ -11,37 +11,50 @@ Detection”**. The paper is under review; author information is anonymized.
 
 ## Overview
 
-Watermarking can reverse the ordering of machine and human detection scores.
+Watermarked machine-generated text can receive lower Fast-DetectGPT scores
+than human-written text. We study this score reversal and develop a detector
+that uses both unusually high and unusually low scores as evidence of machine
+generation.
 
 ![Figure 1: Fast-DetectGPT score distributions for human, unwatermarked, and watermarked text](analysis/figures/score_distributions.png)
 
-**Figure 1.** Fast-DetectGPT score distributions with the native OPT proxy.
-Several watermarking conditions shift scores below human text, motivating
-detection in both tails. [View the paper's vector figure](analysis/figures/score_distributions.pdf).
+**Figure 1.** Fast-DetectGPT score distributions using OPT-2.7B. Some
+watermarking methods shift machine-text scores below human-text scores.
+[PDF](analysis/figures/score_distributions.pdf).
 
-The main evaluation covers 660 settings, with 800 calibration humans,
-2,360 test humans, and 129,800 machine texts. The reported mean AUROCs are:
+We evaluate on **12 test datasets, five generators, and 11 generation
+conditions** (unwatermarked text and ten watermarking methods), giving
+660 combinations for each detector. Calibration uses 800 human-written texts;
+the test set contains 2,360 human-written texts and 129,800 machine-generated
+texts. Our detector achieves the following mean AUROC across the 660 combinations:
 
-| Detector proxy | Mean AUROC |
-| --- | --- |
-| OPT-2.7B | 0.8219 |
-| Falcon-7B / Falcon-7B-Instruct | 0.8317 |
+| Reference model | Scoring model | Mean AUROC |
+| --- | --- | --- |
+| OPT-2.7B | OPT-2.7B | 0.8219 |
+| Falcon-7B | Falcon-7B-Instruct | 0.8317 |
 
 ## Method
 
-Our detector combines an entropy-weighted, shaped-reference upper statistic
-with an original-reference, uniformly weighted lower statistic. Human
-calibration scores turn these into an asymmetric two-sided test.
+The detector has two branches:
+
+- **Upper tail:** an entropy-weighted discrepancy score computed with a
+  reshaped reference distribution.
+- **Lower tail:** a uniformly weighted discrepancy score computed with the
+  original reference distribution.
+
+We calibrate each branch using human-written texts and combine the two
+p-values into a detection score. Higher scores indicate stronger evidence of
+machine generation. The calibration and evaluation code is in
+[`scripts/evaluate_detector.py`](scripts/evaluate_detector.py).
 
 ![Figure 2: Architecture of the asymmetric two-sided detector](analysis/figures/overview.png)
 
-**Figure 2.** Shared model outputs provide upper- and lower-tail evidence,
-which is calibrated against human scores and combined in an asymmetric joint
-test. [View the paper's vector diagram](analysis/figures/overview.pdf).
+**Figure 2.** Scoring, human calibration, and the final two-sided decision.
+[PDF](analysis/figures/overview.pdf).
 
 ## Installation
 
-Use **Python 3.10 or 3.11**. The CPU workflow is verified with Python 3.11.
+Use **Python 3.10 or 3.11**. We tested the CPU workflow with Python 3.11.
 Clone or download this repository, open a terminal in its root directory,
 and install the analysis dependencies:
 
@@ -51,55 +64,58 @@ python3 -m venv .venv
 python3 -m pip install -r requirements-analysis.txt
 ```
 
-The checkout is approximately **2.1 GiB** because it includes benchmark texts
-and document-level score caches. The analysis workflow below needs no GPU,
-model download, LaTeX, or external source corpus.
+The repository is approximately **2.1 GiB**, including benchmark texts and
+saved model outputs. These files support the CPU workflow below without
+downloading model checkpoints.
 
-For fresh language-model scoring, install `requirements-gpu.txt` and obtain
-the OPT/Falcon checkpoints described in
-[the GPU setup instructions](docs/REPRODUCE.md#3-prepare-for-fresh-model-scoring-of-all-80-benchmark-cells).
-Watermark generation additionally uses `requirements-generation.txt` and
-the [generation dependencies](docs/REPRODUCE.md#optional-generation-and-baseline-dependencies).
-Model checkpoints and optional external inputs are downloaded separately.
+For GPU scoring, see the [model setup instructions](docs/REPRODUCE.md#3-prepare-for-fresh-model-scoring-of-all-80-benchmark-cells)
+for checkpoint locations and `requirements-gpu.txt`. Watermark generation
+also requires `requirements-generation.txt` and the
+[generation dependencies](docs/REPRODUCE.md#optional-generation-and-baseline-dependencies).
 
 ## Reproducing reported artifacts
 
-Run all commands from the repository root with the environment activated.
-The following steps rebuild the final detector from the included document
-moments and compare its outputs with the reported results. Fresh model
-scoring is documented separately below. Detailed table and figure workflows
-are available in the [full reproduction guide](docs/REPRODUCE.md).
+Choose either workflow below. Run commands from the repository root with the
+environment activated. For individual tables and figures, see the
+[reproduction guide](docs/REPRODUCE.md) and
+[paper result index](docs/RESULTS_INDEX.md).
 
-### 1. Recompute the final detector results
+### 1. Reproduce results from saved model outputs (CPU)
 
 ```bash
 python3 scripts/evaluate_detector.py --output scratch/detector --check-paper
 ```
 
-This rebuilds human calibration, both directional p-values, and final scores
-from the saved document moments. It checks all **1,320 task rows** across the
-two proxy settings, aggregate metrics, and deployment metrics against the
-reported results at absolute tolerance `1e-12`.
+This command uses the saved per-document statistics to recompute human
+calibration, both tail p-values, and final detection scores. The
+`--check-paper` flag compares all **1,320 evaluation rows** (660 combinations
+for each model setup), aggregate results, and calibrated false-positive rates
+and detection power with the paper's recorded values. The absolute tolerance
+is `1e-12`.
 
-| Proxy | Expected mean AUROC |
+The command creates `scratch/detector/` with these main outputs:
+
+| File | Contents |
 | --- | --- |
-| OPT | 0.8219095663414562 |
-| Falcon | 0.8316661796123974 |
+| `summary.csv` | Aggregate detection metrics for each model setup |
+| `task_metrics.csv` | Metrics for each dataset, generator, and generation condition |
+| `deployment.csv` | False-positive rates and detection power at the specified significance levels |
+| `audit.json` | Input records, sample counts, and the result of the comparison with the paper |
 
-Results are written to `scratch/detector/`, including `summary.csv`,
-`task_metrics.csv`, `deployment.csv`, and `audit.json`. The directory is
-created automatically. Choose a new output name when repeating the run.
+For another run, choose a new directory under `scratch/` with `--output`.
 
-### 2. Run fresh model scoring
+### 2. Recompute model outputs and detector results (GPU)
 
-Follow [the staged GPU workflow](docs/REPRODUCE.md#3-prepare-for-fresh-model-scoring-of-all-80-benchmark-cells)
-to score all 80 included benchmark cells, freeze the development analysis,
-and recompute test calibration and final detection metrics. Fresh numerical
-results can vary with hardware, CUDA, and checkpoint revisions.
+To start from the benchmark texts, follow the
+[GPU reproduction guide](docs/REPRODUCE.md#3-prepare-for-fresh-model-scoring-of-all-80-benchmark-cells).
+It covers all 80 dataset–generator pairs: 20 for development and 60 for
+testing. Score the development split and freeze its analysis, then score the
+test split and evaluate the detector. Numerical results may vary with
+hardware, CUDA, and model checkpoint revisions.
 
-Recreating the benchmark from upstream corpora and rerunning every historical
-baseline require additional inputs. Their availability and setup are listed
-under [historical rerun limits](docs/REPRODUCE.md#limits-of-a-full-historical-rerun).
+Regenerating the benchmark texts and rerunning external baselines require
+additional source data, code, or checkpoints. See
+[additional resources and reproduction limits](docs/REPRODUCE.md#limits-of-a-full-historical-rerun).
 
 ## Repository structure
 
@@ -107,21 +123,21 @@ under [historical rerun limits](docs/REPRODUCE.md#limits-of-a-full-historical-re
 | --- | --- |
 | `scripts/` | Detector evaluation, model scoring, generation, baselines, and numerical diagnostics |
 | `experiments/` | Matched two-sided controls and HeavyWater generation controls |
-| `configs/` | Benchmark roster and frozen experiment configurations |
-| `data/` | The 80 benchmark text cells and source attribution |
-| `results/` | Baseline caches, document-level scores, experimental results, and scientific audits |
-| `analysis/` | Numerical exports, table/figure reproduction code, and published tables and figures |
+| `configs/` | Dataset splits, input file lists, and experiment settings |
+| `data/` | Benchmark texts for the 80 dataset–generator pairs and their source information |
+| `results/` | Saved model outputs, baseline scores, and experiment records |
+| `analysis/` | Source data and scripts for the paper's tables and figures, with the final exports |
 | `third_party/` | Watermark implementations required by the paper experiments and their original licenses |
 | `tests/` | Regression tests for the detector, scoring, generation, and paper reproduction |
-| `docs/` | Reproduction instructions, paper-result mapping, protocols, and provenance |
+| `docs/` | Reproduction instructions, table and figure index, experimental protocols, and data provenance |
 
 Runtime directories such as `scratch/` and `models/` are created locally
 and ignored by Git.
 
 ## Citation
 
-The manuscript is under anonymous review. Citation details, a public preprint
-link, and an arXiv identifier will be added when available.
+The paper is under anonymous review. We will add a BibTeX entry and a preprint
+link when the paper is public.
 
 ## Acknowledgments and license
 
