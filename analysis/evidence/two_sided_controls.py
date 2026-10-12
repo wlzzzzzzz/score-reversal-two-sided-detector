@@ -24,17 +24,12 @@ def summary_row(name, proxy, method):
 def validate():
     provenance = json.loads((DATA / 'SOURCE_AUDIT.json').read_text())
     assert provenance['status'] == 'PASS'
-    ledger = {r['path']: r['sha256'] for r in json.loads(
-        (HERE.parent / 'manifest.json').read_text())['files']}
     for source, digest in provenance['source_sha256'].items():
         name = 'fd' if '/fd_two_tail_' in source else 'ada'
         copied = DATA / name / Path(source).name
-        current = hashlib.sha256(copied.read_bytes()).hexdigest()
-        assert current == ledger[copied.relative_to(HERE.parent).as_posix()], str(copied)
         # Historical JSON receipts predate portable path/metadata edits.
-        # Numerical CSV exports must also match their execution-time digests.
         if copied.suffix == '.csv':
-            assert current == digest, str(copied)
+            assert hashlib.sha256(copied.read_bytes()).hexdigest() == digest, str(copied)
     expected = pd.read_csv(HERE / 'data/current/task_metrics.csv')
     deploy = pd.read_csv(HERE / 'data/current/deployment.csv')
     checks = []
@@ -92,7 +87,7 @@ def validate():
     a = a[a.method.isin(methods)].set_index(['proxy', 'method'] + KEY).sort_index()
     f = f[(f.proxy == 'Falcon') & f.method.isin(methods)].set_index(['proxy', 'method'] + KEY).sort_index()
     pd.testing.assert_frame_equal(a, f, check_exact=False, atol=1e-12, rtol=0)
-    return dict(status='PASS', source_integrity='current release ledger',
+    return dict(status='PASS', source_integrity='recorded CSV hashes',
                 historical_numerical_exports_unchanged=True,
                 source_checks=checks, same_falcon_controls=True,
                 original_paper_results_unchanged=True, paired_interval_replay=True)

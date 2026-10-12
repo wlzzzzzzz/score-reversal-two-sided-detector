@@ -29,5 +29,5 @@
     "data/review_v6/bank_summary.csv": "d58e6de6f172a58e0d63f94dd5b03c012602e3faddb232c2ac2d7378278253d2",
     "tables/watermark_mechanism_observations.tex": "7379a99fdaff4a55d5784f071bba06588b73d258dc9cdc684a8c497b091b4233"
   },
-  "digest_scope": "Original input exports before column selection and portable path naming. Current published bytes are verified by manifest.json."
+  "digest_scope": "Original input exports before column selection and portable path naming."
 }

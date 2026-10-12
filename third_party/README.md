@@ -16,7 +16,8 @@ relicensing of these components.
 These are paper-specific source subsets. Unused algorithms, attacks,
 benchmark frontends and upstream environment dumps are omitted. Local changes
 include portability/compatibility fixes, reduced algorithm registries and
-package imports. The original algorithm implementation files and scientific
+package imports, and retention of only the C4 loader required by SynthID.
+The original algorithm implementation files and scientific
 execution hashes document the scored experiments; current published bytes
 are recorded in the root manifest.
 

@@ -4,9 +4,15 @@ import json
 import os
 from pathlib import Path
 
-from release_utils import sha256
-
 __all__ = ["sha256", "sha256_text", "atomic_json"]
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(8 << 20), b""):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def sha256_text(text: str) -> str:

@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'scratch/iclr_review_supplement'
+OUT=ROOT/'scratch/baseline_audits'
 
 
 def main():
@@ -39,6 +39,7 @@ def main():
                 row['changed_rows_epsilon_'+str(epsilon)]=int((std<epsilon).sum())
                 row['max_abs_score_change_epsilon_'+str(epsilon)]=float(abs(changed-score).max())
             summaries.append(row)
+    (OUT/'analysis').mkdir(parents=True, exist_ok=True)
     pd.DataFrame(summaries).to_csv(OUT/'analysis/reference_numerical_diagnostics.csv',index=False)
     print(pd.DataFrame(summaries).query("group in ['ALL_human_unique','ALL_machine']").to_string(index=False))
 

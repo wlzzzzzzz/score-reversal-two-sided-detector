@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import numpy as np
 
-OUT=Path(__file__).resolve().parents[1]/'scratch/iclr_review_supplement'
+OUT=Path(__file__).resolve().parents[1]/'scratch/baseline_audits'
 
 
 def center(lp,t,mass,score_lp=None):
@@ -33,6 +33,7 @@ def main():
             'fixed_support_derivative_cases':len(derivative_errors),'max_finite_difference_derivative_error':max(derivative_errors),
             'two_model_counterexample':{'q':[.9,.1],'p':[.1,.9],'mean_logp_at_T1_T2':opposite},
             'scope':'Numerical verification supplements the analytic proof; no claim of monotonic final detection performance.'}
+    OUT.mkdir(parents=True, exist_ok=True)
     (OUT/'reference_center_proposition_audit.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
 
 

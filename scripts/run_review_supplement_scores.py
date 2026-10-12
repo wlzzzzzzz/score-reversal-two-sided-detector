@@ -1,4 +1,4 @@
-"""Frozen paired-model scoring for the ICLR review supplement.
+"""Frozen paired-model scoring for the paper baseline comparisons.
 
 One model per GPU for Falcon; all statistics share the same forward passes.
 Cell files are immutable and resumable only after input/config hash validation.

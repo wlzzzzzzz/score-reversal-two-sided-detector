@@ -7,7 +7,7 @@ import torch
 from fastdetect_official_module_core import _weights, _document_score
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'scratch/iclr_review_supplement'
+OUT=ROOT/'scratch/baseline_audits'
 
 
 def s3_only(ref,score,labels,dtype=torch.float32,stable_variance=False,chunk=128,epsilon=1e-9):
@@ -51,6 +51,7 @@ def main():
                     rows.append({'tokens':n,'logit_scale':scale,'repeat':repeat,'variant':name,**res,
                                  'abs_score_error_vs_fp64_central':abs(res['score']-reference),
                                  'relative_score_error_vs_fp64_central':abs(res['score']-reference)/max(1.,abs(reference))})
+    OUT.mkdir(parents=True, exist_ok=True)
     frame=pd.DataFrame(rows);frame.to_csv(OUT/'synthetic_numerical_stress.csv',index=False)
     # Explicit self-pair counterexample: conditioning can increase variance.
     p=np.r_[.2,np.repeat(.008,100)];ell=np.log(p);full=np.sum(p*(ell-np.sum(p*ell))**2)

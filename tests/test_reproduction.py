@@ -1,7 +1,6 @@
-"""Regression checks for packaged inputs and repaired scorer construction."""
+"""Regression checks for paper reproduction and scorer construction."""
 import json
 import os
-import shutil
 import subprocess
 import sys
 import tempfile
@@ -16,7 +15,6 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 import analyze_reference_shaping as analysis
 import evaluate_detector as detector
 import run_clean80_fulltext_strong_baselines as baselines
-from release_utils import release_files
 
 
 @pytest.mark.parametrize('script', ['scripts/evaluate_detector.py',
@@ -46,19 +44,6 @@ def test_detector_rejects_paths_outside_repo(name):
         detector.local(name)
 
 
-def test_release_inventory_excludes_local_reruns(tmp_path):
-    for name in ('README.md', 'models/README.md', 'models/local/weights.bin',
-                 '.venv/bin/python', 'scratch/README.md', 'scratch/run/score.csv',
-                 'external_code/README.md', 'external_code/upstream/model.py',
-                 'external_data/README.md', 'external_data/corpus.json',
-                 'results/run/scores.jsonl', '.pytest_cache/cache.json'):
-        path = tmp_path / name
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.touch()
-    assert {p.relative_to(tmp_path).as_posix() for p in release_files(tmp_path)} == {
-        'README.md', 'results/run/scores.jsonl'}
-
-
 def test_strong_scorer_initializes_both_models_and_witness():
     tokenizer = MagicMock()
     tokenizer.get_vocab.return_value = {'a': 0, 'b': 1}
@@ -72,25 +57,6 @@ def test_strong_scorer_initializes_both_models_and_witness():
     assert load_model.call_count == 2
     assert {call.args[0] for call in load_model.call_args_list} == {baselines.OBSERVER, baselines.PERFORMER}
     load_witness.assert_called_once_with(baselines.DEFAULT_ADA_ROOT, scorer.performer_device)
-
-
-@pytest.mark.skipif(shutil.which("git") is None, reason="Git is needed for checkout verification")
-def test_git_preserves_hashes_with_windows_line_endings(tmp_path):
-    work = tmp_path / "work"
-    work.mkdir()
-    shutil.copyfile(ROOT / ".gitattributes", work / ".gitattributes")
-    samples = {"code.py": b"value = 1\n", "scores.csv": b"source,score\r\nx,1.0\r\n",
-               "cache.bin": b"\x00\x01\r\n\xff"}
-    for name, raw in samples.items():
-        (work / name).write_bytes(raw)
-    def git(*args):
-        return subprocess.run(["git", "-c", "core.autocrlf=true", *args], cwd=work,
-                              capture_output=True, text=True, check=True)
-    git("init", "--quiet")
-    git("add", ".")
-    checkout = tmp_path / "checkout"
-    git("checkout-index", "--all", "--prefix", str(checkout) + os.sep)
-    assert {name: (checkout / name).read_bytes() for name in samples} == samples
 
 
 def test_published_prefix_audit_runs_without_historical_workspace():

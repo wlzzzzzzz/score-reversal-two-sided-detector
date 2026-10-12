@@ -6,20 +6,12 @@ import json
 import numpy as np
 import pandas as pd
 
-from release_utils import sha256 as sha
+from io_utils import sha256 as sha
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "results/runs/heavywater_prefix"
 
 def check(previous_metrics=None):
-    # Historical execution hashes remain evidence about the original run.
-    # The release manifest authenticates the portable files distributed here.
-    ledger = {row["path"]: row["sha256"]
-              for row in json.loads((ROOT / "manifest.json").read_text())["files"]}
-    for name in ("FROZEN.json", "FROZEN_PROTOCOL.md", "diagnostic_source.py",
-                 "prefix_metrics.csv", "SKIPS.json", "BASELINE_RECONSTRUCTION.json"):
-        path = OUT / name
-        assert sha(path) == ledger[path.relative_to(ROOT).as_posix()], name
     frozen = json.loads((OUT / "FROZEN.json").read_text())
     for item in frozen["source_metadata"]:
         assert item["data_sha256"] == sha(ROOT / item["datafile"]), item["datafile"]
@@ -63,8 +55,8 @@ def check(previous_metrics=None):
         }
     result = {
         "checks_passed": True, "script_sha256": sha(__file__),
-        "source_integrity": "current release manifest and frozen benchmark hashes",
-        "historical_code_hashes": "retained as original-run evidence, not current release hashes",
+        "source_integrity": "frozen benchmark hashes",
+        "historical_code_hashes": "original execution; current code parity not checked",
         "v1_v2_unaffected_numeric_columns_exactly_equal": previous_equal,
         "previous_version_comparison": "recomputed" if previous_equal else "not rerun; earlier CSV not supplied",
         "corrected_baseline_top_k": 50,

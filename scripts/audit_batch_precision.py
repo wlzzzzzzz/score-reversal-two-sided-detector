@@ -4,11 +4,11 @@ import json
 from pathlib import Path
 import torch
 from model import load_model,load_tokenizer
-from audit_iclr_numerics import s3_only
+from audit_numerics import s3_only
 from io_utils import atomic_json
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'scratch/iclr_review_supplement'
+OUT=ROOT/'scratch/baseline_audits'
 
 
 def main():

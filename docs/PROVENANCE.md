@@ -1,22 +1,19 @@
-# Provenance and release notes
+# Data and experiment provenance
 
 ## Source of truth
 
-`paper/paper.pdf` contains the complete manuscript in preprint format.
-Its scientific content matches the final submitted manuscript. Numerical
-exports and result tables are under `analysis/`.
+The released numerical exports, result tables, and figures under `analysis/`
+correspond to the manuscript's main text and appendices. Their mapping is
+documented in [the paper result index](RESULTS_INDEX.md). Publication status
+and citation information are in the root [README](../README.md#citation).
 
-`manifest.json` records repository-relative paths, byte counts, and SHA-256
-checksums for every published file except the manifest itself. Locally installed
-environments, model checkpoints, external inputs, and generated `scratch/`
-outputs are excluded. `scripts/check_release.py`
-verifies those hashes and checks the 80-cell cohort against its recorded
-input checksums. Published code and metadata include portability fixes and
-may differ from their historical versions. Nested code/configuration hashes
-in archived run receipts describe the original execution; the root manifest
-describes this release. Fresh runs create new hashes and their own
-development/test gate. The fixed protocol is in
-`docs/protocols/reference_shaping.md`.
+`configs/benchmark_cells.json` records the 80 benchmark cells and their
+input hashes. Each document-moment cache has an experiment manifest recording
+its source, configuration, row count, and content hash. The evaluator checks
+these inputs as part of reproduction. Historical code/configuration hashes
+in archived run receipts describe the original execution; published code and
+metadata may include later portability edits. Fresh runs create new receipts
+and follow the fixed protocol in `docs/protocols/reference_shaping.md`.
 
 ## Included data and exclusions
 
@@ -79,9 +76,8 @@ provider terms, including inconsistent MAGE license labels and source versions
 that cannot be established from the retained manifests alone. The rights to
 redistribute every source text have not been verified.
 
-The repository is approximately 2.1 GiB uncompressed. `manifest.json` and
-`scripts/check_release.py` verify the payload and reject files exceeding
-GitHub's 100 MiB single-file limit.
+The root `.gitattributes` preserves original line endings so that Git checkouts
+retain the bytes used by the recorded data and cache hashes.
 
 ## Scientific audit scope
 
@@ -89,9 +85,9 @@ The retained audits record inputs, seeds, model/checkpoint and implementation
 hashes, precision, independent numerical checks, source overlap/exclusions,
 calibration/test separation and the original frozen decisions. The original
 development observations are retained because they document prior data exposure.
-Historical code/input digests identify the original execution; portability and
-scope edits are covered by the current root manifest. They should not be used
-as current executable paths or current code hashes.
+Historical code/input digests identify the original execution. Recorded code
+paths and hashes can differ from the current public scripts; use
+`docs/REPRODUCE.md` for executable commands.
 
 The result index maps all retained analyses to paper tables, figures, appendix
 text or these scientific dependencies. Manuscript editing, translation, build

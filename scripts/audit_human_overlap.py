@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'scratch/iclr_review_supplement'
+OUT=ROOT/'scratch/baseline_audits'
 
 
 def main():
@@ -32,6 +32,7 @@ def main():
             'normalized_duplicate_groups':[[rows[i]['source_id'] for i in ids] for ids in exact.values() if len(ids)>1],
             'all_shared_5gram_candidates':len(shared),'pairs_containment_ge_0p8':near,
             'scope':'Exhaustive shared5-word-shingle candidates across all main Human sources; no author-independence or semantic-duplicate guarantee.'}
+    OUT.mkdir(parents=True, exist_ok=True)
     (OUT/'main_human_source_overlap_audit.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report))
 

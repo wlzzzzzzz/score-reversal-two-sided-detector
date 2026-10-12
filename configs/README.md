@@ -10,4 +10,4 @@
 For a new model run, follow `docs/REPRODUCE.md`, copy the configuration below
 `scratch/`, select local GPU/model locations and a new output directory, then
 create new source, code and freeze receipts. Historical digests record the
-original execution; `manifest.json` verifies the published release.
+original execution. The evaluator checks benchmark and per-cell cache hashes.

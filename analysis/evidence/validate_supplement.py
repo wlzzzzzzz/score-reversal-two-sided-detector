@@ -58,18 +58,11 @@ def validate():
             close(r['unwm_auc'],b[b.watermark_method=='unwatermarked'].auc.mean())
             for tag in ['a01','a05']:close(r['power_'+tag],b['power_'+tag].mean());close(r['fpr_'+tag],r['fp_'+tag]/2360)
     assert configurations==19 and parameter_rows==12540
-    for stem,script,protocol,artifact in [('kappa','measure_kappa.py','SENSITIVITY_PROTOCOL.json','kappa_measurements.npz'),('local_construction','measure_construction.py','LOCAL_CONSTRUCTION_PROTOCOL.json','local_construction_measurements.npz')]:
+    for stem,artifact in [('kappa','kappa_measurements.npz'),('local_construction','local_construction_measurements.npz')]:
         r=json.loads((d/'sensitivity'/(stem+'_forward_audit.json')).read_text());m=r['manifest']
         assert r['status']=='PASS' and r['export_sha256']==sha(d/'sensitivity'/artifact)
-        # Archived digests describe the code that performed the original forwards.
-        # Path-normalized source is checked against the current release ledger.
-        root=HERE.parent
-        ledger={x['path']:x['sha256'] for x in json.loads((root/'manifest.json').read_text())['files']}
-        for name in (script,protocol):
-            path=HERE/'evidence'/name
-            assert sha(path)==ledger[path.relative_to(root).as_posix()]
         assert m['rows']==132960 and sum(x['rows'] for x in r['shards'])==132960
     for name in ['SUPPLEMENT_CACHE_CHECKS.json','KAPPA_CHECKS.json','LOCAL_CONSTRUCTION_CHECKS.json']:assert json.loads((HERE/'evidence/checks'/name).read_text())['status']=='PASS'
     p=subprocess.run([sys.executable,'evidence/render_supplement_tables.py','--check-only'],cwd=HERE,text=True,capture_output=True);assert p.returncode==0,p.stdout+p.stderr
-    return {'status':'PASS','source_integrity':'current release ledger','historical_code_parity_checked':False,'parameter_configurations':configurations,'parameter_task_rows':parameter_rows,'tail_partition_rows':len(tail),'tail_task_rows':len(tt),'length_strata':len(length),'tables':p.stdout.strip(),'human_denominator':2360,'machine_denominator':129800,'fresh_forward_documents_per_study':132960}
+    return {'status':'PASS','source_integrity':'recorded measurement export hashes','historical_code_parity_checked':False,'parameter_configurations':configurations,'parameter_task_rows':parameter_rows,'tail_partition_rows':len(tail),'tail_task_rows':len(tt),'length_strata':len(length),'tables':p.stdout.strip(),'human_denominator':2360,'machine_denominator':129800,'fresh_forward_documents_per_study':132960}
 if __name__=='__main__':print(json.dumps(validate(),indent=2))

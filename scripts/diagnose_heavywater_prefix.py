@@ -73,7 +73,7 @@ def main():
             "code_sha256":{str(p.relative_to(ROOT)):sha(p) for p in (
                 ROOT/"scripts/run_clean20_watermark_extension_worker.py",
                 ROOT/"scripts/generation_utils.py", ROOT/"scripts/text_utils.py",
-                ROOT/"scripts/io_utils.py", ROOT/"scripts/release_utils.py",
+                ROOT/"scripts/io_utils.py",
                 ROOT/"third_party/external_watermarks/HeavyWater_SimplexWater/watermark/heavy_tail_randscore.py")},
             "model_config_sha256":{p.name:sha(p) for p in MODEL.glob("*.json")},
             "model_weight_sha256":{p.name:sha(p) for p in sorted(MODEL.iterdir())

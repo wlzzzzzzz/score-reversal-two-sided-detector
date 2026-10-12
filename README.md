@@ -4,7 +4,6 @@ Code, benchmark texts, and experimental results for **“Resolving Score-Orderin
 Reversal in Watermarked Text: An Asymmetric Two-Sided Test for LLM Text
 Detection”**. The paper is under review; author information is anonymized.
 
-[Paper](paper/paper.pdf) |
 [Installation](#installation) |
 [Reproducing reported artifacts](#reproducing-reported-artifacts) |
 [Detailed reproduction guide](docs/REPRODUCE.md) |
@@ -43,11 +42,10 @@ test. [View the paper's vector diagram](analysis/figures/overview.pdf).
 ## Installation
 
 Use **Python 3.10 or 3.11**. The CPU workflow is verified with Python 3.11.
-Clone the repository and install the analysis dependencies:
+Clone or download this repository, open a terminal in its root directory,
+and install the analysis dependencies:
 
 ```bash
-git clone https://github.com/wlzzzzzzz/score-reversal-two-sided-detector.git
-cd score-reversal-two-sided-detector
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements-analysis.txt
@@ -72,17 +70,7 @@ moments and compare its outputs with the reported results. Fresh model
 scoring is documented separately below. Detailed table and figure workflows
 are available in the [full reproduction guide](docs/REPRODUCE.md).
 
-### 1. Verify the included files
-
-```bash
-python3 scripts/check_release.py
-python3 scripts/check_paths.py
-```
-
-These checks verify file hashes, all 80 benchmark cells, portable paths,
-the main result values, and the inventory for 19 paper tables and two figures.
-
-### 2. Recompute the final detector results
+### 1. Recompute the final detector results
 
 ```bash
 python3 scripts/evaluate_detector.py --output scratch/detector --check-paper
@@ -102,7 +90,7 @@ Results are written to `scratch/detector/`, including `summary.csv`,
 `task_metrics.csv`, `deployment.csv`, and `audit.json`. The directory is
 created automatically. Choose a new output name when repeating the run.
 
-### 3. Run fresh model scoring
+### 2. Run fresh model scoring
 
 Follow [the staged GPU workflow](docs/REPRODUCE.md#3-prepare-for-fresh-model-scoring-of-all-80-benchmark-cells)
 to score all 80 included benchmark cells, freeze the development analysis,
@@ -117,25 +105,23 @@ under [historical rerun limits](docs/REPRODUCE.md#limits-of-a-full-historical-re
 
 | Directory | Contents |
 | --- | --- |
-| `scripts/` | Detector evaluation, model scoring, generation, baseline implementations, and release checks |
+| `scripts/` | Detector evaluation, model scoring, generation, baselines, and numerical diagnostics |
 | `experiments/` | Matched two-sided controls and HeavyWater generation controls |
 | `configs/` | Benchmark roster and frozen experiment configurations |
 | `data/` | The 80 benchmark text cells and source attribution |
 | `results/` | Baseline caches, document-level scores, experimental results, and scientific audits |
 | `analysis/` | Numerical exports, table/figure reproduction code, and published tables and figures |
 | `third_party/` | Watermark implementations required by the paper experiments and their original licenses |
-| `tests/` | Regression tests for the detector, scoring workflow, and release checks |
+| `tests/` | Regression tests for the detector, scoring, generation, and paper reproduction |
 | `docs/` | Reproduction instructions, paper-result mapping, protocols, and provenance |
-| `paper/` | The complete manuscript PDF in preprint format |
 
-`manifest.json` records the relative path, size, and SHA-256 of every
-published artifact. Runtime directories such as `scratch/` and `models/`
-are created locally and ignored by Git. See [path conventions](docs/PATHS.md).
+Runtime directories such as `scratch/` and `models/` are created locally
+and ignored by Git.
 
 ## Citation
 
-The provisional citation is in [CITATION.bib](CITATION.bib). Authors are
-currently anonymized; an arXiv identifier will be added when available.
+The manuscript is under anonymous review. Citation details, a public preprint
+link, and an arXiv identifier will be added when available.
 
 ## Acknowledgments and license
 

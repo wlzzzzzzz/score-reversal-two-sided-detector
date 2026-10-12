@@ -4,8 +4,8 @@ Run every command below from the repository root. There are two supported
 starting points:
 
 1. **Verify the published numerical results** from the included benchmark,
-   score caches, and analysis exports. This checks the complete release and
-   rebuilds final detector scores and regenerates the supported tables without a GPU.
+   score caches, and analysis exports. This rebuilds final detector scores
+   and regenerates the supported tables without a GPU.
 2. **Recompute the main detector and its reference moments** from all 80 included text
    cells. This performs fresh OPT and Falcon model forwards, development
    analysis, a frozen transition to test, and final two-sided
@@ -18,26 +18,9 @@ The starting input for a model rerun is the included final benchmark in
 is a separate generation task: some source corpora and model checkpoints are
 not distributed here. See [Limits of a full historical rerun](#limits-of-a-full-historical-rerun).
 
-## 1. Inspect and verify the included release
+## 1. Install the analysis dependencies
 
-Use Python 3.10 or 3.11 for a new environment. The checks and analysis were
-also verified in the original Python 3.8.10 environment; the CPU replay runs
-in an isolated Python 3.11 environment with `requirements-analysis.txt`. No third-party
-package is needed for the two integrity checks below.
-
-```bash
-python3 scripts/check_release.py
-python3 scripts/check_paths.py
-```
-
-`check_release.py` verifies the recorded payload hashes, the 80 benchmark
-input hashes, the main reported AUROCs, and the paper table/figure inventory.
-`check_paths.py` checks that stored paths are portable. A failed hash check
-means the local release differs from the recorded one; resolve that before
-comparing numerical results.
-
-## 2. Rebuild the final detector and check the tables without GPU inference
-
+Use Python 3.10 or 3.11. The CPU replay is verified with Python 3.11.
 Create an environment and install the analysis dependencies:
 
 ```bash
@@ -45,6 +28,8 @@ python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements-analysis.txt
 ```
+
+## 2. Rebuild the final detector and check the tables without GPU inference
 
 Rebuild human calibration, both directional p-values, detector scores, all
 660 task metrics per proxy, and deployment FPR/power directly from the 160
@@ -54,8 +39,8 @@ included document-moment caches:
 python3 scripts/evaluate_detector.py --output scratch/detector --check-paper
 ```
 
-The command validates benchmark text hashes, per-cell completeness, and the
-current release hashes. It uses 800 unique calibration humans, applies the
+The command validates benchmark text hashes, document-moment cache hashes,
+and per-cell completeness. It uses 800 unique calibration humans, applies the
 recorded `wp:11` test exclusion, and evaluates 2,360 unique test humans and
 129,800 machine texts. The upper branch uses entropy-weighted shaped-reference
 moments; the lower branch uses uniform original-reference moments. Both use
@@ -94,9 +79,8 @@ These commands use `analysis/data/` and the recorded score summaries. They
 compare generated table bodies to `analysis/tables/` and do not run a language
 model. The current-table renderer covers Tables 1, 2, 3, 5, 6, 7 and 10, plus
 supporting exports; `two_sided_controls.py` covers Table 4 and its appendix
-controls. Tables 2 and 10 contain all ten detectors. Other table exports
-are checked for integrity by `check_release.py`;
-some also have separate validators in `analysis/evidence/`.
+controls. Tables 2 and 10 contain all ten detectors. The source exports and
+reproduction scripts for every paper table are listed in `docs/RESULTS_INDEX.md`.
 Write the current-table exports to a separate directory with:
 
 ```bash
@@ -106,8 +90,7 @@ python3 analysis/evidence/render_current_tables.py --output-dir scratch/tables
 For renderers without an output-directory option, omit `--check-only` only
 **in a separate copy** of the repository because this replaces recorded tables. Use `docs/RESULTS_INDEX.md` to trace
 each of the 19 paper tables and two figures to its source files. This replay
-checks available numerical exports, not the wording of captions in
-`paper/paper.pdf`.
+checks available numerical exports, not the wording of manuscript captions.
 
 ### Figures
 
@@ -341,7 +324,7 @@ exports and writes a new directory under `scratch/`.
 
 ## Limits of a full historical rerun
 
-Sections 1–2 verify the included release, rebuild the final detector from
+Sections 1–2 install the analysis environment, rebuild the final detector from
 archived moments, and regenerate the supported tables. Sections 3–6 rerun
 the main detector from the included benchmark texts through model scoring,
 human calibration, and final evaluation.
@@ -396,8 +379,8 @@ does not reproduce an older modified implementation exactly.
 ### HeavyWater prefix diagnostic
 
 The read-only command `python3 scripts/audit_heavywater_prefix.py` checks the
-published prefix decomposition against the release manifest, original benchmark
-hashes and numerical identities. It preserves `results/runs/heavywater_prefix/`.
+published prefix decomposition using original benchmark hashes and numerical
+identities. It preserves `results/runs/heavywater_prefix/`.
 The old-versus-corrected replay comparison is not rerun unless the earlier CSV
 is explicitly supplied with `--previous-metrics`; its historical audit remains
 included. Historical code hashes are not hashes of the edited public scripts.

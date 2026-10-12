@@ -9,5 +9,5 @@
     "results/runs/reference_shaping/figures/development_summary.pdf": "6cd63f711191a0bfd2634fd1317f01d576bf15006a5796a98f319a182d40958a",
     "results/runs/reference_shaping/figures/development_summary.png": "8ea64544536032aacca97201a4fd2c66afb8e5607478b24345ba81354c7f3437"
   },
-  "note": "Pre-test development figures and frozen observations. Historical digests describe the original run; current file integrity is verified by manifest.json."
+  "note": "Pre-test development figures and frozen observations. Historical digests describe the original run."
 }

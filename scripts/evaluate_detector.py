@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Rebuild the final detector from saved or freshly computed document moments.
 
-Archived inputs are checked against the current release ledger and per-cell
-hashes. Fresh inputs must pass the development freeze and test-access checks.
+Inputs are checked against benchmark and per-cell hashes. Fresh inputs must
+also pass the development freeze and test-access checks.
 Historical code/configuration digests are never rewritten to authorize a run.
 """
 from __future__ import annotations
@@ -16,6 +16,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import roc_auc_score, roc_curve
 
+from io_utils import sha256 as sha
 from two_sided_core import rank_pvalues
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,14 +24,6 @@ ARCHIVE = ROOT / 'results/runs/reference_shaping'
 FIELDS = ['row_id', 'source_id', 'dataset', 'generator', 'watermark_method',
           'label', 'split', 'text_sha256', 'token_length']
 MOMENTS = [w + '_' + k for w in ('entropy', 'uniform') for k in ('N0', 'N1', 'V0', 'V1')]
-
-
-def sha(path):
-    digest = hashlib.sha256()
-    with Path(path).open('rb') as stream:
-        for block in iter(lambda: stream.read(8 << 20), b''):
-            digest.update(block)
-    return digest.hexdigest()
 
 
 def local(path):
@@ -51,7 +44,7 @@ def humans(frame):
         ['dataset', 'source_id', 'generator', 'row_id']).drop_duplicates(['dataset', 'source_id'])
 
 
-def load_frame(config, proxy, split, ledger, inputs):
+def load_frame(config, proxy, split, inputs, *, fresh):
     root = local(config['output_root'])
     records = []
     for cell in config['data_cells']:
@@ -65,12 +58,9 @@ def load_frame(config, proxy, split, ledger, inputs):
             raise ValueError('Cell hash mismatch: ' + relative(path))
         if manifest['proxy'] != proxy or manifest['access']['split'] != split or manifest['smoke_rows'] != 0:
             raise ValueError('Incomplete or incompatible cell: ' + relative(path))
-        for artifact in (path, manifest_path):
-            name, value = relative(artifact), sha(artifact)
-            if ledger is not None and ledger.get(name) != value:
-                raise ValueError('Release hash mismatch: ' + name)
-            inputs[name] = value
-        if ledger is None:
+        inputs[relative(path)] = digest
+        inputs[relative(manifest_path)] = sha(manifest_path)
+        if fresh:
             if manifest['config_sha256'] != config['_config_sha256']:
                 raise ValueError('Fresh scores use a different configuration')
             if manifest['script_sha256'] != sha(ROOT / 'scripts/score_reference_moments.py'):
@@ -208,15 +198,11 @@ def main():
         raise ValueError('Choose a new output directory below scratch/')
     config = json.loads(config_path.read_text())
     archived = local(config['output_root']) == ARCHIVE
-    if archived:
-        ledger = {item['path']: item['sha256'] for item in
-                  json.loads((ROOT / 'manifest.json').read_text())['files']}
-    else:
+    if not archived:
         from analyze_reference_shaping import read_config, validate_test_gate
         config, digest = read_config(config_path)
         validate_test_gate(config, digest)
         config['_config_sha256'] = digest
-        ledger = None
         root = local(config['output_root'])
         audit = json.loads((root / 'test_source_audit.json').read_text())
         expected = {
@@ -233,8 +219,8 @@ def main():
     inputs = {relative(config_path): sha(config_path)}
     all_tasks, summaries, deployment = [], [], []
     for proxy in ('OPT', 'Falcon'):
-        calibration = humans(load_frame(config, proxy, 'development', ledger, inputs)).reset_index(drop=True)
-        query = load_frame(config, proxy, 'test', ledger, inputs).reset_index(drop=True)
+        calibration = humans(load_frame(config, proxy, 'development', inputs, fresh=not archived)).reset_index(drop=True)
+        query = load_frame(config, proxy, 'test', inputs, fresh=not archived).reset_index(drop=True)
         if set(calibration.source_id) & set(query.source_id) or set(calibration.text_sha256) & set(query.text_sha256):
             raise ValueError('Calibration and test inputs overlap')
         tasks, summary, deploy, predictions = evaluate(calibration, query, proxy)

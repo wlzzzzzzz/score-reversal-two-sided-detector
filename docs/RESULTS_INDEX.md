@@ -1,7 +1,7 @@
 # Paper result index
 
-The final PDF in `paper/paper.pdf` has 19 tables and 2 figures. This
-index maps each to the numeric exports and recorded experiment runs. A table
+The manuscript has 19 tables and 2 figures. This index maps each to the
+numeric exports and recorded experiment runs. A table
 may combine several exports; the retained result tables show recorded values.
 
 | Paper item | Primary result files | Experiment/code |
