@@ -9,8 +9,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 438,
-      "sha256": "d5a808e4d90c735cd5e8ff397f65f248b0dd5e13d34e421fb13744e1928a4d21"
+      "bytes": 351,
+      "sha256": "8cbcf33332b0c54a94fef6a650420bd44b58b9abff395105338d222abc018006"
     },
     {
       "path": "CITATION.bib",
@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7024,
-      "sha256": "ad3c272588382e356d845c0d5ec76c2deb159155dfcaa3d9c5c915f523fb8a58"
+      "bytes": 7760,
+      "sha256": "52352f08aec7a5bf87ce3cf8ba0db03111d0a49c7f695ce5799985aa6b1571f3"
     },
     {
       "path": "analysis/data/calibration/allocation.csv",
@@ -1244,18 +1244,18 @@
     },
     {
       "path": "docs/PATHS.md",
-      "bytes": 1841,
-      "sha256": "fcde329d9a32bda05ece08d897efe460ed1ce6b355c7df9c071f5358eaa8565a"
+      "bytes": 2079,
+      "sha256": "7e52046080b7ff34ec48985800ab2fcb6c68db4d35daccda8ca64f04f708cbce"
     },
     {
       "path": "docs/PROVENANCE.md",
-      "bytes": 5744,
-      "sha256": "b77a80f98e5342f5d581958026df46ad0fdadc2c5abfd6e2ad9c2e743902d5cb"
+      "bytes": 5630,
+      "sha256": "e15ebb43995749b225f89f0cb13d9870f3cc58bfc90077410499635e52d2b63b"
     },
     {
       "path": "docs/REPRODUCE.md",
-      "bytes": 17069,
-      "sha256": "620c0ece71ad5a8fb2245a46f0b8b618765af65d27474a20b9392904571fd6fc"
+      "bytes": 18590,
+      "sha256": "ac4e280af3bab52dcf63cde41ee599b5cc1eabba6300545e191a7d3527037481"
     },
     {
       "path": "docs/RESULTS_INDEX.md",
@@ -1306,21 +1306,6 @@
       "path": "experiments/heavywater_causal/study.py",
       "bytes": 14375,
       "sha256": "25520230410418e9564139c6ec515f21dd7b5140d1c14d4e869ad8d3e194b0ea"
-    },
-    {
-      "path": "external_code/README.md",
-      "bytes": 1283,
-      "sha256": "b5d3dd777a6e96fba7134226393fdeae169c90d745ef7e4edc97c02d04b0d1bf"
-    },
-    {
-      "path": "external_data/README.md",
-      "bytes": 513,
-      "sha256": "3a03e2a29f50357e714a1407f8b2aed09ac6fc69dbdb88e74b3001a1a75a9123"
-    },
-    {
-      "path": "models/README.md",
-      "bytes": 192,
-      "sha256": "68943801cc648331640c10d79e470a483dcf9f319b49a15af391d5abeec38d21"
     },
     {
       "path": "paper/README.md",
@@ -7748,11 +7733,6 @@
       "sha256": "a903a5e27b44b2b8a8a757f600b81f66b360b41451f3eb8da6be29cdd27851b1"
     },
     {
-      "path": "scratch/README.md",
-      "bytes": 62,
-      "sha256": "cacaaa818ebb34362e3140c04f8d6a4dc7c9d1087a5c6d70f9cad806b7afe05f"
-    },
-    {
       "path": "scripts/analyze_iclr_nucleus_diagnostics.py",
       "bytes": 2800,
       "sha256": "b73d39c9faf309151ae769bbe5f76e0f6b7ac663e5cf0a938e20bd571daffaae"
@@ -7909,8 +7889,8 @@
     },
     {
       "path": "scripts/release_utils.py",
-      "bytes": 1286,
-      "sha256": "ccb64e9f3ba5db9050df6fd50759e33ed7fbd73a925f6ddeab04775a19e5b61f"
+      "bytes": 1187,
+      "sha256": "a9401f5855c035e8b31f1e91fec2116384f5ba8440e8bd507761b0e1f0cc3977"
     },
     {
       "path": "scripts/rerun_failed_falcon_watermark_repair_slots.py",
@@ -7939,8 +7919,8 @@
     },
     {
       "path": "scripts/run_clean20_watermark_extension_worker.py",
-      "bytes": 29539,
-      "sha256": "c97952ea734e407e97c615f66d9cbf347f774b5950a56c5ce4f124fd840f6bd9"
+      "bytes": 29579,
+      "sha256": "8189ed6e6008bd36aafd61801923b276fa3ecbc7f9b6aaee373bd34faa6f2148"
     },
     {
       "path": "scripts/run_clean41_strong_baseline_scores.py",
@@ -8014,8 +7994,8 @@
     },
     {
       "path": "tests/test_release_workflow.py",
-      "bytes": 7370,
-      "sha256": "a1e425b67f97410980c7c437b4aab18b7117a46a95c1b372ac1fefb17e08be3d"
+      "bytes": 7525,
+      "sha256": "e467f26a2df00cc03d5183b4241569b43aa7d54372bada46e12895d69bfd363f"
     },
     {
       "path": "tests/test_watermark_loading.py",
@@ -8209,8 +8189,8 @@
     },
     {
       "path": "third_party/README.md",
-      "bytes": 2426,
-      "sha256": "ac1572319376f91803a287ecc49976e5e9d4c99922625b015c08831ad6397874"
+      "bytes": 2494,
+      "sha256": "e760f33e1cd9d36ad9b14ac90888684f85ddb57728459e4bf0753a2370fc2225"
     },
     {
       "path": "third_party/external_watermarks/HeavyWater_SimplexWater/LICENSE",

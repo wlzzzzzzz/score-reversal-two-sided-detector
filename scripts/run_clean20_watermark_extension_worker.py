@@ -176,7 +176,7 @@ def cgw_self_detection(
 def init_semstamp():
     repo = ROOT / "external_code/SemStamp"
     if not (repo / "sampling_lsh_utils.py").is_file():
-        raise FileNotFoundError("SemStamp requires a local upstream checkout at external_code/SemStamp; see external_code/README.md")
+        raise FileNotFoundError("SemStamp requires a local upstream checkout at external_code/SemStamp; see docs/REPRODUCE.md#optional-generation-and-baseline-dependencies")
     if str(repo) not in sys.path:
         sys.path.insert(0, str(repo))
     import nltk

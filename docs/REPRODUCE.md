@@ -189,6 +189,7 @@ target = Path('scratch/reference_shaping.json')
 output = Path('scratch/reference_shaping_run')
 if target.exists() or output.exists():
     raise SystemExit('Replay already exists; inspect it or choose a new scratch path')
+target.parent.mkdir(parents=True, exist_ok=True)
 config = json.loads(source.read_text())
 config['output_root'] = output.as_posix()
 workers = []
@@ -362,13 +363,34 @@ The vendored source subset and optional ITSEdit verification acceleration are
 described in `third_party/README.md`. ITSEdit generation also works with the
 Python fallback and does not require compiling that extension. SemStamp
 requires a separately obtained source checkout and embedding dependencies as
-described in `external_code/README.md`. These dependency instructions do not
+described below. These dependency instructions do not
 replace the earlier source corpora or establish exact historical generation
 parity. The recorded final benchmark,
 baseline scores, calibrated score frames, and table exports are included so
 that every reported result remains inspectable and checkable without those
 external resources. Use `docs/RESULTS_INDEX.md` for the source of each
 figure and table, and `docs/PROVENANCE.md` for the release boundaries.
+
+### Optional generation and baseline dependencies
+
+Create these local directories only when running the corresponding generation
+or baseline scripts. They are ignored by Git and are not part of the published
+repository inventory. The CPU replay and main detector rerun from the included
+benchmark do not need the external code or source corpora below.
+
+| Resource | Local path | Used by |
+| --- | --- | --- |
+| Original source corpora and historical preparation inputs | `external_data/` | Benchmark preparation scripts; obtain each corpus from its provider under its terms |
+| [SemStamp](https://github.com/abehou/SemStamp) source checkout | `external_code/SemStamp/` | `scripts/run_clean20_watermark_extension_worker.py`; loads `sampling_lsh_utils.py` and upstream sentence embedding dependencies |
+| Matching SemStamp sentence embedder | `models/stage3_watermarks/SemStamp-c4-sbert/` | SemStamp generation |
+| AdaDetectGPT upstream scripts and pretrained witness | `external_code/AdaDetectGPT/scripts/` | `scripts/run_clean41_strong_baseline_scores.py` |
+
+SemStamp source is not redistributed because no redistribution license was
+present in the inspected upstream tree. Its benchmark texts and detection
+results are included, as are the recorded AdaDetectGPT scores and their CPU
+validation. Use source revisions matching the recorded experiment hashes
+when investigating historical generation. A current upstream checkout alone
+does not reproduce an older modified implementation exactly.
 
 
 ### HeavyWater prefix diagnostic

@@ -32,6 +32,7 @@ python3 third_party/MarkLLM/watermark/its_edit/cython_files/setup.py build_ext -
 ```
 
 SemStamp is an optional checkout under `external_code/SemStamp/`; see
-`external_code/README.md`. Its source is excluded because a redistribution
+[generation dependencies](../docs/REPRODUCE.md#optional-generation-and-baseline-dependencies).
+Its source is excluded because a redistribution
 license was not found in the inspected upstream tree. Its paper benchmark
 texts and results remain included.

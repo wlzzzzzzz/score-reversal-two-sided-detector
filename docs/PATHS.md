@@ -8,7 +8,10 @@ audits, and tables live under `results/` and `analysis/`. Model checkpoints are
 not bundled. Put locally obtained checkpoints under `models/` using the model
 directory names referenced by the scripts. Earlier generation stages may
 require separate source corpora under `external_data/` or external baseline
-code under `external_code/`. These optional locations are excluded from Git.
+code under `external_code/`. These directories are local runtime locations,
+not published placeholder folders. Create them as needed; Git and the release
+inventory exclude their entire contents. Dependency setup is documented in
+[the reproduction guide](REPRODUCE.md#optional-generation-and-baseline-dependencies).
 
 Historical execution receipts may contain relative source identifiers from
 the original experiment layout. Their digests document the original execution.

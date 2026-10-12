@@ -15,9 +15,8 @@ def release_files(root):
         base = Path(directory)
         relative = base.relative_to(root)
         dirs[:] = sorted(d for d in dirs if d not in IGNORED_DIRS and not d.endswith('.egg-info'))
-        if relative.parts and relative.parts[0] in LOCAL_ROOTS:
-            dirs[:] = []
-            files = ['README.md'] if relative.as_posix() in LOCAL_ROOTS and 'README.md' in files else []
+        if not relative.parts:
+            dirs[:] = [d for d in dirs if d not in LOCAL_ROOTS]
         for name in sorted(files):
             if name.endswith(('.pyc', '.pyo', '.swp', '.swo')) or name == '.DS_Store':
                 continue

@@ -49,12 +49,14 @@ def test_detector_rejects_paths_outside_repo(name):
 def test_release_inventory_excludes_local_reruns(tmp_path):
     for name in ('README.md', 'models/README.md', 'models/local/weights.bin',
                  '.venv/bin/python', 'scratch/README.md', 'scratch/run/score.csv',
+                 'external_code/README.md', 'external_code/upstream/model.py',
+                 'external_data/README.md', 'external_data/corpus.json',
                  'results/run/scores.jsonl', '.pytest_cache/cache.json'):
         path = tmp_path / name
         path.parent.mkdir(parents=True, exist_ok=True)
         path.touch()
     assert {p.relative_to(tmp_path).as_posix() for p in release_files(tmp_path)} == {
-        'README.md', 'models/README.md', 'scratch/README.md', 'results/run/scores.jsonl'}
+        'README.md', 'results/run/scores.jsonl'}
 
 
 def test_strong_scorer_initializes_both_models_and_witness():
@@ -124,6 +126,7 @@ def test_mathematical_checks_preserve_published_audits(script, artifact):
 
 def test_reference_calibration_preserves_published_tables():
     tables = {p: p.read_bytes() for p in (ROOT / 'analysis/tables').glob('*.tex')}
+    (ROOT / 'scratch').mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(dir=ROOT / 'scratch') as work:
         result = subprocess.run(
             [sys.executable, '-B', 'analysis/evidence/analyze_reference_calibration.py',

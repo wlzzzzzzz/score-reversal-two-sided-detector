@@ -68,8 +68,9 @@ to package imports and algorithm registries are identified in those files.
 
 SemStamp source is not included: no redistribution license was found in the
 inspected upstream tree. Its generation worker accepts a separately obtained
-checkout under `external_code/SemStamp/`; see `external_code/README.md` for
-requirements and the limits of matching the historical implementation.
+checkout under `external_code/SemStamp/`; see
+[optional dependencies](REPRODUCE.md#optional-generation-and-baseline-dependencies)
+for requirements and the limits of matching the historical implementation.
 The SemStamp benchmark texts, score caches and paper results remain included.
 Source dataset redistribution remains governed by the original datasets'
 terms; the root MIT license does not grant rights to those texts.
@@ -78,11 +79,9 @@ provider terms, including inconsistent MAGE license labels and source versions
 that cannot be established from the retained manifests alone. The rights to
 redistribute every source text have not been verified.
 
-The repository is approximately 2.1 GiB uncompressed. Its files are below
-GitHub's 100 MiB single-file limit. Use Git rather than browser upload for the
-larger caches, and account for the 2 GiB per-push limit described in the root
-README. `manifest.json` and `scripts/check_release.py` verify the payload and
-reject files exceeding the single-file limit.
+The repository is approximately 2.1 GiB uncompressed. `manifest.json` and
+`scripts/check_release.py` verify the payload and reject files exceeding
+GitHub's 100 MiB single-file limit.
 
 ## Scientific audit scope
 
