@@ -11,9 +11,9 @@ and citation information are in the root [README](../README.md#citation).
 input hashes. Each document-moment cache has an experiment manifest recording
 its source, configuration, row count, and content hash. The evaluator checks
 these inputs as part of reproduction. Historical code/configuration hashes
-in archived run receipts describe the original execution; published code and
-metadata may include later portability edits. Fresh runs create new receipts
-and follow the fixed protocol in `docs/protocols/reference_shaping.md`.
+describe the original execution and may differ from the current source files.
+Fresh runs create new receipts and follow the fixed protocol in
+`docs/protocols/reference_shaping.md`.
 
 ## Included data and exclusions
 
@@ -29,13 +29,10 @@ exclusion is recorded in the score audits and result manifests.
 The numerical `analysis/data/` tree contains the full result exports for all
 19 paper tables. `results/runs/` retains the scored-text caches and raw
 results for the main method, two-sided controls, reference shaping,
-calibration, lower-branch analysis, HeavyWater controls, and sensitivity. `results/baselines/` retains the matching baseline score caches and
-aggregates. Benchmark text files, main moment caches, calibrated arrays and paper result
-CSVs retain their recorded numerical contents. The baseline alignment frame
-contains the 17 metadata/paper-score columns used in this release; all 189,660
-original rows and every retained value are preserved exactly. The source
-per-cell baseline caches are also retained.
-Path-bearing cohort and audit metadata use repository-relative locations.
+calibration, lower-branch analysis, HeavyWater controls, and sensitivity.
+`results/baselines/` contains the corresponding per-cell baseline scores and
+aggregates. Its alignment frame has 189,660 rows and 17 columns of metadata
+and detector scores.
 
 `scripts/evaluate_detector.py` rebuilds the final calibrated frames and detector
 metrics from the archived document moments or a freshly scored 80-cell run.
@@ -58,10 +55,8 @@ manifests. Obtain model files from their original providers subject to their
 terms. GPU reruns also require a compatible CUDA/PyTorch/Transformers stack.
 
 `third_party/README.md` lists the included components, their paper use,
-upstream projects and retained MIT/Apache-2.0 licenses. The vendored trees
-contain the imported paper algorithms and utilities. Unused algorithms,
-attack/demo frontends and unrelated environment dumps are omitted. Changes
-to package imports and algorithm registries are identified in those files.
+upstream projects and retained MIT/Apache-2.0 licenses. It also describes
+changes to package imports and algorithm registries.
 
 SemStamp source is not included: no redistribution license was found in the
 inspected upstream tree. Its generation worker accepts a separately obtained
@@ -76,9 +71,6 @@ provider terms, including inconsistent MAGE license labels and source versions
 that cannot be established from the retained manifests alone. The rights to
 redistribute every source text have not been verified.
 
-The root `.gitattributes` preserves original line endings so that Git checkouts
-retain the bytes used by the recorded data and cache hashes.
-
 ## Scientific audit scope
 
 The retained audits record inputs, seeds, model/checkpoint and implementation
@@ -88,7 +80,3 @@ development observations are retained because they document prior data exposure.
 Historical code/input digests identify the original execution. Recorded code
 paths and hashes can differ from the current public scripts; use
 `docs/REPRODUCE.md` for executable commands.
-
-The result index maps all retained analyses to paper tables, figures, appendix
-text or these scientific dependencies. Manuscript editing, translation, build
-and delivery records are outside the release scope.

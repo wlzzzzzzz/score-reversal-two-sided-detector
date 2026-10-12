@@ -131,9 +131,6 @@ additional source data, code, or checkpoints. See
 | `tests/` | Regression tests for the detector, scoring, generation, and paper reproduction |
 | `docs/` | Reproduction instructions, table and figure index, experimental protocols, and data provenance |
 
-Runtime directories such as `scratch/` and `models/` are created locally
-and ignored by Git.
-
 ## Citation
 
 The paper is under anonymous review. We will add a BibTeX entry and a preprint

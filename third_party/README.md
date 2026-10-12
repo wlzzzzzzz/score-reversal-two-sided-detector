@@ -13,9 +13,8 @@ relicensing of these components.
 | `external_watermarks/HeavyWater_SimplexWater/` | No-tilt HeavyWater processor and base class | [DorTsur/CC_WM_LLMs](https://github.com/DorTsur/CC_WM_LLMs) | MIT; component `LICENSE` |
 | `fast-detect-gpt-LICENSE` | Analytic baseline functions in `scripts/fast_detect_gpt.py` | [baoguangsheng/fast-detect-gpt](https://github.com/baoguangsheng/fast-detect-gpt) | MIT |
 
-These are paper-specific source subsets. Unused algorithms, attacks,
-benchmark frontends and upstream environment dumps are omitted. Local changes
-include portability/compatibility fixes, reduced algorithm registries and
+These are paper-specific source subsets. Local changes include
+portability/compatibility fixes, reduced algorithm registries and
 package imports, and retention of only the C4 loader required by SynthID.
 The recorded execution hashes identify the implementations used in the
 original experiments.

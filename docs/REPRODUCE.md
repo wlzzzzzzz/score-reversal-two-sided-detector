@@ -10,8 +10,7 @@ starting points:
    cells. This performs fresh OPT and Falcon model forwards, development
    analysis, a frozen transition to test, and final two-sided
    calibration and evaluation. It requires local
-   model checkpoints and GPUs. Its output goes under `scratch/` and does not
-   replace the recorded results.
+   model checkpoints and GPUs. Its output goes under `scratch/`.
 
 The starting input for a model rerun is the included final benchmark in
 `data/benchmark/`. Recreating that benchmark from the original source corpora
@@ -158,9 +157,8 @@ experiment environment. Fresh floating-point values can still differ with
 hardware, CUDA libraries, and checkpoint revisions. `sentencepiece` supports
 optional generator tokenizers; it is not needed for this OPT/Falcon replay.
 
-Create a new configuration and output directory under ignored `scratch/`.
-This leaves `configs/original/` and `results/runs/` intact. The script stops
-if a previous replay configuration or output exists:
+Create a new configuration and output directory under `scratch/`. Choose new
+paths if the configuration or output directory already exists:
 
 ```bash
 python3 - <<'PY'
@@ -318,9 +316,8 @@ python3 analysis/evidence/analyze_reference_calibration.py \
 ```
 
 This rebuilds the Table 5/Table 14 comparison, all 1,320 task rows, threshold
-changes and paired intervals. It writes only to the requested scratch directory;
-published table files remain unchanged. It checks each task against the recorded paper
-exports and writes a new directory under `scratch/`.
+changes and paired intervals. It checks each task against the recorded paper
+exports and saves the results in `scratch/reference_calibration/`.
 
 ## Limits of a full historical rerun
 
@@ -352,14 +349,12 @@ parity. The recorded final benchmark,
 baseline scores, calibrated score frames, and table exports are included so
 that every reported result remains inspectable and checkable without those
 external resources. Use `docs/RESULTS_INDEX.md` for the source of each
-figure and table, and `docs/PROVENANCE.md` for the release boundaries.
+figure and table, and `docs/PROVENANCE.md` for data and experiment provenance.
 
 ### Optional generation and baseline dependencies
 
-Create these local directories only when running the corresponding generation
-or baseline scripts. They are ignored by Git and are not part of the published
-repository inventory. The CPU replay and main detector rerun from the included
-benchmark do not need the external code or source corpora below.
+The following resources are used by the benchmark-generation and external-baseline
+scripts:
 
 | Resource | Local path | Used by |
 | --- | --- | --- |
