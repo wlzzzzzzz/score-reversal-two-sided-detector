@@ -13,9 +13,6 @@ Detection”**. The paper is under review; author information is anonymized.
 ## Overview
 
 Watermarking can reverse the ordering of machine and human detection scores.
-Our detector combines an entropy-weighted, shaped-reference upper statistic
-with an original-reference, uniformly weighted lower statistic. Human
-calibration scores turn these into an asymmetric two-sided test.
 
 ![Figure 1: Fast-DetectGPT score distributions for human, unwatermarked, and watermarked text](analysis/figures/score_distributions.png)
 
@@ -30,6 +27,18 @@ The main evaluation covers 660 settings, with 800 calibration humans,
 | --- | --- |
 | OPT-2.7B | 0.8219 |
 | Falcon-7B / Falcon-7B-Instruct | 0.8317 |
+
+## Method
+
+Our detector combines an entropy-weighted, shaped-reference upper statistic
+with an original-reference, uniformly weighted lower statistic. Human
+calibration scores turn these into an asymmetric two-sided test.
+
+![Figure 2: Architecture of the asymmetric two-sided detector](analysis/figures/overview.png)
+
+**Figure 2.** Shared model outputs provide upper- and lower-tail evidence,
+which is calibrated against human scores and combined in an asymmetric joint
+test. [View the paper's vector diagram](analysis/figures/overview.pdf).
 
 ## Installation
 
@@ -59,8 +68,9 @@ Model checkpoints and optional external inputs are downloaded separately.
 
 Run all commands from the repository root with the environment activated.
 The following steps rebuild the final detector from the included document
-moments, check the reported numerical results, and regenerate table and
-figure exports. Fresh model scoring is documented separately below.
+moments and compare its outputs with the reported results. Fresh model
+scoring is documented separately below. Detailed table and figure workflows
+are available in the [full reproduction guide](docs/REPRODUCE.md).
 
 ### 1. Verify the included files
 
@@ -92,40 +102,7 @@ Results are written to `scratch/detector/`, including `summary.csv`,
 `task_metrics.csv`, `deployment.csv`, and `audit.json`. The directory is
 created automatically. Choose a new output name when repeating the run.
 
-### 3. Check the paper tables and Figure 1
-
-```bash
-python3 analysis/evidence/render_current_tables.py --check-only
-python3 analysis/evidence/render_supplement_tables.py --check-only
-python3 analysis/evidence/render_reference_calibration_table.py --check-only
-python3 analysis/evidence/analyze_lower_branch.py --check-only
-python3 analysis/evidence/check_baselines.py
-python3 analysis/evidence/two_sided_controls.py
-python3 analysis/evidence/check_heavywater_controls.py
-python3 scripts/audit_heavywater_prefix.py
-python3 analysis/evidence/validate_supplement.py
-python3 analysis/plot_score_distributions.py --check-only
-```
-
-The table checks cover the main comparisons, ablations, baselines, and
-appendix analyses. The Figure 1 check recomputes empirical quantiles and
-all 660 native OPT task AUROCs. See the
-[paper result index](docs/RESULTS_INDEX.md) for the source files and validation
-commands associated with each table and figure.
-
-To write the supported main table exports and redraw Figure 1:
-
-```bash
-python3 analysis/evidence/render_current_tables.py --output-dir scratch/tables
-python3 analysis/plot_score_distributions.py --output-dir scratch/figures
-```
-
-The figure command writes PDF, PNG, and SVG files. It uses the recorded
-empirical quantiles; default fonts and spacing may differ from the published
-master. Figure 2 is a conceptual diagram supplied as the final vector master
-in `analysis/figures/overview.pdf`.
-
-### 4. Run fresh model scoring
+### 3. Run fresh model scoring
 
 Follow [the staged GPU workflow](docs/REPRODUCE.md#3-prepare-for-fresh-model-scoring-of-all-80-benchmark-cells)
 to score all 80 included benchmark cells, freeze the development analysis,
